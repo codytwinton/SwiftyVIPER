@@ -46,7 +46,7 @@ class ___FILEBASENAMEASIDENTIFIER___Router: NSObject {
 		
 		presenter?.router = nil
 		presenter?.view = nil
-		presenter?.interactor = nil
+		//presenter?.interactor = nil
 	}
 }
 
