@@ -16,8 +16,8 @@ import UIKit
 
 // MARK: Protocols
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
-
+protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
+	func setupView()
 }
 
 
@@ -29,6 +29,8 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
 	override func viewDidLoad() {
         super.viewDidLoad()
+		
+		presenter?.setupView()
     }
 }
 
@@ -36,5 +38,8 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to View Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
-
+	
+	func showSomething() {
+		print("Recieve Data from Presenter")
+	}
 }

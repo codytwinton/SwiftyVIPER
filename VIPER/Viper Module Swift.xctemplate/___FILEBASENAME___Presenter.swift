@@ -16,12 +16,8 @@ import Foundation
 
 // MARK: Protocols
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
-	func setupView()
-}
-
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
-
+protocol ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
+	func showSomething()
 }
 
 
@@ -30,21 +26,21 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
 class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
 
 	var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol?
-	var interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol?
 	var router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol?
+	//var interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol?
+	
+	init(view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol?, router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol?) {
+		self.view = view
+		self.router = router
+	}
 }
 
 // MARK: ___FILEBASENAMEASIDENTIFIER___ View to Presenter Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
 
-  func setupView() {
-
-  }
-}
-
-// MARK: ___FILEBASENAMEASIDENTIFIER___ Interactor to Presenter Protocol
-
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
-
+	func setupView() {
+		print("Handle View Setup")
+		view?.showSomething()
+	}
 }

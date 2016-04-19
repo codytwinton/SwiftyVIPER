@@ -13,6 +13,7 @@
 		6A15A2C91CC6AD3A00C9BE91 /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
 		6A15A2CA1CC6AD3A00C9BE91 /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
 		6A15A2CB1CC6AD3A00C9BE91 /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		6A15A2CD1CC6AD8600C9BE91 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -26,6 +27,7 @@
 		6A15A2C41CC6AD3A00C9BE91 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				6A15A2CD1CC6AD8600C9BE91 /* README.txt */,
 				6A15A2C51CC6AD3A00C9BE91 /* Viper Module Swift.xctemplate */,
 			);
 			path = VIPER;
