@@ -13,7 +13,7 @@
 	<key>DefaultCompletionName</key>
 	<string>NewVIPERModule</string>
 	<key>Description</key>
-	<string>Basic SWIFT-VIPER module template. Creates View, Interactor, Presenter, Router with protocols.</string>
+	<string>Basic VIPER Interactor template, with protocols</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>
