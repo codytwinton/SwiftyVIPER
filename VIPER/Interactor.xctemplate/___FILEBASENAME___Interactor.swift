@@ -17,14 +17,17 @@ import Foundation
 // MARK: Protocols
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
+	func handleEntities()
+}
 
+protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
+	func entitiesHandled()
 }
 
 
 // MARK: -
 
 class ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject {
-
 	var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol?
 
 }
@@ -32,5 +35,8 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject {
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to Interactor Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
-
+	
+	func handleEntities() {
+		presenter?.entitiesHandled()
+	}
 }
