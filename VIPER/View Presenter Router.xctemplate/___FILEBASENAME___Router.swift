@@ -22,10 +22,6 @@ protocol RouterProtocol {
 }
 */
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
-
-}
-
 
 // MARK: -
 

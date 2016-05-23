@@ -20,6 +20,10 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
 	func showSomething()
 }
 
+protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
+	
+}
+
 
 // MARK: -
 
