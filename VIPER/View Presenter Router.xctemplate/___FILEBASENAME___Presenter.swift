@@ -43,4 +43,9 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
 		print("Handle View Setup")
 		view?.showSomething()
 	}
+	
+	func viewAppeared() {
+		print("Handle View Appeared")
+		view?.showSomething()
+	}
 }

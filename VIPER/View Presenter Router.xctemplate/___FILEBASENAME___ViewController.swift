@@ -15,9 +15,15 @@ import UIKit
 
 
 // MARK: Protocols
-
-protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
+/*
+protocol ViewPresenterProtocol {
 	func setupView()
+	func viewAppeared()
+}
+*/
+
+protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol: ViewPresenterProtocol {
+	
 }
 
 
@@ -32,6 +38,12 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 		
 		presenter?.setupView()
     }
+	
+	override func viewDidAppear(animated: Bool) {
+		super.viewDidAppear(animated)
+		
+		presenter?.viewAppeared()
+	}
 }
 
 
