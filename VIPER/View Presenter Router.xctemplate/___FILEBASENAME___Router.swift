@@ -31,7 +31,7 @@ class ___FILEBASENAMEASIDENTIFIER___Router: NSObject {
 	private var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController?
 	
 	private var storyboard: UIStoryboard {
-		return UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+		return UIStoryboard.mainStoryboard()
 	}
 	
 	override init() {

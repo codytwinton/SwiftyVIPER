@@ -15,12 +15,20 @@ import UIKit
 
 
 // MARK: Protocols
+
+// MARK: -
+
+
+// Boiler plate, that should be already present in your project, unless this is your first module
 /*
 protocol ViewPresenterProtocol {
 	func viewLoaded()
 	func viewAppeared()
 }
 */
+
+
+//private var _storyboard = UIStoryboard(name: "MainStoryboard", bundle: NSBundle.mainBundle())
 
 /*
 extension UIStoryboard {
@@ -34,6 +42,10 @@ extension UIStoryboard {
 	*/
 	func viewController<T where T: UIViewController, T: StoryboardProtocol>(type: T.Type) -> T? {
 		return self.instantiateViewControllerWithIdentifier(type.storyboardID) as? T
+	}
+
+	class func mainStoryboard() -> UIStoryboard {
+		return _storyboard
 	}
 }
 
