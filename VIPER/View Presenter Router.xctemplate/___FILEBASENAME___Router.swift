@@ -37,7 +37,7 @@ class ___FILEBASENAMEASIDENTIFIER___Router: NSObject {
 	override init() {
 		super.init()
 		
-		viewController = storyboard.instantiateViewControllerWithIdentifier("___FILEBASENAMEASIDENTIFIER___") as? ___FILEBASENAMEASIDENTIFIER___ViewController
+		viewController = storyboard.viewController(___FILEBASENAMEASIDENTIFIER___ViewController)
 		presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(view: viewController, router: self)
 		
 		viewController?.presenter = presenter

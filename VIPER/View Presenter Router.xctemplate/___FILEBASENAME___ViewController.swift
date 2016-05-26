@@ -22,6 +22,26 @@ protocol ViewPresenterProtocol {
 }
 */
 
+/*
+extension UIStoryboard {
+	
+	/**
+	Returns the view controller of a perticular type
+	
+	- parameters:
+		- type: The Class Type, which must be a UIViewController that conforms to `StoryboardProtocol`
+	- returns: The first view controller
+	*/
+	func viewController<T where T: UIViewController, T: StoryboardProtocol>(type: T.Type) -> T? {
+		return self.instantiateViewControllerWithIdentifier(type.storyboardID) as? T
+	}
+}
+
+protocol StoryboardProtocol {
+	static var storyboardID: String { get }
+}
+*/
+
 protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol: ViewPresenterProtocol {
 	
 }
@@ -44,6 +64,10 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 		
 		presenter?.viewAppeared()
 	}
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___ViewController: StoryboardProtocol {
+	static var storyboardID: String { return "___FILEBASENAMEASIDENTIFIER___"} // Add in Storyboard ID
 }
 
 
