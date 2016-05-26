@@ -18,7 +18,7 @@ import Foundation
 
 /*
 protocol RouterProtocol {
-	func present(fromViewController viewController: UIViewController, modalTransitionStyle: UIModalTransitionStyle)
+	func present(fromViewController viewController: UIViewController, modalTransitionStyle: UIModalTransitionStyle, completion: (() -> Void)?)
 }
 */
 
@@ -56,10 +56,10 @@ class ___FILEBASENAMEASIDENTIFIER___Router: NSObject {
 
 extension ___FILEBASENAMEASIDENTIFIER___Router: RouterProtocol {
 	
-	func present(fromViewController viewController: UIViewController, modalTransitionStyle: UIModalTransitionStyle) {
+	func present(fromViewController viewController: UIViewController, modalTransitionStyle: UIModalTransitionStyle, completion: (() -> Void)?) {
 		guard let controller = self.viewController else {return}
 		controller.modalTransitionStyle = modalTransitionStyle
-		viewController.presentViewController(controller, animated: true, completion: nil)
+		viewController.presentViewController(controller, animated: true, completion: completion)
 	}
 }
 

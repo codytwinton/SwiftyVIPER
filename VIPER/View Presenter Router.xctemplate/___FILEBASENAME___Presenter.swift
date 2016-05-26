@@ -43,7 +43,7 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
 
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
 
-	func setupView() {
+	func viewLoaded() {
 		print("Handle View Setup")
 		view?.showSomething()
 	}

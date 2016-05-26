@@ -17,7 +17,7 @@ import UIKit
 // MARK: Protocols
 /*
 protocol ViewPresenterProtocol {
-	func setupView()
+	func viewLoaded()
 	func viewAppeared()
 }
 */
@@ -36,7 +36,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
 		
-		presenter?.setupView()
+		presenter?.viewLoaded()
     }
 	
 	override func viewDidAppear(animated: Bool) {
