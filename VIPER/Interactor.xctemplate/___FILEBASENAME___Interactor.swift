@@ -28,8 +28,12 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
 // MARK: -
 
 class ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject {
-	var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol?
-
+	var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol
+	
+	init(presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol) {
+		self.presenter = presenter
+		super.init()
+	}
 }
 
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to Interactor Protocol
@@ -37,6 +41,6 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject {
 extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 	
 	func handleEntities() {
-		presenter?.entitiesHandled()
+		presenter.entitiesHandled()
 	}
 }

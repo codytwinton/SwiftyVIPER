@@ -30,12 +30,13 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
 class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
 
 	var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol?
-	var router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol?
+	var router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol
 	//var interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol?
 	
-	init(view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol?, router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol?) {
+	init(view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol?, router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol) {
 		self.view = view
 		self.router = router
+		super.init()
 	}
 }
 
