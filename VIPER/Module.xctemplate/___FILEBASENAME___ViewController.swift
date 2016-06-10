@@ -3,7 +3,6 @@
 //  Project: ___PROJECTNAME___
 //
 //  Module: ___VARIABLE_viperModuleName___
-//  Description: ___VARIABLE_viperModuleDescription___
 //
 //  By ___FULLUSERNAME___ ___DATE___
 //  ___ORGANIZATIONNAME___ ___YEAR___
@@ -13,46 +12,36 @@
 
 import UIKit
 
-
-// MARK: Protocols
-
-// MARK: -
-
-
-// Boiler plate, that should be already present in your project, unless this is your first module
+// MARK: - Boiler Plate Functionality. Uncomment, if this is your first/root module. Delete, if this is already implemented in another module
 /*
 protocol ViewPresenterProtocol {
+	
+	/**
+	Designed to be called in the Presenter
+	Designed for setting up the View with data from the Interactors/Entities
+	Should call back on View, for example:
+	
+	`self.view setExampleString:self.exampleString`
+	*/
 	func viewLoaded()
 	func viewAppeared()
+	func viewDisappeared()
+}
+
+extension ViewPresenterProtocol {
+	func viewLoaded() {}
+	func viewAppeared() {}
+	func viewDisappeared() {}
 }
 */
 
-
-//private var _storyboard = UIStoryboard(name: "MainStoryboard", bundle: NSBundle.mainBundle())
-
 /*
-extension UIStoryboard {
-	
-	/**
-	Returns the view controller of a perticular type
-	
-	- parameters:
-		- type: The Class Type, which must be a UIViewController that conforms to `StoryboardProtocol`
-	- returns: The first view controller
-	*/
-	func viewController<T where T: UIViewController, T: StoryboardProtocol>(type: T.Type) -> T? {
-		return self.instantiateViewControllerWithIdentifier(type.storyboardID) as? T
-	}
-
-	class func mainStoryboard() -> UIStoryboard {
-		return _storyboard
-	}
-}
-
 protocol StoryboardProtocol {
 	static var storyboardID: String { get }
 }
 */
+
+// MARK: Protocols
 
 protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol: ViewPresenterProtocol {
 	
@@ -76,6 +65,12 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 		
 		presenter?.viewAppeared()
 	}
+	
+	override func viewDidDisappear(animated: Bool) {
+		super.viewDidDisappear(animated)
+		
+		presenter?.viewDisappeared()
+	}
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: StoryboardProtocol {
@@ -87,7 +82,8 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController: StoryboardProtocol {
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
 	
-	func showSomething() {
-		print("Recieve Data from Presenter")
+	func viewTitle(title: String?) {
+		print("title: \(title)")
+		self.title = title
 	}
 }

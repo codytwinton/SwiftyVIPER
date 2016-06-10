@@ -13,7 +13,7 @@
 	<key>DefaultCompletionName</key>
 	<string>NewVIPERModule</string>
 	<key>Description</key>
-	<string>Basic VIPER Interactor template, with protocols</string>
+	<string>VIPER Module template, including View, Presenter, Router, and Interactor with protocols</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>
@@ -43,20 +43,6 @@
 			<string>productName</string>
 			<key>Type</key>
 			<string>static</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string></string>
-			<key>Description</key>
-			<string>The description of the module</string>
-			<key>Identifier</key>
-			<string>viperModuleDescription</string>
-			<key>Name</key>
-			<string>Module Description</string>
-			<key>Required</key>
-			<string>YES</string>
-			<key>Type</key>
-			<string>text</string>
 		</dict>
 	</array>
 </dict>

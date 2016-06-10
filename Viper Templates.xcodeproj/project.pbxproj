@@ -10,12 +10,13 @@
 		6A15A2CF1CC6B34400C9BE91 /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
 		6A15A2D01CC6B34400C9BE91 /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
 		6A15A2D11CC6B34400C9BE91 /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
-		6A15A2D31CC6B34400C9BE91 /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
-		6A15A2D41CC6B34400C9BE91 /* ___FILEBASENAME___Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Router.swift"; sourceTree = "<group>"; };
-		6A15A2D51CC6B34400C9BE91 /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
-		6A15A2D61CC6B34400C9BE91 /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
-		6A15A2D71CC6B34400C9BE91 /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		6A15A2E01CC6B68B00C9BE91 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6ACEF2511D0B4ABA005A9E0A /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
+		6ACEF2521D0B4ABA005A9E0A /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
+		6ACEF2531D0B4ABA005A9E0A /* ___FILEBASENAME___Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Router.swift"; sourceTree = "<group>"; };
+		6ACEF2541D0B4ABA005A9E0A /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
+		6ACEF2551D0B4ABA005A9E0A /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
+		6ACEF2561D0B4ABA005A9E0A /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -30,8 +31,8 @@
 		6A15A2C41CC6AD3A00C9BE91 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				6ACEF2501D0B4ABA005A9E0A /* Module.xctemplate */,
 				6A15A2CE1CC6B34400C9BE91 /* Interactor.xctemplate */,
-				6A15A2D21CC6B34400C9BE91 /* View Presenter Router.xctemplate */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -46,16 +47,17 @@
 			path = Interactor.xctemplate;
 			sourceTree = "<group>";
 		};
-		6A15A2D21CC6B34400C9BE91 /* View Presenter Router.xctemplate */ = {
+		6ACEF2501D0B4ABA005A9E0A /* Module.xctemplate */ = {
 			isa = PBXGroup;
 			children = (
-				6A15A2D31CC6B34400C9BE91 /* ___FILEBASENAME___Presenter.swift */,
-				6A15A2D41CC6B34400C9BE91 /* ___FILEBASENAME___Router.swift */,
-				6A15A2D51CC6B34400C9BE91 /* ___FILEBASENAME___ViewController.swift */,
-				6A15A2D61CC6B34400C9BE91 /* TemplateIcon.icns */,
-				6A15A2D71CC6B34400C9BE91 /* TemplateInfo.plist */,
+				6ACEF2511D0B4ABA005A9E0A /* ___FILEBASENAME___Interactor.swift */,
+				6ACEF2521D0B4ABA005A9E0A /* ___FILEBASENAME___Presenter.swift */,
+				6ACEF2531D0B4ABA005A9E0A /* ___FILEBASENAME___Router.swift */,
+				6ACEF2541D0B4ABA005A9E0A /* ___FILEBASENAME___ViewController.swift */,
+				6ACEF2551D0B4ABA005A9E0A /* TemplateIcon.icns */,
+				6ACEF2561D0B4ABA005A9E0A /* TemplateInfo.plist */,
 			);
-			path = "View Presenter Router.xctemplate";
+			path = Module.xctemplate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

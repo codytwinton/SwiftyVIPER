@@ -3,7 +3,6 @@
 //  Project: ___PROJECTNAME___
 //
 //  Module: ___VARIABLE_viperModuleName___
-//  Description: ___VARIABLE_viperModuleDescription___
 //
 //  By ___FULLUSERNAME___ ___DATE___
 //  ___ORGANIZATIONNAME___ ___YEAR___
@@ -17,11 +16,12 @@ import Foundation
 // MARK: Protocols
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
-	func showSomething()
+	func viewTitle(title: String?)
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
-	
+	var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol? { get }
+	var interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol { get }
 }
 
 
@@ -29,12 +29,17 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
 
 class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
 
-	var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol?
 	var router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol
-	//var interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol?
 	
-	init(view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol?, router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol) {
-		self.view = view
+	var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol? {
+		return router.view
+	}
+	
+	var interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
+		return router.interactor
+	}
+	
+	init(router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol) {
 		self.router = router
 		super.init()
 	}
@@ -45,12 +50,15 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
 
 	func viewLoaded() {
-		print("Handle View Setup")
-		view?.showSomething()
+		interactor.requestTitle()
 	}
+}
+
+// MARK: ___FILEBASENAMEASIDENTIFIER___ Interactor to Presenter Protocol
+
+extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
 	
-	func viewAppeared() {
-		print("Handle View Appeared")
-		view?.showSomething()
+	func setTitle(title: String?) {
+		view?.viewTitle(title)
 	}
 }
