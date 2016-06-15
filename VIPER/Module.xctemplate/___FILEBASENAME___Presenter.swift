@@ -16,10 +16,10 @@ import Foundation
 // MARK: Protocols
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
-	func viewTitle(title: String?)
+	//func viewTitle(title: String?)
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
+protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol: PresenterRouterProtocol {
 	var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol? { get }
 	var interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol { get }
 }
@@ -50,7 +50,7 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
 
 	func viewLoaded() {
-		interactor.requestTitle()
+		//interactor.requestTitle()
 	}
 }
 
@@ -58,7 +58,9 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
 
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
 	
+	/*
 	func setTitle(title: String?) {
 		view?.viewTitle(title)
 	}
+	*/
 }

@@ -11,6 +11,7 @@
 // MARK: Imports
 
 import Foundation
+import UIKit
 
 // MARK: - Boiler Plate Functionality. Uncomment, if this is your first/root module. Delete, if this is already implemented in another module
 /*
@@ -19,6 +20,36 @@ protocol RouterProtocol {
 	func present(fromViewController viewController: UIViewController?, modalTransitionStyle: UIModalTransitionStyle, completion: (() -> Void)?)
 }
 */
+
+/*
+import SafariServices
+
+protocol PresenterRouterProtocol: RouterProtocol {
+	func presentAlertController(alertController: UIAlertController, completion: (() -> Void)?)
+	func openURL(url: NSURL?, completion: (() -> Void)?)
+}
+
+extension PresenterRouterProtocol {
+	func presentAlertController(alertController: UIAlertController, completion: (() -> Void)?) {
+		self.viewController?.presentViewController(alertController, animated: true, completion: completion)
+	}
+	
+	func openURL(url: NSURL?, completion: (() -> Void)?) {
+		
+		guard let url = url else {completion?(); return}
+		
+		guard #available(iOS 9.0, *) else {
+			UIApplication.sharedApplication().openURL(url)
+			completion?()
+			return
+		}
+		
+		let SVC = SFSafariViewController(URL: url)
+		self.viewController?.presentViewController(SVC, animated: true, completion: completion)
+	}
+}
+*/
+
 /*
 extension RouterProtocol {
 	

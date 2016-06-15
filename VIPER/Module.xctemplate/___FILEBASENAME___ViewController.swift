@@ -74,7 +74,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: StoryboardProtocol {
-	static var storyboardID: String { return "___FILEBASENAMEASIDENTIFIER___"} // Add in Storyboard ID
+	static var storyboardID: String {return "___FILEBASENAMEASIDENTIFIER___"} // Add in Storyboard ID
 }
 
 
@@ -82,8 +82,10 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController: StoryboardProtocol {
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
 	
+	/*
 	func viewTitle(title: String?) {
 		print("title: \(title)")
 		self.title = title
 	}
+	*/
 }

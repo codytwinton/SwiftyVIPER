@@ -16,11 +16,11 @@ import Foundation
 // MARK: Protocols
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
-	func requestTitle()
+	//func requestTitle()
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
-	func setTitle(title: String?)
+	//func setTitle(title: String?)
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol {
@@ -48,7 +48,9 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject {
 
 extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 	
+	/*
 	func requestTitle() {
 		presenter.setTitle("___FILEBASENAMEASIDENTIFIER___")
 	}
+	*/
 }
