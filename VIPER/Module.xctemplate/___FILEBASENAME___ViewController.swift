@@ -24,12 +24,14 @@ protocol ViewPresenterProtocol {
 	`self.view setExampleString:self.exampleString`
 	*/
 	func viewLoaded()
+	func viewAppearing()
 	func viewAppeared()
 	func viewDisappeared()
 }
 
 extension ViewPresenterProtocol {
 	func viewLoaded() {}
+	func viewAppearing() {}
 	func viewAppeared() {}
 	func viewDisappeared() {}
 }
@@ -59,6 +61,12 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 		
 		presenter?.viewLoaded()
     }
+	
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		presenter?.viewAppearing()
+	}
 	
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
