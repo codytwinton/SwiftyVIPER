@@ -30,7 +30,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol {
 
 // MARK: -
 
-class ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject {
+struct ___FILEBASENAMEASIDENTIFIER___Interactor {
 	
 	var router: ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol
 	
@@ -40,7 +40,6 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject {
 	
 	init(router: ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol) {
 		self.router = router
-		super.init()
 	}
 }
 
