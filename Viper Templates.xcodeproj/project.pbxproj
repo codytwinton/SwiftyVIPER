@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		6A15A2CF1CC6B34400C9BE91 /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
-		6A15A2D01CC6B34400C9BE91 /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
-		6A15A2D11CC6B34400C9BE91 /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		6A15A2E01CC6B68B00C9BE91 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6ACEF2511D0B4ABA005A9E0A /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
 		6ACEF2521D0B4ABA005A9E0A /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
@@ -32,19 +29,8 @@
 			isa = PBXGroup;
 			children = (
 				6ACEF2501D0B4ABA005A9E0A /* Module.xctemplate */,
-				6A15A2CE1CC6B34400C9BE91 /* Interactor.xctemplate */,
 			);
 			path = VIPER;
-			sourceTree = "<group>";
-		};
-		6A15A2CE1CC6B34400C9BE91 /* Interactor.xctemplate */ = {
-			isa = PBXGroup;
-			children = (
-				6A15A2CF1CC6B34400C9BE91 /* ___FILEBASENAME___Interactor.swift */,
-				6A15A2D01CC6B34400C9BE91 /* TemplateIcon.icns */,
-				6A15A2D11CC6B34400C9BE91 /* TemplateInfo.plist */,
-			);
-			path = Interactor.xctemplate;
 			sourceTree = "<group>";
 		};
 		6ACEF2501D0B4ABA005A9E0A /* Module.xctemplate */ = {

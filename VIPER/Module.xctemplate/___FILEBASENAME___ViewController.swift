@@ -53,30 +53,31 @@ protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol: ViewPresenterProto
 // MARK: -
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
+	
+	// MARK: - Variables
 
 	var presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol?
+	
+	
+	// MARK: - Load Functions
 
 	override func viewDidLoad() {
         super.viewDidLoad()
-		
 		presenter?.viewLoaded()
     }
 	
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
-		
 		presenter?.viewAppearing()
 	}
 	
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
-		
 		presenter?.viewAppeared()
 	}
 	
 	override func viewDidDisappear(animated: Bool) {
 		super.viewDidDisappear(animated)
-		
 		presenter?.viewDisappeared()
 	}
 }
@@ -89,7 +90,6 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController: StoryboardProtocol {
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to View Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
-	
 	/*
 	func viewTitle(title: String?) {
 		print("title: \(title)")

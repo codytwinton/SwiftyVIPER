@@ -24,7 +24,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol {
-	var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol { get }
+	var interactorPresenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol { get }
 }
 
 
@@ -32,11 +32,10 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol {
 
 struct ___FILEBASENAMEASIDENTIFIER___Interactor {
 	
-	var router: ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol
+	// MARK: - Variables
 	
-	var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
-		return router.presenter
-	}
+	var router: ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol
+	var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {return router.interactorPresenter}
 	
 	init(router: ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol) {
 		self.router = router
@@ -46,7 +45,6 @@ struct ___FILEBASENAMEASIDENTIFIER___Interactor {
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to Interactor Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
-	
 	/*
 	func requestTitle() {
 		presenter.setTitle("___FILEBASENAMEASIDENTIFIER___")

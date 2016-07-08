@@ -75,42 +75,42 @@ extension UIStoryboard {
 
 class ___FILEBASENAMEASIDENTIFIER___Router: NSObject {
 	
-	private lazy var _presenter: ___FILEBASENAMEASIDENTIFIER___Presenter = {
+	// MARK: - Variables
+	
+	private lazy var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter = {
 		return ___FILEBASENAMEASIDENTIFIER___Presenter(router: self)
 	}()
 	
-	private lazy var _interactor: ___FILEBASENAMEASIDENTIFIER___Interactor = {
+	private lazy var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor = {
 		return ___FILEBASENAMEASIDENTIFIER___Interactor(router: self)
 	}()
 	
-	private lazy var _viewController: ___FILEBASENAMEASIDENTIFIER___ViewController? = {
+	private lazy var view: ___FILEBASENAMEASIDENTIFIER___ViewController? = {
 		let controller = UIStoryboard.mainStoryboard().viewController(___FILEBASENAMEASIDENTIFIER___ViewController)
-		controller?.presenter = self._presenter
+		controller?.presenter = self.presenter
 		return controller
 	}()
 	
 	deinit {
-		_viewController?.presenter = nil
+		view?.presenter = nil
 	}
 }
 
 // MARK: Router Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Router: RouterProtocol {
-	var viewController: UIViewController? {return _viewController}
+	var viewController: UIViewController? {return view}
 }
 
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to Router Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
-	
-	var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol? {return _viewController}
-	
-	var interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {return _interactor}
+	var presenterView: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol? {return view}
+	var presenterInteractor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {return interactor}
 }
 
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Interactor to Router Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol {
-	var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {return _presenter}
+	var interactorPresenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {return presenter}
 }
