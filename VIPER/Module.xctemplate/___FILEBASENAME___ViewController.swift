@@ -37,12 +37,6 @@ extension ViewPresenterProtocol {
 }
 */
 
-/*
-protocol StoryboardProtocol {
-	static var storyboardID: String { get }
-}
-*/
-
 // MARK: Protocols
 
 protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol: ViewPresenterProtocol {
@@ -56,34 +50,39 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 	
 	// MARK: - Variables
 
-	var presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol?
+	var presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol
 	
 	
 	// MARK: - Load Functions
+	
+	init(presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol) {
+		self.presenter = presenter
+		super.init(nibName: nil, bundle: nil)
+	}
+	
+	required init?(coder aDecoder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
 
 	override func viewDidLoad() {
         super.viewDidLoad()
-		presenter?.viewLoaded()
+		presenter.viewLoaded()
     }
 	
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
-		presenter?.viewAppearing()
+		presenter.viewAppearing()
 	}
 	
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
-		presenter?.viewAppeared()
+		presenter.viewAppeared()
 	}
 	
 	override func viewDidDisappear(animated: Bool) {
 		super.viewDidDisappear(animated)
-		presenter?.viewDisappeared()
+		presenter.viewDisappeared()
 	}
-}
-
-extension ___FILEBASENAMEASIDENTIFIER___ViewController: StoryboardProtocol {
-	static var storyboardID: String {return "___FILEBASENAMEASIDENTIFIER___"} // Add in Storyboard ID
 }
 
 

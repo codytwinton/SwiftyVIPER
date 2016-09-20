@@ -60,13 +60,6 @@ extension RouterProtocol {
 	}
 }
 */
-/*
-extension UIStoryboard {
-	class func mainStoryboard() -> UIStoryboard {
-		return UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-	}
-}
-*/
 
 // MARK: Protocols
 
@@ -85,15 +78,9 @@ class ___FILEBASENAMEASIDENTIFIER___Router: NSObject {
 		return ___FILEBASENAMEASIDENTIFIER___Interactor(router: self)
 	}()
 	
-	private lazy var view: ___FILEBASENAMEASIDENTIFIER___ViewController? = {
-		let controller = UIStoryboard.mainStoryboard().viewController(___FILEBASENAMEASIDENTIFIER___ViewController)
-		controller?.presenter = self.presenter
-		return controller
+	private lazy var view: ___FILEBASENAMEASIDENTIFIER___ViewController = {
+		return ___FILEBASENAMEASIDENTIFIER___ViewController(presenter: self.presenter)
 	}()
-	
-	deinit {
-		view?.presenter = nil
-	}
 }
 
 // MARK: Router Protocol
@@ -105,7 +92,7 @@ extension ___FILEBASENAMEASIDENTIFIER___Router: RouterProtocol {
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to Router Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
-	var presenterView: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol? {return view}
+	var presenterView: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {return view}
 	var presenterInteractor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {return interactor}
 }
 

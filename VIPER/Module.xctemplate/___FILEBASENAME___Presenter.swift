@@ -20,7 +20,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol: PresenterRouterProtocol {
-	var presenterView: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol? { get }
+	var presenterView: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol { get }
 	var presenterInteractor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol { get }
 }
 
@@ -32,7 +32,7 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
 	// MARK: - Variables
 
 	var router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol
-	var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol? {return router.presenterView}
+	var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {return router.presenterView}
 	var interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {return router.presenterInteractor}
 	
 	init(router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol) {
@@ -67,7 +67,7 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
 	/*
 	func setTitle(title: String?) {
-		view?.viewTitle(title)
+		view.viewTitle(title)
 	}
 	*/
 }
