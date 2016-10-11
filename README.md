@@ -7,3 +7,5 @@ Drag the VIPER folder into this location: `/Applications/Xcode.app/Contents/Deve
 
 
 There may be some updates that I add eventually. Still waiting until we flush out VIPER, but this will give us templates to work off of.
+
+Inspired by [ViperMcFlurry](https://github.com/rambler-digital-solutions/ViperMcFlurry)
