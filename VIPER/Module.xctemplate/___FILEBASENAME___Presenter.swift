@@ -29,11 +29,18 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol: PresenterRouterP
 
 class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
 	
-	// MARK: - Variables
-
-	var router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol
+	// MARK: - Constants
+	
+	let router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol
+	
+	
+	// MARK: Variables
+	
 	var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {return router.presenterView}
 	var interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {return router.presenterInteractor}
+	
+	
+	// MARK: Inits
 	
 	init(router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol) {
 		self.router = router

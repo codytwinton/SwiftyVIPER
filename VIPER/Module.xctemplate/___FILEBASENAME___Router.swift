@@ -75,7 +75,7 @@ class ___FILEBASENAMEASIDENTIFIER___Router: NSObject {
 	}()
 	
 	private lazy var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor = {
-		return ___FILEBASENAMEASIDENTIFIER___Interactor(router: self)
+		return ___FILEBASENAMEASIDENTIFIER___Interactor(presenter: self.presenter)
 	}()
 	
 	private lazy var view: ___FILEBASENAMEASIDENTIFIER___ViewController = {
@@ -86,7 +86,7 @@ class ___FILEBASENAMEASIDENTIFIER___Router: NSObject {
 // MARK: Router Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Router: RouterProtocol {
-	var viewController: UIViewController? {return view}
+	var viewController: UIViewController {return view}
 }
 
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to Router Protocol
@@ -94,10 +94,4 @@ extension ___FILEBASENAMEASIDENTIFIER___Router: RouterProtocol {
 extension ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
 	var presenterView: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {return view}
 	var presenterInteractor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {return interactor}
-}
-
-// MARK: ___FILEBASENAMEASIDENTIFIER___ Interactor to Router Protocol
-
-extension ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol {
-	var interactorPresenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {return presenter}
 }

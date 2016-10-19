@@ -23,22 +23,20 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
 	//func setTitle(title: String?)
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol {
-	var interactorPresenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol { get }
-}
-
 
 // MARK: -
 
 struct ___FILEBASENAMEASIDENTIFIER___Interactor {
 	
-	// MARK: - Variables
+	// MARK: - Constants
 	
-	var router: ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol
-	var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {return router.interactorPresenter}
+	let presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol
 	
-	init(router: ___FILEBASENAMEASIDENTIFIER___InteractorRouterProtocol) {
-		self.router = router
+	
+	// MARK: Inits
+	
+	init(presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol) {
+		self.presenter = presenter
 	}
 }
 

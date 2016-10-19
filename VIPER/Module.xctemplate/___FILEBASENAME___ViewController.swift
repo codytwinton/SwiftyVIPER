@@ -50,10 +50,10 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 	
 	// MARK: - Variables
 
-	var presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol
+	let presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol
 	
 	
-	// MARK: - Load Functions
+	// MARK: Inits
 	
 	init(presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol) {
 		self.presenter = presenter
@@ -63,6 +63,9 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 	required init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
+	
+	
+	// MARK: - Load Functions
 
 	override func viewDidLoad() {
         super.viewDidLoad()
