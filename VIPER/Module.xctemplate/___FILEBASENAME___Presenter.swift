@@ -15,13 +15,12 @@ import Foundation
 
 // MARK: Protocols
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
-	//func viewTitle(title: String?)
+protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol: ViewPresenterProtocol {
+	
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol: PresenterRouterProtocol {
-	var presenterView: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol { get }
-	var presenterInteractor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol { get }
+protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol: class {
+	//func setTitle(title: String?)
 }
 
 
@@ -32,18 +31,19 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
 	// MARK: - Constants
 	
 	let router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol
+	let interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol
 	
 	
 	// MARK: Variables
 	
-	var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {return router.presenterView}
-	var interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {return router.presenterInteractor}
+	weak var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol?
 	
 	
 	// MARK: Inits
 	
-	init(router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol) {
+	init(router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol, interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol) {
 		self.router = router
+		self.interactor = interactor
 		super.init()
 	}
 }
@@ -74,7 +74,7 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
 	/*
 	func setTitle(title: String?) {
-		view.viewTitle(title)
+		view?.viewTitle(title)
 	}
 	*/
 }

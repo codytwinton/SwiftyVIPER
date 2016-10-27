@@ -19,25 +19,14 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 	//func requestTitle()
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
-	//func setTitle(title: String?)
-}
-
 
 // MARK: -
 
 struct ___FILEBASENAMEASIDENTIFIER___Interactor {
 	
-	// MARK: - Constants
+	// MARK: - Variables
 	
-	let presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol
-	
-	
-	// MARK: Inits
-	
-	init(presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol) {
-		self.presenter = presenter
-	}
+	weak var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol?
 }
 
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to Interactor Protocol
@@ -45,7 +34,7 @@ struct ___FILEBASENAMEASIDENTIFIER___Interactor {
 extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 	/*
 	func requestTitle() {
-		presenter.setTitle("___FILEBASENAMEASIDENTIFIER___")
+		presenter?.setTitle("___FILEBASENAMEASIDENTIFIER___")
 	}
 	*/
 }

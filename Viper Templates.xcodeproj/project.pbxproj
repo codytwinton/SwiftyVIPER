@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		6A15A2E01CC6B68B00C9BE91 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6A69560B1DC1D8ED00C2E443 /* ___FILEBASENAME___Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Module.swift"; sourceTree = "<group>"; };
 		6ACEF2511D0B4ABA005A9E0A /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
 		6ACEF2521D0B4ABA005A9E0A /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
 		6ACEF2531D0B4ABA005A9E0A /* ___FILEBASENAME___Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Router.swift"; sourceTree = "<group>"; };
@@ -36,10 +37,11 @@
 		6ACEF2501D0B4ABA005A9E0A /* Module.xctemplate */ = {
 			isa = PBXGroup;
 			children = (
-				6ACEF2511D0B4ABA005A9E0A /* ___FILEBASENAME___Interactor.swift */,
+				6A69560B1DC1D8ED00C2E443 /* ___FILEBASENAME___Module.swift */,
+				6ACEF2541D0B4ABA005A9E0A /* ___FILEBASENAME___ViewController.swift */,
 				6ACEF2521D0B4ABA005A9E0A /* ___FILEBASENAME___Presenter.swift */,
 				6ACEF2531D0B4ABA005A9E0A /* ___FILEBASENAME___Router.swift */,
-				6ACEF2541D0B4ABA005A9E0A /* ___FILEBASENAME___ViewController.swift */,
+				6ACEF2511D0B4ABA005A9E0A /* ___FILEBASENAME___Interactor.swift */,
 				6ACEF2551D0B4ABA005A9E0A /* TemplateIcon.icns */,
 				6ACEF2561D0B4ABA005A9E0A /* TemplateInfo.plist */,
 			);

@@ -12,35 +12,10 @@
 
 import UIKit
 
-// MARK: - Boiler Plate Functionality. Uncomment, if this is your first/root module. Delete, if this is already implemented in another module
-/*
-protocol ViewPresenterProtocol {
-	
-	/**
-	Designed to be called in the Presenter
-	Designed for setting up the View with data from the Interactors/Entities
-	Should call back on View, for example:
-	
-	`self.view setExampleString:self.exampleString`
-	*/
-	func viewLoaded()
-	func viewAppearing()
-	func viewAppeared()
-	func viewDisappeared()
-}
-
-extension ViewPresenterProtocol {
-	func viewLoaded() {}
-	func viewAppearing() {}
-	func viewAppeared() {}
-	func viewDisappeared() {}
-}
-*/
-
 // MARK: Protocols
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol: ViewPresenterProtocol {
-	
+protocol ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol: class {
+	//func viewTitle(title: String?)
 }
 
 
