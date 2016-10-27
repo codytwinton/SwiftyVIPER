@@ -64,7 +64,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 }
 
 
-// MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to View Protocol
+// MARK: - ___FILEBASENAMEASIDENTIFIER___ Presenter to View Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
 	/*

@@ -29,7 +29,7 @@ class ___FILEBASENAMEASIDENTIFIER___Router: NSObject {
 	weak var viewController: UIViewController?
 }
 
-// MARK: Router Protocol
+// MARK: - Router Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Router: RouterProtocol {
 	

@@ -29,7 +29,7 @@ struct ___FILEBASENAMEASIDENTIFIER___Interactor {
 	weak var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol?
 }
 
-// MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to Interactor Protocol
+// MARK: - ___FILEBASENAMEASIDENTIFIER___ Presenter to Interactor Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 	/*

@@ -48,7 +48,7 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
 	}
 }
 
-// MARK: ___FILEBASENAMEASIDENTIFIER___ View to Presenter Protocol
+// MARK: - ___FILEBASENAMEASIDENTIFIER___ View to Presenter Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
 

@@ -39,7 +39,7 @@ class ___FILEBASENAMEASIDENTIFIER___Module: NSObject {
 	}
 }
 
-// MARK: Module Protocol
+// MARK: - Module Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Module: ModuleProtocol {
 	var viewController: UIViewController? {return view}
