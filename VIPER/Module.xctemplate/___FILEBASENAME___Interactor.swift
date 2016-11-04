@@ -22,7 +22,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 
 // MARK: -
 
-struct ___FILEBASENAMEASIDENTIFIER___Interactor {
+class ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject {
 	
 	// MARK: - Variables
 	

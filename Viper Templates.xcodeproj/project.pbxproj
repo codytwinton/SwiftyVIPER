@@ -13,7 +13,6 @@
 		6ACEF2521D0B4ABA005A9E0A /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
 		6ACEF2531D0B4ABA005A9E0A /* ___FILEBASENAME___Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Router.swift"; sourceTree = "<group>"; };
 		6ACEF2541D0B4ABA005A9E0A /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
-		6ACEF2551D0B4ABA005A9E0A /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
 		6ACEF2561D0B4ABA005A9E0A /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,7 +41,6 @@
 				6ACEF2521D0B4ABA005A9E0A /* ___FILEBASENAME___Presenter.swift */,
 				6ACEF2531D0B4ABA005A9E0A /* ___FILEBASENAME___Router.swift */,
 				6ACEF2511D0B4ABA005A9E0A /* ___FILEBASENAME___Interactor.swift */,
-				6ACEF2551D0B4ABA005A9E0A /* TemplateIcon.icns */,
 				6ACEF2561D0B4ABA005A9E0A /* TemplateInfo.plist */,
 			);
 			path = Module.xctemplate;
