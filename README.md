@@ -1,8 +1,4 @@
 ![Header](Assets/SwiftVIPER.png)
-
-# SwiftVIPER
-> Edited with [StackEdit](https://stackedit.io/).
-
 ![Swift Version](https://img.shields.io/badge/Swift-3.0-orange.svg)
 ![Plaforms](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)
 
@@ -47,7 +43,7 @@ If you're looking for VIPER architecture templates to use directly within Xcode,
 ```
 
 Inspired by [ViperMcFlurry](https://github.com/rambler-digital-solutions/ViperMcFlurry)
-
+Edited with [StackEdit](https://stackedit.io/)
 
 
 ### Resources
