@@ -8,12 +8,14 @@
 
 /* Begin PBXFileReference section */
 		6A15A2E01CC6B68B00C9BE91 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		6A69560B1DC1D8ED00C2E443 /* ___FILEBASENAME___Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Module.swift"; sourceTree = "<group>"; };
-		6ACEF2511D0B4ABA005A9E0A /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
-		6ACEF2521D0B4ABA005A9E0A /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
-		6ACEF2531D0B4ABA005A9E0A /* ___FILEBASENAME___Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Router.swift"; sourceTree = "<group>"; };
-		6ACEF2541D0B4ABA005A9E0A /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
-		6ACEF2561D0B4ABA005A9E0A /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		6A601C0F1DCD50BA001B034D /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
+		6A601C101DCD50BA001B034D /* ___FILEBASENAME___Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Module.swift"; sourceTree = "<group>"; };
+		6A601C111DCD50BA001B034D /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
+		6A601C121DCD50BA001B034D /* ___FILEBASENAME___Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Router.swift"; sourceTree = "<group>"; };
+		6A601C131DCD50BA001B034D /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
+		6A601C141DCD50BA001B034D /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		6A601C151DCD50BA001B034D /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		6A601C161DCD50BA001B034D /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -21,27 +23,37 @@
 			isa = PBXGroup;
 			children = (
 				6A15A2E01CC6B68B00C9BE91 /* README.md */,
-				6A15A2C41CC6AD3A00C9BE91 /* VIPER */,
+				6A601C0C1DCD50BA001B034D /* Templates */,
 			);
 			sourceTree = "<group>";
 		};
-		6A15A2C41CC6AD3A00C9BE91 /* VIPER */ = {
+		6A601C0C1DCD50BA001B034D /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				6ACEF2501D0B4ABA005A9E0A /* Module.xctemplate */,
+				6A601C0D1DCD50BA001B034D /* VIPER */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		6A601C0D1DCD50BA001B034D /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				6A601C0E1DCD50BA001B034D /* Module.xctemplate */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
 		};
-		6ACEF2501D0B4ABA005A9E0A /* Module.xctemplate */ = {
+		6A601C0E1DCD50BA001B034D /* Module.xctemplate */ = {
 			isa = PBXGroup;
 			children = (
-				6A69560B1DC1D8ED00C2E443 /* ___FILEBASENAME___Module.swift */,
-				6ACEF2541D0B4ABA005A9E0A /* ___FILEBASENAME___ViewController.swift */,
-				6ACEF2521D0B4ABA005A9E0A /* ___FILEBASENAME___Presenter.swift */,
-				6ACEF2531D0B4ABA005A9E0A /* ___FILEBASENAME___Router.swift */,
-				6ACEF2511D0B4ABA005A9E0A /* ___FILEBASENAME___Interactor.swift */,
-				6ACEF2561D0B4ABA005A9E0A /* TemplateInfo.plist */,
+				6A601C0F1DCD50BA001B034D /* ___FILEBASENAME___Interactor.swift */,
+				6A601C101DCD50BA001B034D /* ___FILEBASENAME___Module.swift */,
+				6A601C111DCD50BA001B034D /* ___FILEBASENAME___Presenter.swift */,
+				6A601C121DCD50BA001B034D /* ___FILEBASENAME___Router.swift */,
+				6A601C131DCD50BA001B034D /* ___FILEBASENAME___ViewController.swift */,
+				6A601C141DCD50BA001B034D /* TemplateIcon.png */,
+				6A601C151DCD50BA001B034D /* TemplateIcon@2x.png */,
+				6A601C161DCD50BA001B034D /* TemplateInfo.plist */,
 			);
 			path = Module.xctemplate;
 			sourceTree = "<group>";

@@ -38,7 +38,7 @@ I've attempted to solve some of these issues with SwiftVIPER.
 
 ### Using SwiftVIPER Templates
 
-If you're looking for VIPER architecture templates to use directly within Xcode, you can find these in the `/VIPER` folder. Merely drag the VIPER folder into this location:
+If you're looking for VIPER architecture templates to use directly within Xcode, you can find these in the `/Templates/VIPER` folder. Merely drag the VIPER folder into this location:
 
 ```bash
 /Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/File Templates
