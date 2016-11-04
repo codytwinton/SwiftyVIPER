@@ -1,8 +1,9 @@
 ![Header](Assets/SwiftVIPER.png)
-![Swift Version](https://img.shields.io/badge/Swift-3.0-orange.svg)
-![Plaforms](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)
 
 ---
+
+![Swift Version](https://img.shields.io/badge/Swift-3.0-orange.svg)
+![Plaforms](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)
 
 ## What is VIPER?
 
