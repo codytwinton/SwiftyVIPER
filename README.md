@@ -1,3 +1,5 @@
+![Header](Assets/SwiftVIPER.png)
+
 # SwiftVIPER
 > Edited with [StackEdit](https://stackedit.io/).
 
