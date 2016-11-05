@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Viper Templates.xcodeproj">
+      location = "self:SwiftVIPER.xcodeproj">
    </FileRef>
 </Workspace>
