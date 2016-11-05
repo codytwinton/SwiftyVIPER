@@ -12,7 +12,7 @@ def shared_pods
 	pod 'SwiftyVIPER', :path => './'
 end
 
-target 'SwiftyVIPER' do
+target 'SwiftyVIPERExample' do
 	shared_pods
 end
 

@@ -12,6 +12,8 @@
 
 import Foundation
 
+import SwiftyVIPER
+
 
 // MARK: Protocols
 

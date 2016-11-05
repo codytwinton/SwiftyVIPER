@@ -19,13 +19,14 @@ public protocol ModuleProtocol: class {
 	func push(from navController: UINavigationController?)
 }
 
-protocol RouterProtocol: class {
+public protocol RouterProtocol: class {
 	var viewController: UIViewController? { get }
 }
 
-protocol PresenterRouterProtocol: class {
-	func pop() -> UIViewController?
+public protocol PresenterRouterProtocol: class {
+	@discardableResult func pop() -> UIViewController?
 	func dismiss(completion: CompletionBlock?)
+	func present(_ view: UIViewController, completion: CompletionBlock?)
 }
 
 
@@ -45,7 +46,7 @@ public extension ModuleProtocol {
 	}
 }
 
-extension PresenterRouterProtocol where Self:RouterProtocol {
+public extension PresenterRouterProtocol where Self:RouterProtocol {
 	
 	@discardableResult
 	func pop() -> UIViewController? {
@@ -56,6 +57,11 @@ extension PresenterRouterProtocol where Self:RouterProtocol {
 		guard let viewController = viewController else {completion?(); return}
 		viewController.view?.endEditing(true)
 		viewController.dismiss(animated: true, completion: completion)
+	}
+	
+	func present(_ view: UIViewController, completion: CompletionBlock?) {
+		guard let viewController = viewController else {completion?(); return}
+		viewController.present(view, animated: true, completion: completion)
 	}
 }
 

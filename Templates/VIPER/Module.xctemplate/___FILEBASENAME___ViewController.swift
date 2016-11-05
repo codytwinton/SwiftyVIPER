@@ -12,6 +12,8 @@
 
 import UIKit
 
+import SwiftyVIPER
+
 // MARK: Protocols
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol: class {
