@@ -5,7 +5,7 @@
 ![Swift Version](https://img.shields.io/badge/Swift-3.0-orange.svg)
 ![Plaforms](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)
 
-## What is VIPER?
+### What is VIPER?
 
 Great question! VIPER is a [backronym](https://en.wikipedia.org/wiki/Backronym) which stands for:
 
@@ -21,7 +21,7 @@ I've always been excited about clean, beautiful code, and I think Test Driven De
 
 However, I also believe that good programming should be simple as well as beautiful. Good code shouldn't be difficult to create. And [great API's](https://youtu.be/qCdpTji8nxo?t=1m52s) shouldn't be hard to deal with. However, creating a module for VIPER purely based on stack overflow code everytime seemed unnecessary and tedious.
 
-## Why SwiftVIPER?
+### Why SwiftVIPER?
 
 I know that some other projects are attempting to solve some of these issues, but here are some issues that I ran into with other frameworks out there:
 
@@ -31,9 +31,11 @@ I know that some other projects are attempting to solve some of these issues, bu
 
 I've attempted to solve some of these issues with SwiftVIPER.
 
-## Using SwiftVIPER
+### Using SwiftVIPER
 
+```swift
 // MARK: - TODO
+```
 
 ### Using SwiftVIPER Templates
 
