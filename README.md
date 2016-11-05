@@ -25,13 +25,13 @@ If all of this is totally knew for you, check out my running list of [VIPER Reso
 
 I believe that good programming should be simple as well as beautiful. Good code shouldn't be difficult to create. And [great API's](https://youtu.be/qCdpTji8nxo?t=1m52s) shouldn't be hard to deal with. However, creating a module for VIPER purely based on "stack overflow code" everytime seemed unnecessary and tedious. :D
 
-I know that some other open source projects are attempting to solve some of these problems, but here are some issues that I ran into with other frameworks out there:
+I know that some other open source projects are attempting to solve some of these problems, but here are some things that I didn't find with other frameworks out there:
 
- 1. Nothing based on pure Swift. I believe that Objective-C, while solid, will eventually become obsolete. All modules created with SwiftVIPER uses `Swift 3`
- 2. The amount of files & folders created for a single module was overkill. I wanted tools that would create VIPER modules that were a manageable size.
- 3. Confusing API locations and names. Trying to find where a certain protocol function should reside was a long process of seaching.
-
-I've attempted to solve some of these issues with SwiftVIPER.
+ 1. VIPER interaction based on pure Swift. I believe that Objective-C, while solid, will eventually become obsolete. All modules created with SwiftVIPER uses `Swift 3`
+ 2. A resonable amount of Module files. I wanted tools that would create VIPER modules that were a manageable size and some other frameworks created upwards of 10 files per module, which seemed like an overkill.
+ 3. Easily understood API locations and names. Trying to find where a certain protocol function will reside should not be a long process of searching.
+ 4. Fail proof setup. I wanted a module that was simple to initialize, with everything wiring up properly upon the first init.
+ 5. Only using Optionals when necessary. One of the great aspects about Swift is not only that the language is type-safe, but you can declare non-Optional values. Optionals are great for weak references, but when possible, I've using non-Optionals throughout the modules.
 
 ### Using SwiftVIPER
 
