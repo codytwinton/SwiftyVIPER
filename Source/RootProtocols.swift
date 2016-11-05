@@ -9,11 +9,11 @@
 import UIKit
 
 
-typealias CompletionBlock = () -> Void
+public typealias CompletionBlock = () -> Void
 
 // MARK: Protocols
 
-protocol ModuleProtocol: class {
+public protocol ModuleProtocol: class {
 	var viewController: UIViewController? { get }
 	func present(from fromVC: UIViewController?, style: UIModalTransitionStyle, completion: CompletionBlock?)
 	func push(from navController: UINavigationController?)
@@ -31,7 +31,7 @@ protocol PresenterRouterProtocol: class {
 
 // MARK: Extensions
 
-extension ModuleProtocol {
+public extension ModuleProtocol {
 	
 	func present(from fromVC: UIViewController?, style: UIModalTransitionStyle, completion: CompletionBlock? = nil) {
 		guard let viewController = viewController else {completion?(); return}
@@ -59,14 +59,14 @@ extension PresenterRouterProtocol where Self:RouterProtocol {
 	}
 }
 
-protocol ViewPresenterProtocol {
+public protocol ViewPresenterProtocol {
 	func viewLoaded()
 	func viewAppearing()
 	func viewAppeared()
 	func viewDisappeared()
 }
 
-extension ViewPresenterProtocol {
+public extension ViewPresenterProtocol {
 	func viewLoaded() {}
 	func viewAppearing() {}
 	func viewAppeared() {}

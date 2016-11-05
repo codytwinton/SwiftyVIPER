@@ -13,6 +13,8 @@
 import Foundation
 import UIKit
 
+import SwiftyVIPER
+
 // MARK: Protocols
 
 protocol RootPresenterRouterProtocol: PresenterRouterProtocol {
