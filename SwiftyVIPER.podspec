@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SwiftyVIPER'
-  s.version = '0.1'
+  s.version = '0.2'
   s.license = 'MIT'
   s.summary = 'Swifty Interaction with VIPER'
   s.homepage = 'https://github.com/codytwinton/SwiftyVIPER'
