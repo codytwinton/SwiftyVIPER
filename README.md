@@ -35,9 +35,13 @@ I know that some other open source projects are attempting to solve some of thes
 
 ### Using SwiftyVIPER
 
+Simply add a new module using the VIPER template. Once done, simply call:
+
 ```swift
-// MARK: - TODO
+ModuleName_Module().present(from: self.viewController, style: .coverVertical, completion: nil)
 ```
+
+The module will handle the rest, including initializing and attaching all the connections necessary for the Module to show properly.
 
 ### Using SwiftyVIPER Templates
 
