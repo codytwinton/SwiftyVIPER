@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name = 'SwiftyVIPER'
   s.version = '0.1'
   s.license = 'MIT'
-  s.summary = 'Swifty VIPER Interaction'
+  s.summary = 'Swifty Interaction with VIPER'
   s.homepage = 'https://github.com/codytwinton/SwiftyVIPER'
   s.social_media_url = 'http://twitter.com/codytwinton'
   s.authors = { 'Cody Winton' => 'me@codywinton.com' }
