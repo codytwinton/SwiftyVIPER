@@ -48,7 +48,6 @@ If you're looking for VIPER architecture templates to use directly within Xcode,
 ```
 
 Inspired by [ViperMcFlurry](https://github.com/rambler-digital-solutions/ViperMcFlurry)
-Edited with [StackEdit](https://stackedit.io/)
 
 
 ### Resources
@@ -60,3 +59,5 @@ Edited with [StackEdit](https://stackedit.io/)
  - [medium.com](https://medium.com/mobile-travel-technologies/architecting-mobile-apps-with-b-viper-modules-e94e277c8d68)
  - [speakerdeck.com](https://speakerdeck.com/sergigracia/clean-architecture-viper)
  - [brigade.engineering](https://brigade.engineering/brigades-experience-using-an-mvc-alternative-36ef1601a41f#.tezoetq87)
+
+README edited with [StackEdit](https://stackedit.io/)
