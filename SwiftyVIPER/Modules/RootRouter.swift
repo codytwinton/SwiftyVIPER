@@ -18,7 +18,7 @@ import SwiftyVIPER
 // MARK: Protocols
 
 protocol RootPresenterRouterProtocol: PresenterRouterProtocol {
-	
+	func detailsSelected()
 }
 
 
@@ -41,4 +41,7 @@ extension RootRouter: RouterProtocol {
 
 extension RootRouter: RootPresenterRouterProtocol {
 	
+	func detailsSelected() {
+		DetailModule().present(from: viewController, style: .coverVertical)
+	}
 }

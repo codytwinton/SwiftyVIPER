@@ -8,7 +8,7 @@ inhibit_all_warnings!
 
 def shared_pods
 	pod 'SnapKit', '~> 3.0'
-	
+
 	pod 'SwiftyVIPER', :path => './'
 end
 

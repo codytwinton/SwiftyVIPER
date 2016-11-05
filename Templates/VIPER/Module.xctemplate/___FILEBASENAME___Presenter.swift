@@ -55,7 +55,7 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
 
 	func viewLoaded() {
-		//interactor.requestTitle()
+		interactor.requestTitle()
 	}
 
 	func viewAppearing() {
@@ -75,7 +75,7 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
 
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
 
-  func set(title: String?) {
+	func set(title: String?) {
 		view?.set(title: title)
 	}
 }

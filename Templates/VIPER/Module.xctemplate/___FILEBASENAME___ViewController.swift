@@ -17,7 +17,7 @@ import SwiftyVIPER
 // MARK: Protocols
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol: class {
-  func set(title: String?)
+	func set(title: String?)
 }
 
 
@@ -30,7 +30,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 	let presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol
 
 
-  // MARK: Variables
+	// MARK: Variables
 
 
 	// MARK: Inits
@@ -52,8 +52,10 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 	// MARK: - Load Functions
 
 	override func viewDidLoad() {
-    super.viewDidLoad()
+    	super.viewDidLoad()
 		presenter.viewLoaded()
+
+		view.backgroundColor = .white
     }
 
 	override func viewWillAppear(_ animated: Bool) {
@@ -77,7 +79,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
 
-  func set(title: String?) {
+	func set(title: String?) {
 		print("title: \(title)")
 		self.title = title
 	}

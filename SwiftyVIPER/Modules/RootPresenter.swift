@@ -18,7 +18,7 @@ import SwiftyVIPER
 // MARK: Protocols
 
 protocol RootViewPresenterProtocol: ViewPresenterProtocol {
-	
+	func detailsSelected()
 }
 
 protocol RootInteractorPresenterProtocol: class {
@@ -68,6 +68,10 @@ extension RootPresenter: RootViewPresenterProtocol {
 	
 	func viewDisappeared() {
 		
+	}
+	
+	func detailsSelected() {
+		router.detailsSelected()
 	}
 }
 

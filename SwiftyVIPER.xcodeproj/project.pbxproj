@@ -15,6 +15,11 @@
 		6A5DE8921DCE62DF00DA5157 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DE88D1DCE62DF00DA5157 /* RootPresenter.swift */; };
 		6A5DE8931DCE62DF00DA5157 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DE88E1DCE62DF00DA5157 /* RootRouter.swift */; };
 		6A5DE8941DCE62DF00DA5157 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DE88F1DCE62DF00DA5157 /* RootViewController.swift */; };
+		6A5DE89B1DCE67A000DA5157 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DE8961DCE67A000DA5157 /* DetailInteractor.swift */; };
+		6A5DE89C1DCE67A000DA5157 /* DetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DE8971DCE67A000DA5157 /* DetailModule.swift */; };
+		6A5DE89D1DCE67A000DA5157 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DE8981DCE67A000DA5157 /* DetailPresenter.swift */; };
+		6A5DE89E1DCE67A000DA5157 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DE8991DCE67A000DA5157 /* DetailRouter.swift */; };
+		6A5DE89F1DCE67A000DA5157 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DE89A1DCE67A000DA5157 /* DetailViewController.swift */; };
 		6A601C241DCD55E4001B034D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A601C231DCD55E4001B034D /* AppDelegate.swift */; };
 		6A601C391DCD55E4001B034D /* SwiftyVIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A601C381DCD55E4001B034D /* SwiftyVIPERTests.swift */; };
 		6A88E7A91DCE2F590072A286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A88E7A81DCE2F590072A286 /* Assets.xcassets */; };
@@ -40,6 +45,11 @@
 		6A5DE88D1DCE62DF00DA5157 /* RootPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
 		6A5DE88E1DCE62DF00DA5157 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		6A5DE88F1DCE62DF00DA5157 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		6A5DE8961DCE67A000DA5157 /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		6A5DE8971DCE67A000DA5157 /* DetailModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailModule.swift; sourceTree = "<group>"; };
+		6A5DE8981DCE67A000DA5157 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		6A5DE8991DCE67A000DA5157 /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		6A5DE89A1DCE67A000DA5157 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6A601C201DCD55E4001B034D /* SwiftyVIPERExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyVIPERExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A601C231DCD55E4001B034D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A601C2F1DCD55E4001B034D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +92,18 @@
 				6A5DE88F1DCE62DF00DA5157 /* RootViewController.swift */,
 			);
 			name = Root;
+			sourceTree = "<group>";
+		};
+		6A5DE8951DCE678A00DA5157 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6A5DE8961DCE67A000DA5157 /* DetailInteractor.swift */,
+				6A5DE8971DCE67A000DA5157 /* DetailModule.swift */,
+				6A5DE8981DCE67A000DA5157 /* DetailPresenter.swift */,
+				6A5DE8991DCE67A000DA5157 /* DetailRouter.swift */,
+				6A5DE89A1DCE67A000DA5157 /* DetailViewController.swift */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 		6A601C171DCD55E3001B034D = {
@@ -127,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				6A5DE88A1DCE62AC00DA5157 /* Root */,
+				6A5DE8951DCE678A00DA5157 /* Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -364,11 +387,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A5DE89F1DCE67A000DA5157 /* DetailViewController.swift in Sources */,
 				6A5DE8911DCE62DF00DA5157 /* RootModule.swift in Sources */,
 				6A5DE8931DCE62DF00DA5157 /* RootRouter.swift in Sources */,
+				6A5DE89D1DCE67A000DA5157 /* DetailPresenter.swift in Sources */,
 				6A5DE8941DCE62DF00DA5157 /* RootViewController.swift in Sources */,
 				6A5DE8901DCE62DF00DA5157 /* RootInteractor.swift in Sources */,
+				6A5DE89E1DCE67A000DA5157 /* DetailRouter.swift in Sources */,
+				6A5DE89B1DCE67A000DA5157 /* DetailInteractor.swift in Sources */,
 				6A5DE8921DCE62DF00DA5157 /* RootPresenter.swift in Sources */,
+				6A5DE89C1DCE67A000DA5157 /* DetailModule.swift in Sources */,
 				6A601C241DCD55E4001B034D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

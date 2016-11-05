@@ -32,11 +32,18 @@ class RootViewController: UIViewController {
 	
 	// MARK: Variables
 	
-	lazy var titleLabel: UILabel = {
-		let width = UIScreen.main.bounds.width
-		let label = UILabel(frame: CGRect(x: 0, y: 20, width: width, height: 40))
-		label.textAlignment = .center
-		return label
+	lazy var rootImageView: UIImageView = {
+		let imageView = UIImageView(image: #imageLiteral(resourceName: "SwiftyVIPER"))
+		imageView.contentMode = .scaleAspectFit
+		return imageView
+	}()
+	
+	lazy var detailsButton: UIButton = {
+		let button = UIButton(type: .system)
+		button.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
+		button.setTitle("Show Details", for: .normal)
+		button.addTarget(self, action: #selector(detailsSelected), for: .touchUpInside)
+		return button
 	}()
 	
 	
@@ -56,20 +63,36 @@ class RootViewController: UIViewController {
 	}
 	
 	
+	// MARK: - Functions
+	
+	func detailsSelected() {
+		presenter.detailsSelected()
+	}
+	
+	
 	// MARK: - Load Functions
 
 	override func viewDidLoad() {
         super.viewDidLoad()
 		presenter.viewLoaded()
 		
-		view.addSubview(titleLabel)
+		view.backgroundColor = .white
 		
-		titleLabel.snp.makeConstraints() {
+		view.addSubview(rootImageView)
+		rootImageView.snp.makeConstraints() {
 			(make) in
-			make.left.equalTo(self.view)
-			make.right.equalTo(self.view)
-			make.top.equalTo(self.view).offset(self.titleLabel.frame.origin.y)
-			make.height.equalTo(self.titleLabel.frame.height)
+			make.top.equalTo(40)
+			make.centerX.equalTo(self.view)
+			make.left.equalTo(self.view).offset(30)
+			make.height.equalTo(150)
+		}
+		
+		view.addSubview(detailsButton)
+		detailsButton.snp.makeConstraints() {
+			(make) in
+			make.bottom.equalTo(self.view).offset(-30)
+			make.centerX.equalTo(self.view)
+			make.size.equalTo(self.detailsButton.frame.size)
 		}
     }
 	
@@ -95,6 +118,6 @@ class RootViewController: UIViewController {
 extension RootViewController: RootPresenterViewProtocol {
 	
 	func set(title: String?) {
-		self.titleLabel.text = title
+		self.title = title
 	}
 }
