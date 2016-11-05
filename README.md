@@ -5,6 +5,10 @@
 ![Swift Version](https://img.shields.io/badge/Swift-3.0-orange.svg)
 ![Plaforms](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)
 
+### Introduction
+
+I've always been excited about clean, beautiful code, and I think Test Driven Development is a solid approach to develop iOS apps. When a colleague ([@iamMehedi](https://github.com/iamMehedi)) told me about VIPER, I became very excited about this architecture, since VIPER offered the ability to create beautiful "modules" that were separate from each other and easily testable.
+
 ### What is VIPER?
 
 Great question! VIPER is a [backronym](https://en.wikipedia.org/wiki/Backronym) which stands for:
@@ -17,19 +21,17 @@ Great question! VIPER is a [backronym](https://en.wikipedia.org/wiki/Backronym) 
 
 If all of this is totally knew for you, check out my running list of [VIPER Resources](#resources)
 
-I've always been excited about clean, beautiful code, and I think Test Driven Development is a solid approach to develop iOS apps. When a colleague ([@iamMehedi](https://github.com/iamMehedi)) told me about VIPER, I became very excited about this architecture, since VIPER offered the ability to create beautiful "modules" that were separate from each other and easily testable.
-
-However, I also believe that good programming should be simple as well as beautiful. Good code shouldn't be difficult to create. And [great API's](https://youtu.be/qCdpTji8nxo?t=1m52s) shouldn't be hard to deal with. However, creating a module for VIPER purely based on stack overflow code everytime seemed unnecessary and tedious.
-
 ### Why SwiftyVIPER?
 
-I know that some other projects are attempting to solve some of these issues, but here are some issues that I ran into with other frameworks out there:
+I believe that good programming should be simple as well as beautiful. Good code shouldn't be difficult to create. And [great API's](https://youtu.be/qCdpTji8nxo?t=1m52s) shouldn't be hard to deal with. However, creating a module for VIPER purely based on "stack overflow code" everytime seemed unnecessary and tedious. :D
 
- 1. Nothing based on pure Swift. I believe that Objective-C, while solid, will eventually become obsolete. All modules created with SwiftyVIPER uses `Swift 3`
- 2. The amount of files & folders created for a single module was overkill. I wanted tools that would create VIPER modules that were a manageable size.
- 3. Confusing API locations and names. Trying to find where a certain protocol function should reside was a long process of seaching.
+I know that some other open source projects are attempting to solve some of these problems, but here are some things that I didn't find with other frameworks out there:
 
-I've attempted to solve some of these issues with SwiftyVIPER.
+ 1. VIPER interaction based on pure Swift. I believe that Objective-C, while solid, will eventually become obsolete. All modules created with SwiftyVIPER uses `Swift 3`
+ 2. A resonable amount of Module files. I wanted tools that would create VIPER modules that were a manageable size and some other frameworks created upwards of 10 files per module, which seemed like an overkill.
+ 3. Easily understood API locations and names. Trying to find where a certain protocol function will reside should not be a long process of searching.
+ 4. Fail proof setup. I wanted a module that was simple to initialize, with everything wiring up properly upon the first init.
+ 5. Only using Optionals when necessary. One of the great aspects about Swift is not only that the language is type-safe, but you can declare non-Optional values. Optionals are great for weak references, but when possible, I've using non-Optionals throughout the modules.
 
 ### Using SwiftyVIPER
 
