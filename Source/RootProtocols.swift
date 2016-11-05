@@ -34,7 +34,7 @@ protocol PresenterRouterProtocol: class {
 extension ModuleProtocol {
 	
 	func present(from fromVC: UIViewController?, style: UIModalTransitionStyle, completion: CompletionBlock? = nil) {
-		guard let viewController = viewController else {return}
+		guard let viewController = viewController else {completion?(); return}
 		viewController.modalTransitionStyle = style
 		fromVC?.present(viewController, animated: true, completion: completion)
 	}
@@ -53,8 +53,9 @@ extension PresenterRouterProtocol where Self:RouterProtocol {
 	}
 	
 	func dismiss(completion: CompletionBlock? = nil) {
-		viewController?.view?.endEditing(true)
-		viewController?.dismiss(animated: true, completion: completion)
+		guard let viewController = viewController else {completion?(); return}
+		viewController.view?.endEditing(true)
+		viewController.dismiss(animated: true, completion: completion)
 	}
 }
 
