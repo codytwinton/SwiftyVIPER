@@ -10,11 +10,11 @@ def shared_pods
 	pod 'SnapKit', '~> 3.0'
 end
 
-target 'SwiftVIPER' do
+target 'SwiftyVIPER' do
 	shared_pods
 end
 
-target 'SwiftVIPERTests' do
+target 'SwiftyVIPERTests' do
 	shared_pods
 end
 
@@ -22,7 +22,7 @@ end
 #	installer.pods_project.targets.each do |target|
 #		if target.name.include?("Pods-")
 #			require 'fileutils'
-#			FileUtils.cp_r('Pods/Target Support Files/' + target.name + '/' + target.name + '-acknowledgements.plist', 'SwiftVIPER/' + target.name + '-acknowledgements.plist', :remove_destination => true)
+#			FileUtils.cp_r('Pods/Target Support Files/' + target.name + '/' + target.name + '-acknowledgements.plist', 'SwiftyVIPER/' + target.name + '-acknowledgements.plist', :remove_destination => true)
 #		end
 #	end
 #end

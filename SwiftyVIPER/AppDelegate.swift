@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SwiftVIPER
+//  SwiftyVIPER
 //
 //  Created by Cody Winton on 11/4/16.
 //  Copyright © 2016 codeRed. All rights reserved.

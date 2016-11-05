@@ -1,15 +1,15 @@
 //
-//  SwiftVIPERTests.swift
-//  SwiftVIPERTests
+//  SwiftyVIPERTests.swift
+//  SwiftyVIPERTests
 //
 //  Created by Cody Winton on 11/4/16.
 //  Copyright © 2016 codeRed. All rights reserved.
 //
 
 import XCTest
-@testable import SwiftVIPER
+@testable import SwiftyVIPER
 
-class SwiftVIPERTests: XCTestCase {
+class SwiftyVIPERTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

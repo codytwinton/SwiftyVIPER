@@ -1,4 +1,4 @@
-![Header](Assets/SwiftVIPER.png)
+![Header](Assets/SwiftyVIPER.png)
 
 ---
 
@@ -21,23 +21,23 @@ I've always been excited about clean, beautiful code, and I think Test Driven De
 
 However, I also believe that good programming should be simple as well as beautiful. Good code shouldn't be difficult to create. And [great API's](https://youtu.be/qCdpTji8nxo?t=1m52s) shouldn't be hard to deal with. However, creating a module for VIPER purely based on stack overflow code everytime seemed unnecessary and tedious.
 
-### Why SwiftVIPER?
+### Why SwiftyVIPER?
 
 I know that some other projects are attempting to solve some of these issues, but here are some issues that I ran into with other frameworks out there:
 
- 1. Nothing based on pure Swift. I believe that Objective-C, while solid, will eventually become obsolete. All modules created with SwiftVIPER uses `Swift 3`
+ 1. Nothing based on pure Swift. I believe that Objective-C, while solid, will eventually become obsolete. All modules created with SwiftyVIPER uses `Swift 3`
  2. The amount of files & folders created for a single module was overkill. I wanted tools that would create VIPER modules that were a manageable size.
  3. Confusing API locations and names. Trying to find where a certain protocol function should reside was a long process of seaching.
 
-I've attempted to solve some of these issues with SwiftVIPER.
+I've attempted to solve some of these issues with SwiftyVIPER.
 
-### Using SwiftVIPER
+### Using SwiftyVIPER
 
 ```swift
 // MARK: - TODO
 ```
 
-### Using SwiftVIPER Templates
+### Using SwiftyVIPER Templates
 
 If you're looking for VIPER architecture templates to use directly within Xcode, you can find these in the `/Templates/VIPER` folder. Merely drag the VIPER folder into this location:
 
