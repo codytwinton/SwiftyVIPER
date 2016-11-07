@@ -43,6 +43,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6A601C331DCD55E4001B034D"
+               BuildableName = "SwiftyVIPERTests.xctest"
+               BlueprintName = "SwiftyVIPERTests"
+               ReferencedContainer = "container:SwiftyVIPER.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

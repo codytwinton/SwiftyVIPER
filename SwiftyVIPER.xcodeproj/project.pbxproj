@@ -555,7 +555,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codeRed.SwiftyVIPERTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyVIPER.app/SwiftyVIPER";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyVIPERExample.app/SwiftyVIPERExample";
 			};
 			name = Debug;
 		};
@@ -571,7 +571,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codeRed.SwiftyVIPERTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyVIPER.app/SwiftyVIPER";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyVIPERExample.app/SwiftyVIPERExample";
 			};
 			name = Release;
 		};
