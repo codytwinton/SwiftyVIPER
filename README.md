@@ -72,10 +72,17 @@ The module will handle the rest, including initializing and attaching all the co
 
 ## Using SwiftyVIPER Templates
 
-If you're looking for VIPER architecture templates to use directly within Xcode, you can find these in the `/Templates/VIPER` folder. Merely drag the VIPER folder into this location:
+If you're looking for VIPER architecture templates to use directly within Xcode, you can find these in the `/Templates/VIPER` folder. Open your terminal and run:
 
 ```bash
-/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/File Templates
+cd PATH/TO/REPO
+```
+
+Then, simply run this command in your terminal:
+
+```bash
+mkdir -p ~/Library/Developer/Xcode/Templates/File\ Templates/VIPER
+cp -R Templates/VIPER/Module.xctemplate ~/Library/Developer/Xcode/Templates/File\ Templates/VIPER/Module.xctemplate
 ```
 
 ## Contribute
