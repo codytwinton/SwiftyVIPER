@@ -17,7 +17,7 @@ import SwiftyVIPER
 // MARK: Protocols
 
 protocol DetailPresenterViewProtocol: class {
-  func set(title: String?)
+	func set(title: String?)
 }
 
 
@@ -57,10 +57,6 @@ class DetailViewController: UIViewController {
 
 	required init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
-	}
-
-	deinit {
-		print("deinit: \(self)")
 	}
 	
 	

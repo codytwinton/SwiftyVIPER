@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		41D09D46E55EF41E84B15479 /* Pods_SwiftyVIPERExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6345BE78C5F3FC3B12D198DE /* Pods_SwiftyVIPERExample.framework */; };
 		4596C149BF5A65B1C389F610 /* Pods_SwiftyVIPERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1F583382DC520082ED9255 /* Pods_SwiftyVIPERTests.framework */; };
+		6A0E80F91DD1386B006B1A61 /* DetailModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E80F71DD13488006B1A61 /* DetailModuleTests.swift */; };
+		6A0E81001DD13C1E006B1A61 /* RootInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E80FB1DD13C1E006B1A61 /* RootInteractorTests.swift */; };
+		6A0E81011DD13C1E006B1A61 /* RootRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E80FC1DD13C1E006B1A61 /* RootRouterTests.swift */; };
+		6A0E81021DD13C1E006B1A61 /* RootModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E80FD1DD13C1E006B1A61 /* RootModuleTests.swift */; };
+		6A0E81031DD13C1E006B1A61 /* RootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E80FE1DD13C1E006B1A61 /* RootViewTests.swift */; };
+		6A0E81041DD13C1E006B1A61 /* RootPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E80FF1DD13C1E006B1A61 /* RootPresenterTests.swift */; };
 		6A266F4B1DCE2F35007E63CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A266F4A1DCE2F35007E63CB /* LaunchScreen.storyboard */; };
 		6A5DE8901DCE62DF00DA5157 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DE88B1DCE62DF00DA5157 /* RootInteractor.swift */; };
 		6A5DE8911DCE62DF00DA5157 /* RootModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DE88C1DCE62DF00DA5157 /* RootModule.swift */; };
@@ -21,8 +27,11 @@
 		6A5DE89E1DCE67A000DA5157 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DE8991DCE67A000DA5157 /* DetailRouter.swift */; };
 		6A5DE89F1DCE67A000DA5157 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DE89A1DCE67A000DA5157 /* DetailViewController.swift */; };
 		6A601C241DCD55E4001B034D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A601C231DCD55E4001B034D /* AppDelegate.swift */; };
-		6A601C391DCD55E4001B034D /* SwiftyVIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A601C381DCD55E4001B034D /* SwiftyVIPERTests.swift */; };
 		6A88E7A91DCE2F590072A286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A88E7A81DCE2F590072A286 /* Assets.xcassets */; };
+		6AB533161DD117E000BE822D /* DetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB533151DD117E000BE822D /* DetailInteractorTests.swift */; };
+		6AB533191DD11ED700BE822D /* DetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB533181DD11ED700BE822D /* DetailPresenterTests.swift */; };
+		6AB5331B1DD1291300BE822D /* DetailRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB5331A1DD1291300BE822D /* DetailRouterTests.swift */; };
+		6AB5331D1DD12AB200BE822D /* DetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB5331C1DD12AB200BE822D /* DetailViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +48,12 @@
 		2C499928EBCD749F42A1C310 /* Pods-SwiftyVIPERExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyVIPERExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyVIPERExample/Pods-SwiftyVIPERExample.release.xcconfig"; sourceTree = "<group>"; };
 		2F1F583382DC520082ED9255 /* Pods_SwiftyVIPERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyVIPERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6345BE78C5F3FC3B12D198DE /* Pods_SwiftyVIPERExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyVIPERExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0E80F71DD13488006B1A61 /* DetailModuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailModuleTests.swift; sourceTree = "<group>"; };
+		6A0E80FB1DD13C1E006B1A61 /* RootInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractorTests.swift; sourceTree = "<group>"; };
+		6A0E80FC1DD13C1E006B1A61 /* RootRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouterTests.swift; sourceTree = "<group>"; };
+		6A0E80FD1DD13C1E006B1A61 /* RootModuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleTests.swift; sourceTree = "<group>"; };
+		6A0E80FE1DD13C1E006B1A61 /* RootViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewTests.swift; sourceTree = "<group>"; };
+		6A0E80FF1DD13C1E006B1A61 /* RootPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenterTests.swift; sourceTree = "<group>"; };
 		6A266F4A1DCE2F35007E63CB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A5DE88B1DCE62DF00DA5157 /* RootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		6A5DE88C1DCE62DF00DA5157 /* RootModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModule.swift; sourceTree = "<group>"; };
@@ -54,9 +69,12 @@
 		6A601C231DCD55E4001B034D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A601C2F1DCD55E4001B034D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A601C341DCD55E4001B034D /* SwiftyVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A601C381DCD55E4001B034D /* SwiftyVIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyVIPERTests.swift; sourceTree = "<group>"; };
 		6A601C3A1DCD55E4001B034D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A88E7A81DCE2F590072A286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AB533151DD117E000BE822D /* DetailInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractorTests.swift; sourceTree = "<group>"; };
+		6AB533181DD11ED700BE822D /* DetailPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenterTests.swift; sourceTree = "<group>"; };
+		6AB5331A1DD1291300BE822D /* DetailRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouterTests.swift; sourceTree = "<group>"; };
+		6AB5331C1DD12AB200BE822D /* DetailViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewTests.swift; sourceTree = "<group>"; };
 		E7576530A752AA1F8672DA79 /* Pods-SwiftyVIPERTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyVIPERTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyVIPERTests/Pods-SwiftyVIPERTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8352BACA44F436B7C36E45E /* Pods-SwiftyVIPERExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyVIPERExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyVIPERExample/Pods-SwiftyVIPERExample.debug.xcconfig"; sourceTree = "<group>"; };
 		F379EAA3BE43CCED18B92909 /* Pods-SwiftyVIPERTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyVIPERTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyVIPERTests/Pods-SwiftyVIPERTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,14 +100,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A0E80FA1DD13BEF006B1A61 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				6A0E80FD1DD13C1E006B1A61 /* RootModuleTests.swift */,
+				6A0E80FE1DD13C1E006B1A61 /* RootViewTests.swift */,
+				6A0E80FF1DD13C1E006B1A61 /* RootPresenterTests.swift */,
+				6A0E80FC1DD13C1E006B1A61 /* RootRouterTests.swift */,
+				6A0E80FB1DD13C1E006B1A61 /* RootInteractorTests.swift */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
 		6A5DE88A1DCE62AC00DA5157 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				6A5DE88B1DCE62DF00DA5157 /* RootInteractor.swift */,
 				6A5DE88C1DCE62DF00DA5157 /* RootModule.swift */,
+				6A5DE88F1DCE62DF00DA5157 /* RootViewController.swift */,
 				6A5DE88D1DCE62DF00DA5157 /* RootPresenter.swift */,
 				6A5DE88E1DCE62DF00DA5157 /* RootRouter.swift */,
-				6A5DE88F1DCE62DF00DA5157 /* RootViewController.swift */,
+				6A5DE88B1DCE62DF00DA5157 /* RootInteractor.swift */,
 			);
 			name = Root;
 			sourceTree = "<group>";
@@ -97,11 +127,11 @@
 		6A5DE8951DCE678A00DA5157 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				6A5DE8961DCE67A000DA5157 /* DetailInteractor.swift */,
 				6A5DE8971DCE67A000DA5157 /* DetailModule.swift */,
+				6A5DE89A1DCE67A000DA5157 /* DetailViewController.swift */,
 				6A5DE8981DCE67A000DA5157 /* DetailPresenter.swift */,
 				6A5DE8991DCE67A000DA5157 /* DetailRouter.swift */,
-				6A5DE89A1DCE67A000DA5157 /* DetailViewController.swift */,
+				6A5DE8961DCE67A000DA5157 /* DetailInteractor.swift */,
 			);
 			name = Detail;
 			sourceTree = "<group>";
@@ -139,8 +169,9 @@
 		6A601C371DCD55E4001B034D /* SwiftyVIPERTests */ = {
 			isa = PBXGroup;
 			children = (
-				6A601C381DCD55E4001B034D /* SwiftyVIPERTests.swift */,
 				6A601C3A1DCD55E4001B034D /* Info.plist */,
+				6A0E80FA1DD13BEF006B1A61 /* Root */,
+				6AB533171DD11C8200BE822D /* Detail */,
 			);
 			path = SwiftyVIPERTests;
 			sourceTree = "<group>";
@@ -162,6 +193,18 @@
 				6A601C2F1DCD55E4001B034D /* Info.plist */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		6AB533171DD11C8200BE822D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6A0E80F71DD13488006B1A61 /* DetailModuleTests.swift */,
+				6AB5331C1DD12AB200BE822D /* DetailViewTests.swift */,
+				6AB533181DD11ED700BE822D /* DetailPresenterTests.swift */,
+				6AB5331A1DD1291300BE822D /* DetailRouterTests.swift */,
+				6AB533151DD117E000BE822D /* DetailInteractorTests.swift */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 		A503AEAF174D5DB4F6BD17EC /* Frameworks */ = {
@@ -405,7 +448,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A601C391DCD55E4001B034D /* SwiftyVIPERTests.swift in Sources */,
+				6AB5331B1DD1291300BE822D /* DetailRouterTests.swift in Sources */,
+				6A0E81031DD13C1E006B1A61 /* RootViewTests.swift in Sources */,
+				6AB5331D1DD12AB200BE822D /* DetailViewTests.swift in Sources */,
+				6A0E81001DD13C1E006B1A61 /* RootInteractorTests.swift in Sources */,
+				6AB533161DD117E000BE822D /* DetailInteractorTests.swift in Sources */,
+				6A0E81011DD13C1E006B1A61 /* RootRouterTests.swift in Sources */,
+				6A0E81021DD13C1E006B1A61 /* RootModuleTests.swift in Sources */,
+				6AB533191DD11ED700BE822D /* DetailPresenterTests.swift in Sources */,
+				6A0E81041DD13C1E006B1A61 /* RootPresenterTests.swift in Sources */,
+				6A0E80F91DD1386B006B1A61 /* DetailModuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
