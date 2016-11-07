@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SwiftVIPER.xcodeproj">
+      location = "self:SwiftyVIPERExample.xcodeproj">
    </FileRef>
 </Workspace>

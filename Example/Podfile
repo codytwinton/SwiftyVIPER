@@ -9,14 +9,14 @@ inhibit_all_warnings!
 def shared_pods
 	pod 'SnapKit', '~> 3.0'
 
-	pod 'SwiftyVIPER', :path => './'
+	pod 'SwiftyVIPER', :path => '../'
 end
 
 target 'SwiftyVIPERExample' do
 	shared_pods
 end
 
-target 'SwiftyVIPERTests' do
+target 'SwiftyVIPERExampleTests' do
 	shared_pods
 end
 
