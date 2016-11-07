@@ -56,6 +56,7 @@ Inspired by [ViperMcFlurry](https://github.com/rambler-digital-solutions/ViperMc
 
 ### Resources
 
+ - [mutualmobile.com](https://mutualmobile.com/posts/meet-viper-fast-agile-non-lethal-ios-architecture-framework)
  - [objc.io](https://www.objc.io/issues/13-architecture/viper/)
  - [ckl.io](https://www.ckl.io/blog/ios-project-architecture-using-viper/)
  - [stackoverflow.com](http://stackoverflow.com/questions/35132664/why-protocols-are-used-in-both-direction-in-viper-architecture-rather-than-in-on)
