@@ -23,11 +23,11 @@ If all of this is totally knew for you, check out my running list of [VIPER Reso
 
 ## Features
 
-- [x] Small Module VIPER File Templates
+- [x] VIPER Module Templates
+- [X] VIPER Unit Test Templates
 - [x] Simple Module Initialization and Presentation
 - [x] Cocoapods Support
 - [ ] Carthage Support
-- [ ] VIPER Unit Test Templates
 
 ## Requirements
 
@@ -81,8 +81,8 @@ cd PATH/TO/REPO
 Then, simply run this command in your terminal:
 
 ```bash
-mkdir -p ~/Library/Developer/Xcode/Templates/File\ Templates/VIPER
-cp -R Templates/VIPER/Module.xctemplate ~/Library/Developer/Xcode/Templates/File\ Templates/VIPER/Module.xctemplate
+mkdir -p ~/Library/Developer/Xcode/Templates/File\ Templates
+cp -R Templates/VIPER ~/Library/Developer/Xcode/Templates/File\ Templates
 ```
 
 ## Contribute

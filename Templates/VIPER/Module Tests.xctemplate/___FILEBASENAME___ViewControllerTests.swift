@@ -1,56 +1,60 @@
 //
-//  RootInteractorTests.swift
-//  SwiftyVIPER
+//  ___FILENAME___
+//  Project: ___PROJECTNAME___
 //
-//  Created by Cody Winton on 11/7/16.
-//  Copyright © 2016 codeRed. All rights reserved.
+//  Module: ___VARIABLE_viperModuleName___
+//
+//  By ___FULLUSERNAME___ ___DATE___
+//  ___ORGANIZATIONNAME___ ___YEAR___
 //
 
 // MARK: Imports
 
 import XCTest
 
-@testable import SwiftyVIPER
+@testable import ___PROJECTNAME___
+
+import SwiftyVIPER
 
 
 // MARK: -
 
-class RootViewTests: XCTestCase {
-	
+class ___FILEBASENAMEASIDENTIFIER___ViewTests: XCTestCase {
+
 	// MARK: - Variables
-	
+
 	fileprivate let presenter = MockPresenter()
-	
-	fileprivate lazy var view: RootViewController = {
-		return RootViewController(presenter: self.presenter)
+
+	fileprivate lazy var view: ___FILEBASENAMEASIDENTIFIER___ViewController = {
+		return ___FILEBASENAMEASIDENTIFIER___ViewController(presenter: self.presenter)
 	}()
-	
-	
+
+
 	// MARK: Test Functions
-	
+
 	func testPresenter() {
 		view.beginAppearanceTransition(true, animated: false)
 		view.endAppearanceTransition()
 		XCTAssert(presenter.isViewLoaded)
 		XCTAssert(presenter.isViewAppearing)
 		XCTAssert(presenter.isViewAppeared)
-		
-		view.set(title: "Root")
-		XCTAssertEqual(view.title, "Root")
-		
+
+		view.set(title: "___FILEBASENAMEASIDENTIFIER___")
+		XCTAssertEqual(view.title, "___FILEBASENAMEASIDENTIFIER___")
+
 		view.beginAppearanceTransition(false, animated: false)
 		view.endAppearanceTransition()
 		XCTAssert(presenter.isViewDisappeared)
 	}
-	
-	
+
+
 	// MARK: Setup
-	
+
 	override func setUp() {
 		super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 	}
-	
+
 	override func tearDown() {
 		// Put teardown code here. This method is called after the invocation of each test method in the class.
 		super.tearDown()
@@ -62,30 +66,30 @@ class RootViewTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: NSObject, RootViewPresenterProtocol {
-	
+fileprivate class MockPresenter: NSObject, ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
+
 	// MARK: Variables
-	
+
 	var isViewLoaded: Bool = false
 	var isViewAppearing: Bool = false
 	var isViewAppeared: Bool = false
 	var isViewDisappeared: Bool = false
-	
-	
+
+
 	// MARK: Functions
-	
+
 	func viewLoaded() {
 		isViewLoaded = true
 	}
-	
+
 	func viewAppearing() {
 		isViewAppearing = true
 	}
-	
+
 	func viewAppeared() {
 		isViewAppeared = true
 	}
-	
+
 	func viewDisappeared() {
 		isViewDisappeared = true
 	}

@@ -1,50 +1,51 @@
 //
-//  RootInteractorTests.swift
-//  SwiftyVIPER
+//  ___FILENAME___
+//  Project: ___PROJECTNAME___
 //
-//  Created by Cody Winton on 11/7/16.
-//  Copyright © 2016 codeRed. All rights reserved.
+//  Module: ___VARIABLE_viperModuleName___
+//
+//  By ___FULLUSERNAME___ ___DATE___
+//  ___ORGANIZATIONNAME___ ___YEAR___
 //
 
 // MARK: Imports
 
 import XCTest
 
-@testable import SwiftyVIPERExample
+@testable import ___PROJECTNAME___
 
 import SwiftyVIPER
 
 
 // MARK: -
 
-class RootInteractorTests: XCTestCase {
-	
+class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
+
 	// MARK: - Variables
-	
+
 	fileprivate let presenter = MockPresenter()
-	
-	fileprivate lazy var interactor: RootInteractor = {
-		let interactor = RootInteractor()
+
+	fileprivate lazy var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor = {
+		let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
 		interactor.presenter = self.presenter
 		return interactor
 	}()
-	
-	
+
 	// MARK: Test Functions
-	
+
 	func testPresenter() {
 		interactor.requestTitle()
-		XCTAssertEqual(presenter.title, "Root")
+		XCTAssertEqual(presenter.title, "___FILEBASENAMEASIDENTIFIER___")
 	}
-	
-	
+
+
 	// MARK: Setup
-	
+
     override func setUp() {
         super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
     }
-    
+
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
@@ -56,15 +57,15 @@ class RootInteractorTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: NSObject, RootInteractorPresenterProtocol {
-	
+fileprivate class MockPresenter: NSObject, ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
+
 	// MARK: Variables
-	
+
 	var title: String? = nil
-	
-	
+
+
 	// MARK: Functions
-	
+
 	func set(title: String?) {
 		self.title = title
 	}
