@@ -1,5 +1,5 @@
 //
-//  RootProtocols.swift
+//  Protocols.swift
 //  Credntia
 //
 //  Created by Cody Winton on 9/21/16.
@@ -14,7 +14,7 @@ public typealias CompletionBlock = () -> Void
 // MARK: Protocols
 
 public protocol ModuleProtocol: class {
-	var viewController: UIViewController? { get }
+	var viewController: UIViewController { get }
 	func present(from fromVC: UIViewController?, style: UIModalTransitionStyle, completion: CompletionBlock?)
 	func push(from navController: UINavigationController?)
 }
@@ -35,13 +35,11 @@ public protocol PresenterRouterProtocol: class {
 public extension ModuleProtocol {
 	
 	func present(from fromVC: UIViewController?, style: UIModalTransitionStyle, completion: CompletionBlock? = nil) {
-		guard let viewController = viewController else {completion?(); return}
 		viewController.modalTransitionStyle = style
 		fromVC?.present(viewController, animated: true, completion: completion)
 	}
 	
 	func push(from navController: UINavigationController?) {
-		guard let viewController = viewController else {return}
 		navController?.pushViewController(viewController, animated: true)
 	}
 }

@@ -12,8 +12,6 @@ import XCTest
 
 @testable import SwiftyVIPER
 
-import SwiftyVIPER
-
 
 // MARK: -
 
