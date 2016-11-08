@@ -24,7 +24,7 @@ If all of this is totally knew for you, check out my running list of [VIPER Reso
 ## Features
 
 - [x] VIPER Module Templates
-- [X] VIPER Unit Test Templates
+- [x] VIPER Unit Test Templates
 - [x] Simple Module Initialization and Presentation
 - [x] Cocoapods Support
 - [ ] Carthage Support
@@ -53,24 +53,19 @@ import SwiftyVIPER
 ```
 
 #### Manually
+
+This is discouraged, but allowed. :D
+
 1. Download and drop the ```Source``` folder in your project.
 2. Congratulations!
 
 #### Carthage (Coming Soon)
 
-## Using SwiftyVIPER
+---
 
-Simply add a new module using the VIPER template. Once done, simply call:
+## Usage of SwiftyVIPER
 
-```swift
-import SwiftyVIPER
-
-CustomModule().present(from: self.viewController, style: .coverVertical, completion: nil)
-```
-
-The module will handle the rest, including initializing and attaching all the connections necessary for the Module to show properly.
-
-## Using SwiftyVIPER Templates
+### Installing Templates
 
 If you're looking for VIPER architecture templates to use directly within Xcode, you can find these in the `/Templates/VIPER` folder. Open your terminal and run:
 
@@ -84,6 +79,40 @@ Then, simply run this command in your terminal:
 mkdir -p ~/Library/Developer/Xcode/Templates/File\ Templates
 cp -R Templates/VIPER ~/Library/Developer/Xcode/Templates/File\ Templates
 ```
+
+### Adding a Module
+
+Once you've installed the VIPER Templates, you're ready to add a module. Select `File > New > File` or use press `⌘N` to bring up the template selector. You'll find the templates at the bottom.
+
+Choose `Module` for a normal module or `Module Tests` for a module unit tests template
+
+![Choice](Assets/Template Choice.png)
+
+Next, choose the Module name. We'll go with `Custom`.
+
+![Name](Assets/Template Name.png)
+
+This will create 5 files per module:
+
+- `CustomModule.swift`
+- `CustomViewController.swift`
+- `CustomPresenter.swift`
+- `CustomRouter.swift`
+- `CustomInteractor.swift`
+
+Don't forget to target your main app. Once you've added the main template, go ahead and add the Unit Test template. **Make sure it's the same name!** In this case, we'd stay with `Custom`.
+
+### Using SwiftyVIPER
+
+Simply add a new module using the VIPER template. Once done, simply call:
+
+```swift
+import SwiftyVIPER
+
+CustomModule().present(from: self.viewController, style: .coverVertical, completion: nil)
+```
+
+The module will handle the rest, including initializing and attaching all the connections necessary for the Module to show properly.
 
 ## Contribute
 
