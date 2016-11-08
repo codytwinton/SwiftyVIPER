@@ -23,6 +23,7 @@ class ___FILEBASENAMEASIDENTIFIER___ModuleTests: XCTestCase {
 
 	// MARK: - Variables
 
+
 	// MARK: Test Functions
 
 	func testSetup() {

@@ -23,13 +23,9 @@ class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate let presenter = MockPresenter()
+	fileprivate var presenter: MockPresenter!
+	fileprivate var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor!
 
-	fileprivate lazy var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor = {
-		let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
-		interactor.presenter = self.presenter
-		return interactor
-	}()
 
 	// MARK: Test Functions
 
@@ -44,6 +40,11 @@ class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
     override func setUp() {
         super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
+
+		presenter = MockPresenter()
+
+		interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
+		interactor.presenter = self.presenter
     }
 
     override func tearDown() {

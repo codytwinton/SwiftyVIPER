@@ -23,7 +23,7 @@ class ___FILEBASENAMEASIDENTIFIER___RouterTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate let router = ___FILEBASENAMEASIDENTIFIER___Router()
+	fileprivate var router: ___FILEBASENAMEASIDENTIFIER___Router!
 
 
 	// MARK: Setup
@@ -31,6 +31,8 @@ class ___FILEBASENAMEASIDENTIFIER___RouterTests: XCTestCase {
 	override func setUp() {
         super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
+
+		router = ___FILEBASENAMEASIDENTIFIER___Router()
     }
 
     override func tearDown() {

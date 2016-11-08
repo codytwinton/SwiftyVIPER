@@ -23,15 +23,11 @@ class ___FILEBASENAMEASIDENTIFIER___PresenterTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate let router = MockRouter()
-	fileprivate let interactor = MockInteractor()
-	fileprivate let view = MockView()
+	fileprivate var router: MockRouter!
+	fileprivate var interactor: MockInteractor!
+	fileprivate var view: MockView!
 
-	fileprivate lazy var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter = {
-		let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(router: self.router, interactor: self.interactor)
-		presenter.view = self.view
-		return presenter
-	}()
+	fileprivate var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter!
 
 
 	// MARK: Test Functions
@@ -55,6 +51,13 @@ class ___FILEBASENAMEASIDENTIFIER___PresenterTests: XCTestCase {
 	override func setUp() {
         super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
+
+		router = MockRouter()
+		interactor = MockInteractor()
+		view = MockView()
+
+		presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(router: self.router, interactor: self.interactor)
+		presenter.view = self.view
     }
 
     override func tearDown() {

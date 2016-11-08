@@ -23,11 +23,8 @@ class ___FILEBASENAMEASIDENTIFIER___ViewTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate let presenter = MockPresenter()
-
-	fileprivate lazy var view: ___FILEBASENAMEASIDENTIFIER___ViewController = {
-		return ___FILEBASENAMEASIDENTIFIER___ViewController(presenter: self.presenter)
-	}()
+	fileprivate var presenter: MockPresenter!
+	fileprivate var view: ___FILEBASENAMEASIDENTIFIER___ViewController!
 
 
 	// MARK: Test Functions
@@ -53,6 +50,9 @@ class ___FILEBASENAMEASIDENTIFIER___ViewTests: XCTestCase {
 	override func setUp() {
 		super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
+
+		presenter = MockPresenter()
+		view = ___FILEBASENAMEASIDENTIFIER___ViewController(presenter: self.presenter)
 	}
 
 	override func tearDown() {
