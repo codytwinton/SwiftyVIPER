@@ -49,5 +49,5 @@ class DetailModule: NSObject {
 // MARK: - Module Protocol
 
 extension DetailModule: ModuleProtocol {
-	var viewController: UIViewController? {return view}
+	var viewController: UIViewController {return view}
 }

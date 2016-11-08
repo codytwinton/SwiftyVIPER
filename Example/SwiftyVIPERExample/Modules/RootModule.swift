@@ -49,5 +49,5 @@ class RootModule: NSObject {
 // MARK: - Module Protocol
 
 extension RootModule: ModuleProtocol {
-	var viewController: UIViewController? {return view}
+	var viewController: UIViewController {return view}
 }
