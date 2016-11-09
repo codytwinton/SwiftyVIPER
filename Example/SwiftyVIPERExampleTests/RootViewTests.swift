@@ -1,9 +1,11 @@
 //
-//  RootInteractorTests.swift
-//  SwiftyVIPER
+//  RootViewTests.swift
+//  Project: SwiftyVIPERExample
 //
-//  Created by Cody Winton on 11/7/16.
-//  Copyright © 2016 codeRed. All rights reserved.
+//  Module: Root
+//
+//  By Cody Winton 11/9/16
+//  codeRed 2016
 //
 
 // MARK: Imports
@@ -21,11 +23,8 @@ class RootViewTests: XCTestCase {
 	
 	// MARK: - Variables
 	
-	fileprivate let presenter = MockPresenter()
-	
-	fileprivate lazy var view: RootViewController = {
-		return RootViewController(presenter: self.presenter)
-	}()
+	fileprivate var presenter: MockPresenter!
+	fileprivate var view: RootViewController!
 	
 	
 	// MARK: Test Functions
@@ -54,6 +53,10 @@ class RootViewTests: XCTestCase {
 	override func setUp() {
 		super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
+		
+		presenter = MockPresenter()
+		
+		view = RootViewController(presenter: presenter)
 	}
 	
 	override func tearDown() {

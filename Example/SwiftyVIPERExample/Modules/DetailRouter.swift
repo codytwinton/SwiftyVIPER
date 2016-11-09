@@ -1,10 +1,10 @@
 //
 //  DetailRouter.swift
-//  Project: SwiftyVIPER
+//  Project: SwiftyVIPERExample
 //
 //  Module: Detail
 //
-//  By Cody Winton 11/5/16
+//  By Cody Winton 11/9/16
 //  codeRed 2016
 //
 

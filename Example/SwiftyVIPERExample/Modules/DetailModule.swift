@@ -1,10 +1,10 @@
 //
 //  DetailModule.swift
-//  Project: SwiftyVIPER
+//  Project: SwiftyVIPERExample
 //
 //  Module: Detail
 //
-//  By Cody Winton 11/5/16
+//  By Cody Winton 11/9/16
 //  codeRed 2016
 //
 
@@ -18,7 +18,7 @@ import SwiftyVIPER
 
 // MARK: -
 
-class DetailModule: NSObject {
+class DetailModule {
 	
 	// MARK: - Variables
 	
@@ -34,12 +34,15 @@ class DetailModule: NSObject {
 		return DetailPresenter(router: self.router, interactor: self.interactor)
 	}()
 	
-	private(set) lazy var view: DetailViewController = {
-		return DetailViewController(presenter: self.presenter)
-	}()
+	private(set) var view: DetailViewController
 	
-	override init() {
-		super.init()
+	init?() {
+		let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+		guard let view = storyboard.viewController(DetailViewController.self) else {return nil}
+		
+		self.view = view
+		self.view.presenter = presenter
+		
 		presenter.view = view
 		router.viewController = view
 		interactor.presenter = presenter

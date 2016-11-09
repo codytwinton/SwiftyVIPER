@@ -1,10 +1,10 @@
 //
 //  DetailInteractor.swift
-//  Project: SwiftyVIPER
+//  Project: SwiftyVIPERExample
 //
 //  Module: Detail
 //
-//  By Cody Winton 11/5/16
+//  By Cody Winton 11/9/16
 //  codeRed 2016
 //
 
@@ -25,16 +25,16 @@ protocol DetailPresenterInteractorProtocol {
 // MARK: -
 
 class DetailInteractor: NSObject {
-
+	
 	// MARK: - Variables
-
+	
 	weak var presenter: DetailInteractorPresenterProtocol?
 }
 
 // MARK: - Detail Presenter to Interactor Protocol
 
 extension DetailInteractor: DetailPresenterInteractorProtocol {
-
+	
 	func requestTitle() {
 		presenter?.set(title: "Detail")
 	}

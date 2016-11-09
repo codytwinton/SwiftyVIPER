@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="sbo-AU-PcO">
+            <objects>
+                <viewController storyboardIdentifier="Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fvh-9I-i0E" customClass="DetailViewController" customModule="SwiftyVIPERExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8c0-2t-G5U"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y2V-ht-2gR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5YA-Nf-q9I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bh2-Of-QFE">
+                                <rect key="frame" x="80" y="40" width="215" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ohf-Gq-Bf2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqI-mS-Pyv">
+                                <rect key="frame" x="305" y="35" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3CO-Te-WgX"/>
+                                    <constraint firstAttribute="width" constant="50" id="jqA-5V-IdG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bh2-Of-QFE" firstAttribute="centerX" secondItem="5YA-Nf-q9I" secondAttribute="centerX" id="FLQ-DU-Erh"/>
+                            <constraint firstAttribute="trailing" secondItem="cqI-mS-Pyv" secondAttribute="trailing" constant="20" id="Hcn-ug-rca"/>
+                            <constraint firstItem="cqI-mS-Pyv" firstAttribute="leading" secondItem="Bh2-Of-QFE" secondAttribute="trailing" constant="10" id="RBg-aH-QdF"/>
+                            <constraint firstItem="Bh2-Of-QFE" firstAttribute="top" secondItem="8c0-2t-G5U" secondAttribute="bottom" constant="20" id="Y5D-5Q-Ljb"/>
+                            <constraint firstItem="cqI-mS-Pyv" firstAttribute="centerY" secondItem="Bh2-Of-QFE" secondAttribute="centerY" id="wqK-3o-CTx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="cqI-mS-Pyv" id="hRC-bi-N4A"/>
+                        <outlet property="titleLabel" destination="Bh2-Of-QFE" id="hdq-Ae-tbU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iu6-nP-6jh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-476" y="55.322338830584712"/>
+        </scene>
+    </scenes>
+</document>

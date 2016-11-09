@@ -1,9 +1,11 @@
 //
-//  DetailInteractorTests.swift
-//  SwiftyVIPER
+//  DetailPresenterTests.swift
+//  Project: SwiftyVIPERExample
 //
-//  Created by Cody Winton on 11/7/16.
-//  Copyright © 2016 codeRed. All rights reserved.
+//  Module: Detail
+//
+//  By Cody Winton 11/9/16
+//  codeRed 2016
 //
 
 // MARK: Imports
@@ -21,15 +23,11 @@ class DetailPresenterTests: XCTestCase {
 	
 	// MARK: - Variables
 	
-	fileprivate let router = MockRouter()
-	fileprivate let interactor = MockInteractor()
-	fileprivate let view = MockView()
+	fileprivate var router: MockRouter!
+	fileprivate var interactor: MockInteractor!
+	fileprivate var view: MockView!
 	
-	fileprivate lazy var presenter: DetailPresenter = {
-		let presenter = DetailPresenter(router: self.router, interactor: self.interactor)
-		presenter.view = self.view
-		return presenter
-	}()
+	fileprivate var presenter: DetailPresenter!
 	
 	
 	// MARK: Test Functions
@@ -58,8 +56,15 @@ class DetailPresenterTests: XCTestCase {
 	override func setUp() {
         super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
+		
+		router = MockRouter()
+		interactor = MockInteractor()
+		view = MockView()
+		
+		presenter = DetailPresenter(router: self.router, interactor: self.interactor)
+		presenter.view = self.view
     }
-    
+	
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()

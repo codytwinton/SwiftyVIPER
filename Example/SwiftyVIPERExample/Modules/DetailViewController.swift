@@ -1,10 +1,10 @@
 //
 //  DetailViewController.swift
-//  Project: SwiftyVIPER
+//  Project: SwiftyVIPERExample
 //
 //  Module: Detail
 //
-//  By Cody Winton 11/5/16
+//  By Cody Winton 11/9/16
 //  codeRed 2016
 //
 
@@ -13,6 +13,7 @@
 import UIKit
 
 import SwiftyVIPER
+
 
 // MARK: Protocols
 
@@ -24,89 +25,65 @@ protocol DetailPresenterViewProtocol: class {
 // MARK: -
 
 class DetailViewController: UIViewController {
-
+	
 	// MARK: - Constants
 	
-	let presenter: DetailViewPresenterProtocol
-
-
+	
 	// MARK: Variables
 	
-	lazy var titleLabel: UILabel = {
-		let width = UIScreen.main.bounds.width
-		let label = UILabel(frame: CGRect(x: 0, y: 0, width: width, height: 40))
-		label.textAlignment = .center
-		return label
-	}()
+	var presenter: DetailViewPresenterProtocol?
 	
-	lazy var closeButton: UIButton = {
-		let button = UIButton(type: .system)
-		button.frame = CGRect(x: 0, y: 0, width: 60, height: 50)
-		button.setTitle("Close", for: .normal)
-		button.addTarget(self, action: #selector(closeSelected), for: .touchUpInside)
-		return button
-	}()
-
-
-	// MARK: Inits
-
-	init(presenter: DetailViewPresenterProtocol) {
-		self.presenter = presenter
-		super.init(nibName: nil, bundle: nil)
+	
+	@IBOutlet weak var titleLabel: UILabel? {
+		willSet(label) {
+			label?.textAlignment = .center
+		}
 	}
-
-	required init?(coder aDecoder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
+	
+	@IBOutlet weak var closeButton: UIButton? {
+		willSet(button) {
+			button?.setTitle("Close", for: .normal)
+			button?.addTarget(self, action: #selector(closeSelected), for: .touchUpInside)
+		}
 	}
 	
 	
 	// MARK: - Functions
 	
 	func closeSelected() {
-		presenter.closeSelected()
+		presenter?.closeSelected()
 	}
 	
-
 	// MARK: - Load Functions
-
+	
 	override func viewDidLoad() {
-		super.viewDidLoad()
-		presenter.viewLoaded()
+    	super.viewDidLoad()
+		presenter?.viewLoaded()
 		
 		view.backgroundColor = .white
-		
-		view.addSubview(titleLabel)
-		titleLabel.snp.makeConstraints() {
-			(make) in
-			make.left.equalTo(self.view).offset(30)
-			make.centerX.equalTo(self.view)
-			make.top.equalTo(self.view).offset(40)
-			make.height.equalTo(self.titleLabel.frame.height)
-		}
-		
-		view.addSubview(closeButton)
-		closeButton.snp.makeConstraints() {
-			(make) in
-			make.centerY.equalTo(self.titleLabel)
-			make.right.equalTo(self.view).offset(-20)
-			make.size.equalTo(self.closeButton.frame.size)
-		}
     }
-
+	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		presenter.viewAppearing()
+		presenter?.viewAppearing()
 	}
-
+	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		presenter.viewAppeared()
+		presenter?.viewAppeared()
 	}
-
+	
 	override func viewDidDisappear(_ animated: Bool) {
 		super.viewDidDisappear(animated)
-		presenter.viewDisappeared()
+		presenter?.viewDisappeared()
 	}
+}
+
+
+// MARK: - Storyboard Protocol
+
+extension DetailViewController: ViewStoryboardProtocol {
+	static var storyboardID: String { return "Detail" }
 }
 
 
@@ -115,6 +92,6 @@ class DetailViewController: UIViewController {
 extension DetailViewController: DetailPresenterViewProtocol {
 	
 	func set(title: String?) {
-		self.titleLabel.text = title
+		titleLabel?.text = title
 	}
 }

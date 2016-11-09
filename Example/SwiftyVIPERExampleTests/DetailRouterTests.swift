@@ -1,9 +1,11 @@
 //
-//  DetailInteractorTests.swift
-//  SwiftyVIPER
+//  DetailRouterTests.swift
+//  Project: SwiftyVIPERExample
 //
-//  Created by Cody Winton on 11/7/16.
-//  Copyright © 2016 codeRed. All rights reserved.
+//  Module: Detail
+//
+//  By Cody Winton 11/9/16
+//  codeRed 2016
 //
 
 // MARK: Imports
@@ -19,21 +21,20 @@ class DetailRouterTests: XCTestCase {
 	
 	// MARK: - Variables
 	
-	fileprivate let router = DetailRouter()
-	
-	
-	// MARK: Test Functions
+	fileprivate var router: DetailRouter!
 	
 	
 	// MARK: Setup
 	
 	override func setUp() {
-        super.setUp()
+		super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
+		
+		router = DetailRouter()
     }
-    
+	
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+		// Put teardown code here. This method is called after the invocation of each test method in the class.
+		super.tearDown()
     }
 }

@@ -1,9 +1,11 @@
 //
-//  DetailInteractorTests.swift
-//  SwiftyVIPER
+//  DetailViewControllerTests.swift
+//  Project: SwiftyVIPERExample
 //
-//  Created by Cody Winton on 11/7/16.
-//  Copyright © 2016 codeRed. All rights reserved.
+//  Module: Detail
+//
+//  By Cody Winton 11/9/16
+//  codeRed 2016
 //
 
 // MARK: Imports
@@ -21,11 +23,8 @@ class DetailViewTests: XCTestCase {
 	
 	// MARK: - Variables
 	
-	fileprivate let presenter = MockPresenter()
-	
-	fileprivate lazy var view: DetailViewController = {
-		return DetailViewController(presenter: self.presenter)
-	}()
+	fileprivate var presenter: MockPresenter!
+	fileprivate var view: DetailViewController!
 	
 	
 	// MARK: Test Functions
@@ -41,7 +40,7 @@ class DetailViewTests: XCTestCase {
 		XCTAssert(presenter.closeCalled)
 		
 		view.set(title: "Detail")
-		XCTAssertEqual(view.titleLabel.text, "Detail")
+		XCTAssertEqual(view.titleLabel?.text, "Detail")
 		
 		view.beginAppearanceTransition(false, animated: false)
 		view.endAppearanceTransition()
@@ -54,6 +53,12 @@ class DetailViewTests: XCTestCase {
 	override func setUp() {
 		super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
+		
+		presenter = MockPresenter()
+		
+		let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+		view = storyboard.viewController(DetailViewController.self)
+		view.presenter = presenter
 	}
 	
 	override func tearDown() {
