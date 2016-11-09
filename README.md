@@ -4,6 +4,7 @@
 
 [![Swift Version][swift-image]][swift-url]
 [![License][license-image]][license-url]
+[![Build Status](https://travis-ci.org/codytwinton/SwiftyVIPER.svg?branch=master)](https://travis-ci.org/codytwinton/SwiftyVIPER)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/SwiftyVIPER.svg)](https://img.shields.io/cocoapods/v/SwiftyVIPER.svg)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftyVIPER.svg?style=flat)](http://cocoapods.org/pods/SwiftyVIPER)
 
