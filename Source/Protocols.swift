@@ -30,7 +30,7 @@ public protocol PresenterRouterProtocol: class {
 	func present(_ view: UIViewController, completion: CompletionBlock?)
 }
 
-public protocol StoryboardProtocol: class {
+public protocol ViewStoryboardProtocol: class {
 	static var storyboardID: String { get }
 }
 

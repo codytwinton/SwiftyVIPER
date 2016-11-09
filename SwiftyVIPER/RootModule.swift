@@ -16,7 +16,7 @@ import UIKit
 
 // MARK: -
 
-class RootModule: NSObject {
+class RootModule {
 
 	// MARK: - Variables
 
@@ -36,8 +36,7 @@ class RootModule: NSObject {
 		return RootViewController(presenter: self.presenter)
 	}()
 
-	override init() {
-		super.init()
+	init() {
 		presenter.view = view
 		router.viewController = view
 		interactor.presenter = presenter

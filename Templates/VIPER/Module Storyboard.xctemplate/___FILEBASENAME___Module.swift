@@ -34,11 +34,15 @@ class ___FILEBASENAMEASIDENTIFIER___Module {
 		return ___FILEBASENAMEASIDENTIFIER___Presenter(router: self.router, interactor: self.interactor)
 	}()
 	
-	private(set) lazy var view: ___FILEBASENAMEASIDENTIFIER___ViewController = {
-		return ___FILEBASENAMEASIDENTIFIER___ViewController(presenter: self.presenter)
-	}()
+	private(set) var view: ___FILEBASENAMEASIDENTIFIER___ViewController
 	
-	init() {
+	init?() {
+		let storyboard: UIStoryboard = UIStoryboard(name: <#T##String#>, bundle: Bundle.main)
+		guard let view = storyboard.viewController(___FILEBASENAMEASIDENTIFIER___ViewController.self) else {return nil}
+		
+		self.view = view
+		self.view.presenter = presenter
+		
 		presenter.view = view
 		router.viewController = view
 		interactor.presenter = presenter

@@ -39,6 +39,30 @@
 /* Begin PBXFileReference section */
 		6A24A9431DD2A54E0092B050 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6A24A9451DD2A91E0092B050 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6A24A9681DD2B1D50092B050 /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
+		6A24A9691DD2B1D50092B050 /* ___FILEBASENAME___Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Module.swift"; sourceTree = "<group>"; };
+		6A24A96A1DD2B1D50092B050 /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
+		6A24A96B1DD2B1D50092B050 /* ___FILEBASENAME___Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Router.swift"; sourceTree = "<group>"; };
+		6A24A96C1DD2B1D50092B050 /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
+		6A24A96D1DD2B1D50092B050 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		6A24A96E1DD2B1D50092B050 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		6A24A96F1DD2B1D50092B050 /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		6A24A9711DD2B1D50092B050 /* ___FILEBASENAME___InteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___InteractorTests.swift"; sourceTree = "<group>"; };
+		6A24A9721DD2B1D50092B050 /* ___FILEBASENAME___ModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ModuleTests.swift"; sourceTree = "<group>"; };
+		6A24A9731DD2B1D50092B050 /* ___FILEBASENAME___PresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___PresenterTests.swift"; sourceTree = "<group>"; };
+		6A24A9741DD2B1D50092B050 /* ___FILEBASENAME___RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___RouterTests.swift"; sourceTree = "<group>"; };
+		6A24A9751DD2B1D50092B050 /* ___FILEBASENAME___ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewControllerTests.swift"; sourceTree = "<group>"; };
+		6A24A9761DD2B1D50092B050 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		6A24A9771DD2B1D50092B050 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		6A24A9781DD2B1D50092B050 /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		6A24A97A1DD2B1D50092B050 /* ___FILEBASENAME___Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Interactor.swift"; sourceTree = "<group>"; };
+		6A24A97B1DD2B1D50092B050 /* ___FILEBASENAME___Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Module.swift"; sourceTree = "<group>"; };
+		6A24A97C1DD2B1D50092B050 /* ___FILEBASENAME___Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Presenter.swift"; sourceTree = "<group>"; };
+		6A24A97D1DD2B1D50092B050 /* ___FILEBASENAME___Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Router.swift"; sourceTree = "<group>"; };
+		6A24A97E1DD2B1D50092B050 /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
+		6A24A97F1DD2B1D50092B050 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
+		6A24A9801DD2B1D50092B050 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
+		6A24A9811DD2B1D50092B050 /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		6A2D6F711DD144A4008BA1C6 /* SwiftyVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D6F801DD144A4008BA1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A2D6F851DD144A5008BA1C6 /* SwiftyVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,9 +102,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A24A9651DD2B1D50092B050 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				6A24A9661DD2B1D50092B050 /* VIPER */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		6A24A9661DD2B1D50092B050 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				6A24A9671DD2B1D50092B050 /* Module Storyboard.xctemplate */,
+				6A24A9701DD2B1D50092B050 /* Module Tests.xctemplate */,
+				6A24A9791DD2B1D50092B050 /* Module.xctemplate */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		6A24A9671DD2B1D50092B050 /* Module Storyboard.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				6A24A9681DD2B1D50092B050 /* ___FILEBASENAME___Interactor.swift */,
+				6A24A9691DD2B1D50092B050 /* ___FILEBASENAME___Module.swift */,
+				6A24A96A1DD2B1D50092B050 /* ___FILEBASENAME___Presenter.swift */,
+				6A24A96B1DD2B1D50092B050 /* ___FILEBASENAME___Router.swift */,
+				6A24A96C1DD2B1D50092B050 /* ___FILEBASENAME___ViewController.swift */,
+				6A24A96D1DD2B1D50092B050 /* TemplateIcon.png */,
+				6A24A96E1DD2B1D50092B050 /* TemplateIcon@2x.png */,
+				6A24A96F1DD2B1D50092B050 /* TemplateInfo.plist */,
+			);
+			path = "Module Storyboard.xctemplate";
+			sourceTree = "<group>";
+		};
+		6A24A9701DD2B1D50092B050 /* Module Tests.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				6A24A9711DD2B1D50092B050 /* ___FILEBASENAME___InteractorTests.swift */,
+				6A24A9721DD2B1D50092B050 /* ___FILEBASENAME___ModuleTests.swift */,
+				6A24A9731DD2B1D50092B050 /* ___FILEBASENAME___PresenterTests.swift */,
+				6A24A9741DD2B1D50092B050 /* ___FILEBASENAME___RouterTests.swift */,
+				6A24A9751DD2B1D50092B050 /* ___FILEBASENAME___ViewControllerTests.swift */,
+				6A24A9761DD2B1D50092B050 /* TemplateIcon.png */,
+				6A24A9771DD2B1D50092B050 /* TemplateIcon@2x.png */,
+				6A24A9781DD2B1D50092B050 /* TemplateInfo.plist */,
+			);
+			path = "Module Tests.xctemplate";
+			sourceTree = "<group>";
+		};
+		6A24A9791DD2B1D50092B050 /* Module.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				6A24A97A1DD2B1D50092B050 /* ___FILEBASENAME___Interactor.swift */,
+				6A24A97B1DD2B1D50092B050 /* ___FILEBASENAME___Module.swift */,
+				6A24A97C1DD2B1D50092B050 /* ___FILEBASENAME___Presenter.swift */,
+				6A24A97D1DD2B1D50092B050 /* ___FILEBASENAME___Router.swift */,
+				6A24A97E1DD2B1D50092B050 /* ___FILEBASENAME___ViewController.swift */,
+				6A24A97F1DD2B1D50092B050 /* TemplateIcon.png */,
+				6A24A9801DD2B1D50092B050 /* TemplateIcon@2x.png */,
+				6A24A9811DD2B1D50092B050 /* TemplateInfo.plist */,
+			);
+			path = Module.xctemplate;
+			sourceTree = "<group>";
+		};
 		6A2D6F681DD144A4008BA1C6 = {
 			isa = PBXGroup;
 			children = (
+				6A24A9651DD2B1D50092B050 /* Templates */,
 				6ACF463A1DD1454500A49396 /* Source */,
 				6A2D6F731DD144A4008BA1C6 /* SwiftyVIPER */,
 				6A2D6F881DD144A5008BA1C6 /* SwiftyVIPERTests */,

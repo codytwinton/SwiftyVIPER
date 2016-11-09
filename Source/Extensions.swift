@@ -17,10 +17,10 @@ public extension UIStoryboard {
 	Returns the view controller of a perticular type
 	
 	- parameters:
-		- type: The Class Type, which must be a UIViewController that conforms to `StoryboardProtocol`
+		- type: The Class Type, which must be a UIViewController that conforms to `ViewStoryboardProtocol`
 	- returns: The first view controller
 	*/
-	func viewController<T>(_ type: T.Type) -> T? where T: UIViewController, T: StoryboardProtocol {
+	func viewController<T>(_ type: T.Type) -> T? where T: UIViewController, T: ViewStoryboardProtocol {
 		return instantiateViewController(withIdentifier: type.storyboardID) as? T
 	}
 }

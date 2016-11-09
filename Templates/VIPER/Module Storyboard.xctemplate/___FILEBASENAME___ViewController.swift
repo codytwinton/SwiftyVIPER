@@ -28,47 +28,42 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 	
 	// MARK: - Constants
 	
-	let presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol
-	
 	
 	// MARK: Variables
 	
-	
-	// MARK: Inits
-	
-	init(presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol) {
-		self.presenter = presenter
-		super.init(nibName: nil, bundle: nil)
-	}
-	
-	required init?(coder aDecoder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
-	}
+	var presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol?
 	
 	
 	// MARK: - Load Functions
 	
 	override func viewDidLoad() {
     	super.viewDidLoad()
-		presenter.viewLoaded()
+		presenter?.viewLoaded()
 		
 		view.backgroundColor = .white
     }
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		presenter.viewAppearing()
+		presenter?.viewAppearing()
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		presenter.viewAppeared()
+		presenter?.viewAppeared()
 	}
 	
 	override func viewDidDisappear(_ animated: Bool) {
 		super.viewDidDisappear(animated)
-		presenter.viewDisappeared()
+		presenter?.viewDisappeared()
 	}
+}
+
+
+// MARK: - Storyboard Protocol
+
+extension ___FILEBASENAMEASIDENTIFIER___ViewController: ViewStoryboardProtocol {
+	static var storyboardID: String { return <#T##String#> }
 }
 
 

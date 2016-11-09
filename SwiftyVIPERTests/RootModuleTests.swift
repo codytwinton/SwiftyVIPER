@@ -23,10 +23,22 @@ class RootModuleTests: XCTestCase {
 	
 	func testSetup() {
 		let module = RootModule()
-		XCTAssertNotNil(module.presenter.view)
-		XCTAssertNotNil(module.router.viewController)
-		XCTAssertNotNil(module.interactor.presenter)
+		
+		XCTAssertNotNil(module.interactor)
+		XCTAssertNotNil(module.router)
+		XCTAssertNotNil(module.presenter)
+		XCTAssertNotNil(module.view)
 		XCTAssertNotNil(module.viewController)
+		
+		XCTAssertNotNil(module.view.presenter)
+		
+		XCTAssertNotNil(module.presenter.view)
+		XCTAssertNotNil(module.presenter.router)
+		XCTAssertNotNil(module.presenter.interactor)
+		
+		XCTAssertNotNil(module.router.viewController)
+		
+		XCTAssertNotNil(module.interactor.presenter)
 	}
 	
 	
