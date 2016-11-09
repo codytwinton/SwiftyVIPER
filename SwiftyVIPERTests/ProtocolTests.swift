@@ -78,6 +78,15 @@ class ProtocolTests: XCTestCase {
 		presenter.viewDisappeared()
 	}
 	
+	func testStoryboard() {
+		let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+		let viewController = storyboard.viewController(MockViewController.self)
+		XCTAssertNotNil(viewController)
+		
+		let secondViewController = storyboard.viewController(SecondMockViewController.self)
+		XCTAssertNil(secondViewController)
+	}
+	
 	
 	// MARK: Setup
 	
@@ -102,5 +111,16 @@ class ProtocolTests: XCTestCase {
 
 fileprivate class MockPresenter: NSObject, ViewPresenterProtocol {
 	
-	
+}
+
+// MARK: -
+
+class MockViewController: UIViewController, StoryboardProtocol {
+	static var storyboardID: String { return "Mock" }
+}
+
+// MARK: -
+
+class SecondMockViewController: UIViewController, StoryboardProtocol {
+	static var storyboardID: String { return "Mock" }
 }

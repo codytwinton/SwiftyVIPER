@@ -11,6 +11,7 @@ import UIKit
 
 public typealias CompletionBlock = () -> Void
 
+
 // MARK: Protocols
 
 public protocol ModuleProtocol: class {
@@ -29,38 +30,8 @@ public protocol PresenterRouterProtocol: class {
 	func present(_ view: UIViewController, completion: CompletionBlock?)
 }
 
-
-// MARK: Extensions
-
-public extension ModuleProtocol {
-	
-	func present(from fromVC: UIViewController?, style: UIModalTransitionStyle, completion: CompletionBlock? = nil) {
-		viewController.modalTransitionStyle = style
-		fromVC?.present(viewController, animated: true, completion: completion)
-	}
-	
-	func push(from navController: UINavigationController?) {
-		navController?.pushViewController(viewController, animated: true)
-	}
-}
-
-public extension PresenterRouterProtocol where Self:RouterProtocol {
-	
-	@discardableResult
-	func pop() -> UIViewController? {
-		return viewController?.navigationController?.popViewController(animated: true)
-	}
-	
-	func dismiss(completion: CompletionBlock? = nil) {
-		guard let viewController = viewController else {completion?(); return}
-		viewController.view?.endEditing(true)
-		viewController.dismiss(animated: true, completion: completion)
-	}
-	
-	func present(_ view: UIViewController, completion: CompletionBlock?) {
-		guard let viewController = viewController else {completion?(); return}
-		viewController.present(view, animated: true, completion: completion)
-	}
+public protocol StoryboardProtocol: class {
+	static var storyboardID: String { get }
 }
 
 public protocol ViewPresenterProtocol {
@@ -68,11 +39,4 @@ public protocol ViewPresenterProtocol {
 	func viewAppearing()
 	func viewAppeared()
 	func viewDisappeared()
-}
-
-public extension ViewPresenterProtocol {
-	func viewLoaded() {}
-	func viewAppearing() {}
-	func viewAppeared() {}
-	func viewDisappeared() {}
 }

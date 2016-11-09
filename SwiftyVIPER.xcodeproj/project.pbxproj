@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A24A9441DD2A54E0092B050 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A24A9431DD2A54E0092B050 /* Extensions.swift */; };
+		6A24A9461DD2A91E0092B050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A24A9451DD2A91E0092B050 /* Main.storyboard */; };
 		6ACF46391DD1453500A49396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACF46381DD1453500A49396 /* LaunchScreen.storyboard */; };
 		6ACF463C1DD1454500A49396 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF463B1DD1454500A49396 /* Protocols.swift */; };
 		6ACF465A1DD145D700A49396 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF46551DD145D700A49396 /* RootInteractor.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A24A9431DD2A54E0092B050 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6A24A9451DD2A91E0092B050 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6A2D6F711DD144A4008BA1C6 /* SwiftyVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D6F801DD144A4008BA1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A2D6F851DD144A5008BA1C6 /* SwiftyVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				6ACF465F1DD145DF00A49396 /* Root */,
+				6A24A9451DD2A91E0092B050 /* Main.storyboard */,
 				6ACF46381DD1453500A49396 /* LaunchScreen.storyboard */,
 				6ACF466A1DD1477000A49396 /* AppDelegate.swift */,
 				6ACF466B1DD1477000A49396 /* Assets.xcassets */,
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				6ACF463B1DD1454500A49396 /* Protocols.swift */,
+				6A24A9431DD2A54E0092B050 /* Extensions.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A24A9461DD2A91E0092B050 /* Main.storyboard in Resources */,
 				6ACF466D1DD1477000A49396 /* Assets.xcassets in Resources */,
 				6ACF46391DD1453500A49396 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -254,6 +261,7 @@
 				6ACF465C1DD145D700A49396 /* RootPresenter.swift in Sources */,
 				6ACF465A1DD145D700A49396 /* RootInteractor.swift in Sources */,
 				6ACF465B1DD145D700A49396 /* RootModule.swift in Sources */,
+				6A24A9441DD2A54E0092B050 /* Extensions.swift in Sources */,
 				6ACF465E1DD145D700A49396 /* RootViewController.swift in Sources */,
 				6ACF466C1DD1477000A49396 /* AppDelegate.swift in Sources */,
 				6ACF465D1DD145D700A49396 /* RootRouter.swift in Sources */,
