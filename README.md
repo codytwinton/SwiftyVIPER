@@ -84,7 +84,7 @@ cp -R Templates/VIPER ~/Library/Developer/Xcode/Templates/File\ Templates
 
 Once you've installed the VIPER Templates, you're ready to add a module. Select `File > New > File` or use press `⌘N` to bring up the template selector. You'll find the templates at the bottom.
 
-Choose `Module` for a normal module or `Module Tests` for a module unit tests template
+Choose `Module` for a normal module, `Module Storyboard` for a normal module that interacts with Storyboards, or `Module Tests` for a module unit tests template.
 
 ![Choice](Assets/Template Choice.png)
 
