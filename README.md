@@ -140,7 +140,7 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 
 [swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
 [swift-url]: https://swift.org/
-[license-image]: https://img.shields.io/badge/License-MIT-blue.svg
+[license-image]: https://img.shields.io/cocoapods/l/SwiftyVIPER.svg
 [license-url]: LICENSE
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
