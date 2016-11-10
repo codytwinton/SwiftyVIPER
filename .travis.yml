@@ -1,2 +1,6 @@
 language: objective-c
 osx_image: xcode8
+
+env:
+  matrix:
+    - SCHEME="SwiftyVIPER" IOS_DESTINATION_VERSION="10.0" # CARTHAGE_BUILD_PLATFORM="iOS"
