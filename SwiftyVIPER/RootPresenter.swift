@@ -15,17 +15,24 @@ import Foundation
 
 // MARK: Protocols
 
+/// Should be conformed to by the `RootPresenter` and referenced by `RootViewController`
 protocol RootViewPresenterProtocol: ViewPresenterProtocol {
 
 }
 
+/// Should be conformed to by the `RootPresenter` and referenced by `RootInteractor`
 protocol RootInteractorPresenterProtocol: class {
+	/** Sets the title for the presenter
+	- parameters:
+		- title The title to set
+	*/
 	func set(title: String?)
 }
 
 
 // MARK: -
 
+/// The Presenter for the Root module
 class RootPresenter: NSObject {
 
 	// MARK: - Constants
@@ -40,7 +47,7 @@ class RootPresenter: NSObject {
 
 
 	// MARK: Inits
-
+	
 	init(router: RootPresenterRouterProtocol, interactor: RootPresenterInteractorProtocol) {
 		self.router = router
 		self.interactor = interactor

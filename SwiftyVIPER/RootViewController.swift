@@ -12,15 +12,22 @@
 
 import UIKit
 
+
 // MARK: Protocols
 
+/// Should be conformed to by the `RootInteractor` and referenced by `RootPresenter`
 protocol RootPresenterViewProtocol: class {
+	/** Sets the title for the view
+	- parameters:
+		- title The title to set
+	*/
 	func set(title: String?)
 }
 
 
 // MARK: -
 
+/// The View Controller for the Root module
 class RootViewController: UIViewController {
 
 	// MARK: - Constants
@@ -74,7 +81,6 @@ class RootViewController: UIViewController {
 extension RootViewController: RootPresenterViewProtocol {
 
 	func set(title: String?) {
-		print("title: \(title)")
 		self.title = title
 	}
 }

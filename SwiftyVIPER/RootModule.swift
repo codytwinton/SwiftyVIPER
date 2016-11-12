@@ -16,10 +16,11 @@ import UIKit
 
 // MARK: -
 
+/// Used to initialize the Root VIPER module
 class RootModule {
 
 	// MARK: - Variables
-
+	
 	private(set) lazy var interactor: RootInteractor = {
 		return RootInteractor()
 	}()

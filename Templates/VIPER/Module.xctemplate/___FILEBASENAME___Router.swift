@@ -17,28 +17,30 @@ import SwiftyVIPER
 
 // MARK: Protocols
 
+/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___Router` and referenced by `___FILEBASENAMEASIDENTIFIER___Presenter`
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol: PresenterRouterProtocol {
-	
+
 }
 
 
 // MARK: -
 
+/// The Router for the ___FILEBASENAMEASIDENTIFIER___ module
 class ___FILEBASENAMEASIDENTIFIER___Router: NSObject {
-	
+
 	// MARK: - Variables
-	
+
 	weak var viewController: UIViewController?
 }
 
 // MARK: - Router Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Router: RouterProtocol {
-	
+
 }
 
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to Router Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
-	
+
 }

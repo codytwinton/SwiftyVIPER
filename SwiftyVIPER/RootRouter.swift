@@ -13,8 +13,10 @@
 import Foundation
 import UIKit
 
+
 // MARK: Protocols
 
+/// Should be conformed to by the `RootRouter` and referenced by `RootPresenter`
 protocol RootPresenterRouterProtocol: PresenterRouterProtocol {
 
 }
@@ -22,6 +24,7 @@ protocol RootPresenterRouterProtocol: PresenterRouterProtocol {
 
 // MARK: -
 
+/// The Router for the Root module
 class RootRouter: NSObject {
 
 	// MARK: - Variables
