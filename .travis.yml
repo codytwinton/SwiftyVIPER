@@ -2,5 +2,5 @@ language: objective-c
 osx_image: xcode8
 script:
   - xcodebuild -version
-  - xcodebuild -project SwiftyVIPER.xcodeproj -scheme SwiftyVIPER -sdk iphonesimulator -destination "platform=iOS Simulator,name=Generic iOS Simulator Device" -configuration Debug ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test
+  - xcodebuild -project SwiftyVIPER.xcodeproj -scheme SwiftyVIPER -sdk iphonesimulator -destination "platform=iOS Simulator,id=EDE76565-9131-4CD4-888C-1DF422B90B10" -configuration Debug ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test
   - bash <(curl -s https://codecov.io/bash) -cF ios
