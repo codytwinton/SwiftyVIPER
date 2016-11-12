@@ -3,7 +3,7 @@ osx_image: xcode8
 
 env:
   matrix:
-    - SCHEME="SwiftyVIPER" IOS_DESTINATION_VERSION="10.0" # CARTHAGE_BUILD_PLATFORM="iOS"
+    - PROJECT="SwiftyVIPER.xcodeproj" SCHEME="SwiftyVIPER" IOS_DESTINATION_VERSION="10.0" RUN_TESTS="YES"
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
