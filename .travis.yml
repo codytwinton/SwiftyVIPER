@@ -1,9 +1,7 @@
 language: objective-c
 osx_image: xcode8
-
-env:
-  matrix:
-    - PROJECT="SwiftyVIPER.xcodeproj" SCHEME="SwiftyVIPER" IOS_DESTINATION_VERSION="10.0" RUN_TESTS="YES"
+xcode_project: SwiftyVIPER.xcodeproj # path to your xcodeproj folder
+xcode_scheme: SwiftyVIPER
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
