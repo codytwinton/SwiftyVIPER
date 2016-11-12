@@ -1,9 +1,6 @@
 language: objective-c
 osx_image: xcode8
-
-env:
-  matrix:
-    - SCHEME="SwiftyVIPER" IOS_DESTINATION_VERSION="10.0" # CARTHAGE_BUILD_PLATFORM="iOS"
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+script:
+  - xcodebuild -version
+  - xcodebuild -project SwiftyVIPER.xcodeproj -scheme SwiftyVIPER -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" -configuration Release ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test
+  - bash <(curl -s https://codecov.io/bash) -cF ios
