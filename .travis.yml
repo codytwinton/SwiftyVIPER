@@ -3,3 +3,5 @@ osx_image: xcode8
 xcode_project: SwiftyVIPER.xcodeproj
 xcode_scheme: SwiftyVIPER
 xcode_sdk: iphonesimulator10.0
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
