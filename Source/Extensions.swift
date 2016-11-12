@@ -17,8 +17,8 @@ public extension UIStoryboard {
 	Returns the view controller of a perticular type
 	
 	- parameters:
-		- type: The Class Type, which must be a UIViewController that conforms to `ViewStoryboardProtocol`
-	- returns: The first view controller
+		- type: The Class Type, which must be a `UIViewController` that conforms to `ViewStoryboardProtocol`
+	- returns: A Storyboard Instance of Type
 	*/
 	func viewController<T>(_ type: T.Type) -> T? where T: UIViewController, T: ViewStoryboardProtocol {
 		return instantiateViewController(withIdentifier: type.storyboardID) as? T
@@ -39,9 +39,9 @@ public extension ModuleProtocol {
 
 public extension PresenterRouterProtocol where Self:RouterProtocol {
 	
-	@discardableResult
-	func pop() -> UIViewController? {
-		return viewController?.navigationController?.popViewController(animated: true)
+	func present(_ view: UIViewController, completion: CompletionBlock?) {
+		guard let viewController = viewController else {completion?(); return}
+		viewController.present(view, animated: true, completion: completion)
 	}
 	
 	func dismiss(completion: CompletionBlock? = nil) {
@@ -50,12 +50,13 @@ public extension PresenterRouterProtocol where Self:RouterProtocol {
 		viewController.dismiss(animated: true, completion: completion)
 	}
 	
-	func present(_ view: UIViewController, completion: CompletionBlock?) {
-		guard let viewController = viewController else {completion?(); return}
-		viewController.present(view, animated: true, completion: completion)
+	@discardableResult
+	func pop() -> UIViewController? {
+		return viewController?.navigationController?.popViewController(animated: true)
 	}
 }
 
+// Allows these functions to be optional
 public extension ViewPresenterProtocol {
 	func viewLoaded() {}
 	func viewAppearing() {}
