@@ -29,7 +29,7 @@ public protocol ModuleProtocol: class {
 	*/
 	var viewController: UIViewController { get }
 	
-	/** Should present the View Controller owned by the Module
+	/** Presents the View Controller owned by the Module
 	- parameters:
 		- fromVC: The view controller to present the module from
 		- style: The modal transition style to use
@@ -37,7 +37,7 @@ public protocol ModuleProtocol: class {
 	*/
 	func present(from fromVC: UIViewController?, style: UIModalTransitionStyle, completion: CompletionBlock?)
 	
-	/** Should push the View Controller owned by the Module
+	/** Pushes the View Controller owned by the Module
 	- parameters:
 		- navController: The navigation controller to push the module on
 	*/
@@ -59,7 +59,7 @@ public protocol RouterProtocol: class {
 - note: The Presenter to Router protocol should be conformed to by a Router and referenced by the Presenter
 */
 public protocol PresenterRouterProtocol: class {
-	/** Should present a view object from a Presenter
+	/** Presents a view object from a Presenter
 	- note: This should be used to present a simple view controller, like a `UIAlertController`.
 	- note: A new module should be initialized and presented directly from the Router object, not a Presenter
 	- parameters:
@@ -68,13 +68,13 @@ public protocol PresenterRouterProtocol: class {
 	*/
 	func present(_ view: UIViewController, completion: CompletionBlock?)
 	
-	/** Should dismiss a Module that was presented modally
+	/** Dismisses a Module that was presented modally
 	- parameters:
 		- completion: The code block to call when the transition completes
 	*/
 	func dismiss(completion: CompletionBlock?)
 	
-	/** Should pop a Module that was pushed
+	/** Pops a Module that was pushed
 	- returns: Should return the view controller that was popped
 	*/
 	@discardableResult func pop() -> UIViewController?
@@ -85,13 +85,13 @@ public protocol PresenterRouterProtocol: class {
 - note: The View to Presenter protocol should be conformed to by a Presenter and referenced by the View
 */
 public protocol ViewPresenterProtocol {
-	/// Should call when the View is loaded
+	/// Call when the View is loaded
 	func viewLoaded()
-	/// Should call when the View is appearing
+	/// Call when the View is appearing
 	func viewAppearing()
-	/// Should call when the View has appeared
+	/// Call when the View has appeared
 	func viewAppeared()
-	/// Should call when the View has disappeared
+	/// Call when the View has disappeared
 	func viewDisappeared()
 }
 
