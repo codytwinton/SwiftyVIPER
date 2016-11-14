@@ -1,4 +1,4 @@
-![Header][header-image]
+![Header](Assets/SwiftyVIPER.png)
 
 ---
 
@@ -6,6 +6,7 @@
 [![License][license-image]][license-url]
 [![Build Status][build-image]][build-url]
 [![Code Coverage][codecov-image]][codecov-url]
+[![Code Beat][codebeat-image]][codebeat-url]
 [![CocoaPods Version][cocoapod-v-image]][cocoapod-url]
 [![CocoaPods Platform][cocoapod-p-image]][cocoapod-url]
 
@@ -139,8 +140,6 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 - README edited with [StackEdit](https://stackedit.io/)
 
 
-[header-image]: Assets/SwiftyVIPER.png
-
 [build-image]: https://travis-ci.org/codytwinton/SwiftyVIPER.svg?branch=master
 [build-url]: https://travis-ci.org/codytwinton/SwiftyVIPER
 
@@ -157,5 +156,5 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 [cocoapod-v-image]: https://img.shields.io/cocoapods/v/SwiftyVIPER.svg
 [cocoapod-p-image]: https://img.shields.io/cocoapods/p/SwiftyVIPER.svg
 
-[codebeat-image]: https://codebeat.co/badges/c19b47ea-2f9d-45df-8458-b2d952fe9dad
-[codebeat-url]: https://codebeat.co/projects/github-com-vsouza-awesomeios-com
+[codebeat-image]: https://codebeat.co/badges/74c04e5b-e6a2-4baa-9e09-5b08d87dcabc
+[codebeat-url]: https://codebeat.co/projects/github-com-codytwinton-swiftyviper
