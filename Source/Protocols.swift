@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// A standard block of code
+/// A block of code
 public typealias CompletionBlock = () -> Void
 
 
