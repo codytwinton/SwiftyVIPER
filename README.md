@@ -1,13 +1,13 @@
-![Header](Assets/SwiftyVIPER.png)
+![Header][header-image]
 
 ---
 
 [![Swift Version][swift-image]][swift-url]
 [![License][license-image]][license-url]
-[![Build Status](https://travis-ci.org/codytwinton/SwiftyVIPER.svg?branch=master)](https://travis-ci.org/codytwinton/SwiftyVIPER)
-[![codecov](https://codecov.io/gh/codytwinton/SwiftyVIPER/branch/master/graph/badge.svg)](https://codecov.io/gh/codytwinton/SwiftyVIPER)
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/SwiftyVIPER.svg)](https://img.shields.io/cocoapods/v/SwiftyVIPER.svg)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftyVIPER.svg?style=flat)](http://cocoapods.org/pods/SwiftyVIPER)
+[![Build Status][build-image]][build-url]
+[![Code Coverage][codecov-image]][codecov-url]
+[![CocoaPods Version][cocoapod-v-image]][cocoapod-url]
+[![CocoaPods Platform][cocoapod-p-image]][cocoapod-url]
 
 SwiftyVIPER allows easy use of VIPER architecture thoughout your iOS application.
 
@@ -134,15 +134,28 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 ## Meta
 
 - Cody Winton – [@codytwinton](https://twitter.com/codytwinton)
-- Distributed under the MIT license. See ``LICENSE`` for more information.
+- Distributed under the MIT license. See [LICENSE][license-url] for more information.
 - Inspired by [ViperMcFlurry](https://github.com/rambler-digital-solutions/ViperMcFlurry)
 - README edited with [StackEdit](https://stackedit.io/)
 
-[swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
+
+[header-image]: Assets/SwiftyVIPER.png
+
+[build-image]: https://travis-ci.org/codytwinton/SwiftyVIPER.svg?branch=master
+[build-url]: https://travis-ci.org/codytwinton/SwiftyVIPER
+
+[swift-image]: https://img.shields.io/badge/swift-3.0-orange.svg
 [swift-url]: https://swift.org/
-[license-image]: https://img.shields.io/cocoapods/l/SwiftyVIPER.svg
+
+[license-image]: https://img.shields.io/github/license/codytwinton/SwiftyVIPER.svg
 [license-url]: LICENSE
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+
+[codecov-image]: https://codecov.io/gh/codytwinton/SwiftyVIPER/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/codytwinton/SwiftyVIPER
+
+[cocoapod-url]: http://cocoapods.org/pods/SwiftyVIPER
+[cocoapod-v-image]: https://img.shields.io/cocoapods/v/SwiftyVIPER.svg
+[cocoapod-p-image]: https://img.shields.io/cocoapods/p/SwiftyVIPER.svg
+
 [codebeat-image]: https://codebeat.co/badges/c19b47ea-2f9d-45df-8458-b2d952fe9dad
 [codebeat-url]: https://codebeat.co/projects/github-com-vsouza-awesomeios-com
