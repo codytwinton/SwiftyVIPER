@@ -2,13 +2,15 @@
 
 ---
 
-[![Swift Version][swift-image]][swift-url]
+[![Language][lang-image]][lang-url]
 [![License][license-image]][license-url]
+[![Platform][platform-image]][cocoapod-url]
 [![Build Status][build-image]][build-url]
+[![Docs Percentage][docs-image]][homepage-url]
 [![Code Coverage][codecov-image]][codecov-url]
 [![Code Beat][codebeat-image]][codebeat-url]
-[![CocoaPods Version][cocoapod-v-image]][cocoapod-url]
-[![CocoaPods Platform][cocoapod-p-image]][cocoapod-url]
+[![Pod Version][pod-version-image]][cocoapod-url]
+
 
 SwiftyVIPER allows easy use of VIPER architecture thoughout your iOS application.
 
@@ -141,20 +143,22 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 
 
 [build-image]: https://travis-ci.org/codytwinton/SwiftyVIPER.svg?branch=master
-[build-url]: https://travis-ci.org/codytwinton/SwiftyVIPER
-
-[swift-image]: https://img.shields.io/badge/swift-3.0-orange.svg
-[swift-url]: https://swift.org/
-
-[license-image]: https://img.shields.io/github/license/codytwinton/SwiftyVIPER.svg
-[license-url]: LICENSE
-
-[codecov-image]: https://codecov.io/gh/codytwinton/SwiftyVIPER/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/codytwinton/SwiftyVIPER
-
-[cocoapod-url]: http://cocoapods.org/pods/SwiftyVIPER
-[cocoapod-v-image]: https://img.shields.io/cocoapods/v/SwiftyVIPER.svg
-[cocoapod-p-image]: https://img.shields.io/cocoapods/p/SwiftyVIPER.svg
+[platform-image]: https://img.shields.io/badge/platform-ios-lightgrey.svg
+[platform-image-actual]: https://img.shields.io/cocoapods/p/SwiftyVIPER.svg
 
 [codebeat-image]: https://codebeat.co/badges/74c04e5b-e6a2-4baa-9e09-5b08d87dcabc
+[codecov-image]: https://codecov.io/gh/codytwinton/SwiftyVIPER/branch/master/graph/badge.svg
+[docs-image]: https://img.shields.io/cocoapods/metrics/doc-percent/SwiftyVIPER.svg
+[lang-image]: https://img.shields.io/badge/swift-3.0-orange.svg
+[license-image]: https://img.shields.io/github/license/codytwinton/SwiftyVIPER.svg
+[pod-version-image]: https://img.shields.io/badge/pod-0.6.2-blue.svg
+[pod-version-image-actual]: https://img.shields.io/cocoapods/v/SwiftyVIPER.svg
+
+
+[build-url]: https://travis-ci.org/codytwinton/SwiftyVIPER
+[cocoapod-url]: http://cocoapods.org/pods/SwiftyVIPER
 [codebeat-url]: https://codebeat.co/projects/github-com-codytwinton-swiftyviper
+[codecov-url]: https://codecov.io/gh/codytwinton/SwiftyVIPER
+[homepage-url]: https://github.com/codytwinton/SwiftyVIPER
+[lang-url]: https://swift.org/
+[license-url]: LICENSE
