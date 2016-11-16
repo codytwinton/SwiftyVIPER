@@ -79,8 +79,17 @@ class ProtocolTests: XCTestCase {
 	}
 	
 	func testStoryboard() {
+		var storyboardName: String! = nil
+		
+		#if os(iOS)
+			storyboardName = "iOS"
+		#elseif os(tvOS)
+			storyboardName = "tvOS"
+		#endif
+		
 		let bundle = Bundle(for: ProtocolTests.self)
-		let storyboard = UIStoryboard(name: "Main", bundle: bundle)
+		
+		let storyboard = UIStoryboard(name: storyboardName, bundle: bundle)
 		let viewController = storyboard.viewController(MockViewController.self)
 		XCTAssertNotNil(viewController)
 		
