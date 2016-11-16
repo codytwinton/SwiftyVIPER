@@ -42,7 +42,6 @@
 		6A2D6F711DD144A4008BA1C6 /* SwiftyVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D6F801DD144A4008BA1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A2D6F851DD144A5008BA1C6 /* SwiftyVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A2D6F8B1DD144A5008BA1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ACF46381DD1453500A49396 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6ACF463B1DD1454500A49396 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		6ACF46551DD145D700A49396 /* RootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
@@ -81,9 +80,9 @@
 		6A2D6F681DD144A4008BA1C6 = {
 			isa = PBXGroup;
 			children = (
-				6ACF463A1DD1454500A49396 /* Source */,
+				6ACF463A1DD1454500A49396 /* Sources */,
 				6A2D6F731DD144A4008BA1C6 /* SwiftyVIPER */,
-				6A2D6F881DD144A5008BA1C6 /* SwiftyVIPERTests */,
+				6A2D6F881DD144A5008BA1C6 /* Tests */,
 				6A2D6F721DD144A4008BA1C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,23 +109,22 @@
 			path = SwiftyVIPER;
 			sourceTree = "<group>";
 		};
-		6A2D6F881DD144A5008BA1C6 /* SwiftyVIPERTests */ = {
+		6A2D6F881DD144A5008BA1C6 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				6ACF466F1DD1495000A49396 /* ProtocolTests.swift */,
 				6ACF466E1DD147FF00A49396 /* Root */,
-				6A2D6F8B1DD144A5008BA1C6 /* Info.plist */,
 			);
-			path = SwiftyVIPERTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		6ACF463A1DD1454500A49396 /* Source */ = {
+		6ACF463A1DD1454500A49396 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				6ACF463B1DD1454500A49396 /* Protocols.swift */,
 				6A24A9431DD2A54E0092B050 /* Extensions.swift */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		6ACF465F1DD145DF00A49396 /* Root */ = {
@@ -416,7 +414,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = FUC97LYJ62;
-				INFOPLIST_FILE = SwiftyVIPERTests/Info.plist;
+				INFOPLIST_FILE = SwiftyVIPER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codeRed.SwiftyVIPERTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,7 +429,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = FUC97LYJ62;
-				INFOPLIST_FILE = SwiftyVIPERTests/Info.plist;
+				INFOPLIST_FILE = SwiftyVIPER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codeRed.SwiftyVIPERTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
