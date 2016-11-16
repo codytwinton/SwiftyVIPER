@@ -31,6 +31,7 @@ If all of this is totally knew for you, check out my running list of [VIPER Reso
 - [x] VIPER Module Templates
 - [x] VIPER Unit Test Templates
 - [x] Simple Module Initialization and Presentation
+- [x] iOS & tvOS Support
 - [x] Cocoapods Support
 - [ ] Carthage Support
 
@@ -45,9 +46,21 @@ If all of this is totally knew for you, check out my running list of [VIPER Reso
 You can use [CocoaPods](http://cocoapods.org/) to install `SwiftyVIPER` by adding it to your `Podfile`:
 
 ```ruby
-platform :ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
-pod 'SwiftyVIPER'
+platform :ios, '8.0'
+
+def shared_pods
+	pod 'SwiftyVIPER', '~> 1.0'
+end
+
+target 'MyApp' do
+	shared_pods
+end
+
+target 'MyAppTests' do
+	shared_pods
+end
 ```
 
 To get the full benefits import `SwiftyVIPER` wherever you import UIKit
