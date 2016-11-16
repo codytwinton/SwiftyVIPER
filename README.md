@@ -6,7 +6,7 @@
 [![License][license-image]][license-url]
 [![Platform][platform-image]][cocoapod-url]
 [![Build Status][build-image]][build-url]
-[![Docs Percentage][docs-image]][homepage-url]
+[![Docs Percentage][docs-image]][docs-url]
 [![Code Coverage][codecov-image]][codecov-url]
 [![Code Beat][codebeat-image]][codebeat-url]
 [![Pod Version][pod-version-image]][cocoapod-url]
@@ -159,6 +159,7 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 [cocoapod-url]: http://cocoapods.org/pods/SwiftyVIPER
 [codebeat-url]: https://codebeat.co/projects/github-com-codytwinton-swiftyviper
 [codecov-url]: https://codecov.io/gh/codytwinton/SwiftyVIPER
+[docs-url]: http://cocoadocs.org/docsets/SwiftyVIPER
 [homepage-url]: https://github.com/codytwinton/SwiftyVIPER
 [lang-url]: https://swift.org/
 [license-url]: LICENSE
