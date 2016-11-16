@@ -10,7 +10,7 @@
 
 import XCTest
 
-@testable import SwiftyVIPER
+import SwiftyVIPER
 
 
 // MARK: -
@@ -79,7 +79,8 @@ class ProtocolTests: XCTestCase {
 	}
 	
 	func testStoryboard() {
-		let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+		let bundle = Bundle(for: ProtocolTests.self)
+		let storyboard = UIStoryboard(name: "Main", bundle: bundle)
 		let viewController = storyboard.viewController(MockViewController.self)
 		XCTAssertNotNil(viewController)
 		

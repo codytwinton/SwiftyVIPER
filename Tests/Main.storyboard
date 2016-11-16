@@ -12,7 +12,7 @@
         <!--Mock View Controller-->
         <scene sceneID="h2C-SE-5xz">
             <objects>
-                <viewController storyboardIdentifier="Mock" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dk4-ot-caG" customClass="MockViewController" customModule="SwiftyVIPERTests" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Mock" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dk4-ot-caG" customClass="MockViewController" customModule="SwiftyVIPERiOSTests" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LY5-Nl-UXa"/>
                         <viewControllerLayoutGuide type="bottom" id="9TH-6v-nkh"/>
@@ -25,25 +25,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tl2-kh-i1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-281" y="153"/>
-        </scene>
-        <!--Custom View Controller-->
-        <scene sceneID="c7c-zc-96U">
-            <objects>
-                <viewController storyboardIdentifier="Custom" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3IT-Q3-JSC" customClass="CustomViewController" customModule="SwiftyVIPER" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ySB-xy-oDD"/>
-                        <viewControllerLayoutGuide type="bottom" id="1Hx-Eb-vnX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Drj-gA-fql">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2vq-fl-RHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1028" y="152"/>
+            <point key="canvasLocation" x="-974" y="145"/>
         </scene>
     </scenes>
 </document>
