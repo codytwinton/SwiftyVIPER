@@ -143,7 +143,7 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 
 
 [build-image]: https://travis-ci.org/codytwinton/SwiftyVIPER.svg?branch=master
-[platform-image]: https://img.shields.io/badge/platform-ios-lightgrey.svg
+[platform-image]: https://img.shields.io/badge/platform-ios%20%7C%20tvos-lightgrey.svg
 [platform-image-actual]: https://img.shields.io/cocoapods/p/SwiftyVIPER.svg
 
 [codebeat-image]: https://codebeat.co/badges/74c04e5b-e6a2-4baa-9e09-5b08d87dcabc
