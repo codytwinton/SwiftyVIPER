@@ -1,5 +1,5 @@
 //
-//  RootInteractorTests.swift
+//  ProtocolTests.swift
 //  SwiftyVIPER
 //
 //  Created by Cody Winton on 11/7/16.
@@ -19,8 +19,8 @@ class ProtocolTests: XCTestCase {
 	
 	// MARK: - Variables
 	
-	var module: RootModule!
-	var router: RootRouter!
+	var module: MockModule!
+	var router: MockRouter!
 	
 	
 	// MARK: Test Functions
@@ -94,7 +94,7 @@ class ProtocolTests: XCTestCase {
         super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 		
-		module = RootModule()
+		module = MockModule()
 		router = module.router
     }
     
@@ -102,25 +102,4 @@ class ProtocolTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-}
-
-
-// MARK: - Mock Classes
-
-// MARK: -
-
-fileprivate class MockPresenter: NSObject, ViewPresenterProtocol {
-	
-}
-
-// MARK: -
-
-class MockViewController: UIViewController, ViewStoryboardProtocol {
-	static var storyboardID: String { return "Mock" }
-}
-
-// MARK: -
-
-class SecondMockViewController: UIViewController, ViewStoryboardProtocol {
-	static var storyboardID: String { return "Mock" }
 }

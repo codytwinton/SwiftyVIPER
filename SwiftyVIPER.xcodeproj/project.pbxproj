@@ -9,21 +9,11 @@
 /* Begin PBXBuildFile section */
 		6A24A9441DD2A54E0092B050 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A24A9431DD2A54E0092B050 /* Extensions.swift */; };
 		6A24A9461DD2A91E0092B050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A24A9451DD2A91E0092B050 /* Main.storyboard */; };
-		6ACF46391DD1453500A49396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACF46381DD1453500A49396 /* LaunchScreen.storyboard */; };
 		6ACF463C1DD1454500A49396 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF463B1DD1454500A49396 /* Protocols.swift */; };
-		6ACF465A1DD145D700A49396 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF46551DD145D700A49396 /* RootInteractor.swift */; };
-		6ACF465B1DD145D700A49396 /* RootModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF46561DD145D700A49396 /* RootModule.swift */; };
-		6ACF465C1DD145D700A49396 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF46571DD145D700A49396 /* RootPresenter.swift */; };
-		6ACF465D1DD145D700A49396 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF46581DD145D700A49396 /* RootRouter.swift */; };
-		6ACF465E1DD145D700A49396 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF46591DD145D700A49396 /* RootViewController.swift */; };
 		6ACF466C1DD1477000A49396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF466A1DD1477000A49396 /* AppDelegate.swift */; };
 		6ACF466D1DD1477000A49396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACF466B1DD1477000A49396 /* Assets.xcassets */; };
 		6ACF46701DD1495000A49396 /* ProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF466F1DD1495000A49396 /* ProtocolTests.swift */; };
-		6AFAB8721DD14FAF007B4360 /* RootInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF46601DD1465E00A49396 /* RootInteractorTests.swift */; };
-		6AFAB8731DD14FAF007B4360 /* RootModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF46611DD1465E00A49396 /* RootModuleTests.swift */; };
-		6AFAB8741DD14FAF007B4360 /* RootPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF46621DD1465E00A49396 /* RootPresenterTests.swift */; };
-		6AFAB8751DD14FAF007B4360 /* RootRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF46631DD1465E00A49396 /* RootRouterTests.swift */; };
-		6AFAB8761DD14FAF007B4360 /* RootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF46641DD1465E00A49396 /* RootViewTests.swift */; };
+		6AF9E0F51DDC055D00F81BEA /* MockModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF9E0F01DDC055D00F81BEA /* MockModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,21 +32,11 @@
 		6A2D6F711DD144A4008BA1C6 /* SwiftyVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2D6F801DD144A4008BA1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A2D6F851DD144A5008BA1C6 /* SwiftyVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6ACF46381DD1453500A49396 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6ACF463B1DD1454500A49396 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		6ACF46551DD145D700A49396 /* RootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
-		6ACF46561DD145D700A49396 /* RootModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModule.swift; sourceTree = "<group>"; };
-		6ACF46571DD145D700A49396 /* RootPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
-		6ACF46581DD145D700A49396 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
-		6ACF46591DD145D700A49396 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		6ACF46601DD1465E00A49396 /* RootInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractorTests.swift; sourceTree = "<group>"; };
-		6ACF46611DD1465E00A49396 /* RootModuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleTests.swift; sourceTree = "<group>"; };
-		6ACF46621DD1465E00A49396 /* RootPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenterTests.swift; sourceTree = "<group>"; };
-		6ACF46631DD1465E00A49396 /* RootRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouterTests.swift; sourceTree = "<group>"; };
-		6ACF46641DD1465E00A49396 /* RootViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewTests.swift; sourceTree = "<group>"; };
 		6ACF466A1DD1477000A49396 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ACF466B1DD1477000A49396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ACF466F1DD1495000A49396 /* ProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolTests.swift; sourceTree = "<group>"; };
+		6AF9E0F01DDC055D00F81BEA /* MockModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +81,6 @@
 			children = (
 				6ACF465F1DD145DF00A49396 /* Root */,
 				6A24A9451DD2A91E0092B050 /* Main.storyboard */,
-				6ACF46381DD1453500A49396 /* LaunchScreen.storyboard */,
 				6ACF466A1DD1477000A49396 /* AppDelegate.swift */,
 				6ACF466B1DD1477000A49396 /* Assets.xcassets */,
 				6A2D6F801DD144A4008BA1C6 /* Info.plist */,
@@ -113,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				6ACF466F1DD1495000A49396 /* ProtocolTests.swift */,
-				6ACF466E1DD147FF00A49396 /* Root */,
+				6AF9E0F01DDC055D00F81BEA /* MockModule.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -130,23 +109,6 @@
 		6ACF465F1DD145DF00A49396 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				6ACF46551DD145D700A49396 /* RootInteractor.swift */,
-				6ACF46561DD145D700A49396 /* RootModule.swift */,
-				6ACF46571DD145D700A49396 /* RootPresenter.swift */,
-				6ACF46581DD145D700A49396 /* RootRouter.swift */,
-				6ACF46591DD145D700A49396 /* RootViewController.swift */,
-			);
-			name = Root;
-			sourceTree = "<group>";
-		};
-		6ACF466E1DD147FF00A49396 /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				6ACF46601DD1465E00A49396 /* RootInteractorTests.swift */,
-				6ACF46611DD1465E00A49396 /* RootModuleTests.swift */,
-				6ACF46621DD1465E00A49396 /* RootPresenterTests.swift */,
-				6ACF46631DD1465E00A49396 /* RootRouterTests.swift */,
-				6ACF46641DD1465E00A49396 /* RootViewTests.swift */,
 			);
 			name = Root;
 			sourceTree = "<group>";
@@ -238,7 +200,6 @@
 			files = (
 				6A24A9461DD2A91E0092B050 /* Main.storyboard in Resources */,
 				6ACF466D1DD1477000A49396 /* Assets.xcassets in Resources */,
-				6ACF46391DD1453500A49396 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,13 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ACF465C1DD145D700A49396 /* RootPresenter.swift in Sources */,
-				6ACF465A1DD145D700A49396 /* RootInteractor.swift in Sources */,
-				6ACF465B1DD145D700A49396 /* RootModule.swift in Sources */,
 				6A24A9441DD2A54E0092B050 /* Extensions.swift in Sources */,
-				6ACF465E1DD145D700A49396 /* RootViewController.swift in Sources */,
 				6ACF466C1DD1477000A49396 /* AppDelegate.swift in Sources */,
-				6ACF465D1DD145D700A49396 /* RootRouter.swift in Sources */,
 				6ACF463C1DD1454500A49396 /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,11 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AFAB8721DD14FAF007B4360 /* RootInteractorTests.swift in Sources */,
-				6AFAB8751DD14FAF007B4360 /* RootRouterTests.swift in Sources */,
-				6AFAB8731DD14FAF007B4360 /* RootModuleTests.swift in Sources */,
-				6AFAB8741DD14FAF007B4360 /* RootPresenterTests.swift in Sources */,
-				6AFAB8761DD14FAF007B4360 /* RootViewTests.swift in Sources */,
+				6AF9E0F51DDC055D00F81BEA /* MockModule.swift in Sources */,
 				6ACF46701DD1495000A49396 /* ProtocolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
