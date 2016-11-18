@@ -1,14 +1,14 @@
 ![Header](Assets/SwiftyVIPER.png)
 
----
-
 [![Language][lang-image]][lang-url]
 [![License][license-image]][license-url]
 [![Platform][platform-image]][cocoapod-url]
+
 [![Build Status][build-image]][build-url]
 [![Docs Percentage][docs-image]][docs-url]
 [![Code Coverage][codecov-image]][codecov-url]
 [![Code Beat][codebeat-image]][codebeat-url]
+
 [![Pod Version][pod-version-image]][cocoapod-url]
 [![Carthage Compatible][carthage-image]][carthage-url]
 
