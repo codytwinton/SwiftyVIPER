@@ -1,5 +1,7 @@
 ![Header](Assets/SwiftyVIPER.png)
 
+---
+
 [![Language][lang-image]][lang-url]
 [![License][license-image]][license-url]
 [![Platform][platform-image]][cocoapod-url]
