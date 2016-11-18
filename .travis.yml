@@ -6,9 +6,11 @@ env:
   - LANG=en_US.UTF-8
   - PROJECT=SwiftyVIPER.xcodeproj
   - IOS_FRAMEWORK_SCHEME="SwiftyVIPERiOS"
+  - IOS_FRAMEWORK_TEST_SCHEME="SwiftyVIPERiOSTests"
   - IOS_SDK=iphonesimulator10.0
+  - IOS_TEST_SDK=iphonesimulator
   matrix:
-    - DESTINATION="OS=9.0,name=iPhone 6"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"
+    - DESTINATION="OS=9.0,name=iPhone 6"
 before_install:
   - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
 script:
@@ -16,10 +18,11 @@ script:
   - xcodebuild -version
   - xcodebuild -showsdks
 
-  - xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug -enableCodeCoverage YES ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test | xcpretty;
+  #- xcodebuild -project "$PROJECT" -scheme "$IOS_FRAMEWORK_SCHEME" -sdk "$IOS_SDK" -destination "$DESTINATION" -configuration Debug -enableCodeCoverage YES ONLY_ACTIVE_ARCH=YES ENABLE_TESTABILITY=YES test
+  - xcodebuild -project "$PROJECT" -scheme "$IOS_FRAMEWORK_TEST_SCHEME" -sdk "$IOS_TEST_SDK" -destination "$DESTINATION" -configuration Debug -enableCodeCoverage YES ONLY_ACTIVE_ARCH=YES test
 
 notifications:
   email: false
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -cF ios
