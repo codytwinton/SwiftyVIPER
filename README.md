@@ -10,6 +10,7 @@
 [![Code Coverage][codecov-image]][codecov-url]
 [![Code Beat][codebeat-image]][codebeat-url]
 [![Pod Version][pod-version-image]][cocoapod-url]
+[![Carthage Compatible][carthage-image]][carthage-url]
 
 
 SwiftyVIPER allows easy use of VIPER architecture thoughout your iOS application.
@@ -31,14 +32,14 @@ If all of this is totally knew for you, check out my running list of [VIPER Reso
 - [x] VIPER Module Templates
 - [x] VIPER Unit Test Templates
 - [x] Simple Module Initialization and Presentation
-- [x] iOS & tvOS Support
 - [x] Cocoapods Support
-- [ ] Carthage Support
+- [x] Carthage Support
 
 ## Requirements
 
-- iOS 8.0+
+- iOS 8.0+ | tvOS 9.0+
 - Xcode 8
+- Swift 3
 
 ## Installation
 
@@ -156,17 +157,18 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 
 
 [build-image]: https://travis-ci.org/codytwinton/SwiftyVIPER.svg?branch=master
-[platform-image]: https://img.shields.io/cocoapods/p/SwiftyVIPER.svg
-
+[carthage-image]: https://img.shields.io/badge/Carthage-compatible-4BC51D.svg
 [codebeat-image]: https://codebeat.co/badges/74c04e5b-e6a2-4baa-9e09-5b08d87dcabc
 [codecov-image]: https://codecov.io/gh/codytwinton/SwiftyVIPER/branch/master/graph/badge.svg
 [docs-image]: https://img.shields.io/cocoapods/metrics/doc-percent/SwiftyVIPER.svg
 [lang-image]: https://img.shields.io/badge/swift-3.0-orange.svg
 [license-image]: https://img.shields.io/github/license/codytwinton/SwiftyVIPER.svg
+[platform-image]: https://img.shields.io/cocoapods/p/SwiftyVIPER.svg
 [pod-version-image]: https://img.shields.io/cocoapods/v/SwiftyVIPER.svg
 
 
 [build-url]: https://travis-ci.org/codytwinton/SwiftyVIPER
+[carthage-url]: https://github.com/Carthage/Carthage
 [cocoapod-url]: http://cocoapods.org/pods/SwiftyVIPER
 [codebeat-url]: https://codebeat.co/projects/github-com-codytwinton-swiftyviper
 [codecov-url]: https://codecov.io/gh/codytwinton/SwiftyVIPER
