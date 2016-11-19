@@ -73,14 +73,31 @@ import UIKit
 import SwiftyVIPER
 ```
 
+#### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+```bash
+$ brew update
+$ brew install carthage
+```
+
+To integrate SwiftyVIPER into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "codytwinton/SwiftyVIPER" ~> 4.0
+```
+
+Run `carthage update` to build the framework and drag the built `SwiftyVIPER.framework` into your Xcode project.
+
 #### Manually
 
 This is discouraged, but allowed. :D
 
 1. Download and drop the ```Source``` folder in your project.
 2. Congratulations!
-
-#### Carthage (Coming Soon)
 
 ---
 
