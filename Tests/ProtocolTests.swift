@@ -94,6 +94,10 @@ class ProtocolTests: XCTestCase {
 		XCTAssertNotNil(viewController)
 	}
 	
+	func testStoryboardIdentifiable() {
+		XCTAssertFalse(MockViewController.storyboardID.isEmpty)
+	}
+	
 	
 	// MARK: Setup
 	
