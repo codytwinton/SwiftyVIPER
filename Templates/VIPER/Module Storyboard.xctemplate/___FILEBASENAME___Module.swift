@@ -21,7 +21,12 @@ import SwiftyVIPER
 /// Used to initialize the ___FILEBASENAMEASIDENTIFIER___ VIPER module
 class ___FILEBASENAMEASIDENTIFIER___Module {
 
-	// MARK: - Variables
+	// MARK: - Constants
+
+	let storyboard: UIStoryboard = UIStoryboard(name: <#T##String#>, bundle: Bundle.main)
+
+
+	// MARK: Variables
 
 	private(set) lazy var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor = {
 		return ___FILEBASENAMEASIDENTIFIER___Interactor()
@@ -35,15 +40,13 @@ class ___FILEBASENAMEASIDENTIFIER___Module {
 		return ___FILEBASENAMEASIDENTIFIER___Presenter(router: self.router, interactor: self.interactor)
 	}()
 
-	private(set) var view: ___FILEBASENAMEASIDENTIFIER___ViewController
+	private(set) lazy var view: ___FILEBASENAMEASIDENTIFIER___ViewController = {
+		var vc = self.storyboard.viewController(___FILEBASENAMEASIDENTIFIER___ViewController.self)
+		vc.presenter = self.presenter
+		return vc
+	}()
 
-	init?() {
-		let storyboard: UIStoryboard = UIStoryboard(name: <#T##String#>, bundle: Bundle.main)
-		guard let view = storyboard.viewController(___FILEBASENAMEASIDENTIFIER___ViewController.self) else {return nil}
-
-		self.view = view
-		self.view.presenter = presenter
-
+	init() {
 		presenter.view = view
 		router.viewController = view
 		interactor.presenter = presenter

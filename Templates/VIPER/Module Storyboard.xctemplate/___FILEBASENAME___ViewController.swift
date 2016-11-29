@@ -68,9 +68,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
 // MARK: - Storyboard Protocol
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController: ViewStoryboardProtocol {
-	static var storyboardID: String { return <#T##String#> }
-}
+extension ___FILEBASENAMEASIDENTIFIER___ViewController: StoryboardIdentifiable {}
 
 
 // MARK: - ___FILEBASENAMEASIDENTIFIER___ Presenter to View Protocol
