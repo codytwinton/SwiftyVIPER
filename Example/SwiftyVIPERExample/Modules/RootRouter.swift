@@ -42,6 +42,6 @@ extension RootRouter: RouterProtocol {
 extension RootRouter: RootPresenterRouterProtocol {
 	
 	func detailsSelected() {
-		DetailModule()?.present(from: viewController, style: .coverVertical)
+		DetailModule().present(from: viewController, style: .coverVertical)
 	}
 }

@@ -82,9 +82,7 @@ class DetailViewController: UIViewController {
 
 // MARK: - Storyboard Protocol
 
-extension DetailViewController: ViewStoryboardProtocol {
-	static var storyboardID: String { return "Detail" }
-}
+extension DetailViewController: StoryboardIdentifiable {}
 
 
 // MARK: - Detail Presenter to View Protocol

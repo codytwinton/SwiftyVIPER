@@ -12,7 +12,7 @@
         <!--Detail View Controller-->
         <scene sceneID="sbo-AU-PcO">
             <objects>
-                <viewController storyboardIdentifier="Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fvh-9I-i0E" customClass="DetailViewController" customModule="SwiftyVIPERExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fvh-9I-i0E" customClass="DetailViewController" customModule="SwiftyVIPERExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8c0-2t-G5U"/>
                         <viewControllerLayoutGuide type="bottom" id="Y2V-ht-2gR"/>

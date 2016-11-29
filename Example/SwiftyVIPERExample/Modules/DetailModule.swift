@@ -20,7 +20,12 @@ import SwiftyVIPER
 
 class DetailModule {
 	
-	// MARK: - Variables
+	// MARK: - Constants
+	
+	let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+	
+	
+	// MARK: Variables
 	
 	private(set) lazy var interactor: DetailInteractor = {
 		return DetailInteractor()
@@ -34,15 +39,13 @@ class DetailModule {
 		return DetailPresenter(router: self.router, interactor: self.interactor)
 	}()
 	
-	private(set) var view: DetailViewController
+	private(set) lazy var view: DetailViewController = {
+		let vc = self.storyboard.viewController(DetailViewController.self)
+		vc.presenter = self.presenter
+		return vc
+	}()
 	
-	init?() {
-		let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-		guard let view = storyboard.viewController(DetailViewController.self) else {return nil}
-		
-		self.view = view
-		self.view.presenter = presenter
-		
+	init() {
 		presenter.view = view
 		router.viewController = view
 		interactor.presenter = presenter
