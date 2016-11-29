@@ -92,9 +92,6 @@ class ProtocolTests: XCTestCase {
 		let storyboard = UIStoryboard(name: storyboardName, bundle: bundle)
 		let viewController = storyboard.viewController(MockViewController.self)
 		XCTAssertNotNil(viewController)
-		
-		let secondViewController = storyboard.viewController(SecondMockViewController.self)
-		XCTAssertNil(secondViewController)
 	}
 	
 	

@@ -17,11 +17,21 @@ public extension UIStoryboard {
 	Returns the view controller of a perticular type
 	
 	- parameters:
-		- type: The Class Type, which must be a `UIViewController` that conforms to `ViewStoryboardProtocol`
+		- type: The Class Type, which must be a `UIViewController` that conforms to `StoryboardIdentifiable`
 	- returns: A Storyboard Instance of Type
 	*/
-	func viewController<T>(_ type: T.Type) -> T? where T: UIViewController, T: ViewStoryboardProtocol {
-		return instantiateViewController(withIdentifier: type.storyboardID) as? T
+	func viewController<T: UIViewController>(_ type: T.Type) -> T where T: StoryboardIdentifiable {
+		guard let vc = instantiateViewController(withIdentifier: type.storyboardID) as? T else {
+			fatalError("Couldn't find a View Controller with Identifier \(type.storyboardID)")
+		}
+		return vc
+	}
+}
+
+public extension StoryboardIdentifiable where Self: UIViewController {
+	/// The Storyboard ID to use for a View Controller
+	static var storyboardID: String {
+		return String(describing: self)
 	}
 }
 

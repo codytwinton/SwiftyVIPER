@@ -12,7 +12,7 @@
         <!--Mock View Controller-->
         <scene sceneID="h2C-SE-5xz">
             <objects>
-                <viewController storyboardIdentifier="Mock" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dk4-ot-caG" customClass="MockViewController" customModule="SwiftyVIPERiOSTests" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MockViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dk4-ot-caG" customClass="MockViewController" customModule="SwiftyVIPERiOSTests" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LY5-Nl-UXa"/>
                         <viewControllerLayoutGuide type="bottom" id="9TH-6v-nkh"/>

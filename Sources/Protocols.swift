@@ -95,9 +95,14 @@ public protocol ViewPresenterProtocol {
 	func viewDisappeared()
 }
 
-/** This Protocol is used to initialize a View Controller via. Storyboard
+/** This Protocol is conformed to by an object and used to initialize via. Storyboard
 */
-public protocol ViewStoryboardProtocol: class {
+public protocol StoryboardIdentifiable: class {
 	/// The Storyboard ID to use for a View Controller
 	static var storyboardID: String { get }
 }
+
+/** This Protocol is used to initialize a View Controller via. Storyboard
+*/
+@available(*, deprecated, message: "Deprecated in version `1.1`. Use StoryboardIdentifiable instead", renamed: "StoryboardIdentifiable")
+public typealias ViewStoryboardProtocol = StoryboardIdentifiable

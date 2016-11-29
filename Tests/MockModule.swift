@@ -60,12 +60,4 @@ class MockPresenter: NSObject, ViewPresenterProtocol {
 
 // MARK: -
 
-class MockViewController: UIViewController, ViewStoryboardProtocol {
-	static var storyboardID: String { return "Mock" }
-}
-
-// MARK: -
-
-class SecondMockViewController: UIViewController, ViewStoryboardProtocol {
-	static var storyboardID: String { return "Mock" }
-}
+class MockViewController: UIViewController, StoryboardIdentifiable {}
