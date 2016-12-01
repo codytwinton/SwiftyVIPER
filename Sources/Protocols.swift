@@ -12,7 +12,7 @@ import UIKit
 public typealias CodeBlock = () -> Void
 
 /// A block of code
-@available(*, deprecated, message: "Deprecated in version 1.2. Use CodeBlock instead", renamed: "CodeBlock")
+@available(*, deprecated, message: "Deprecated in SwiftyVIPER version 1.2. Use CodeBlock instead", renamed: "CodeBlock")
 public typealias CompletionBlock = CodeBlock
 
 
@@ -94,17 +94,17 @@ public protocol ViewPresenterProtocol {
 	/** Call when the View is appearing
 	- note: Deprecated to reduce the number of calls to the Presenter
 	*/
-	@available(*, deprecated, message: "Deprecated in version 1.2")
+	@available(*, deprecated, message: "Deprecated in SwiftyVIPER version 1.2")
 	func viewAppearing()
 	/** Call when the View has appeared
 	- note: Deprecated to reduce the number of calls to the Presenter
 	*/
-	@available(*, deprecated, message: "Deprecated in version 1.2")
+	@available(*, deprecated, message: "Deprecated in SwiftyVIPER version 1.2")
 	func viewAppeared()
 	/** Call when the View has disappeared
 	- note: Deprecated to reduce the number of calls to the Presenter
 	*/
-	@available(*, deprecated, message: "Deprecated in version 1.2")
+	@available(*, deprecated, message: "Deprecated in SwiftyVIPER version 1.2")
 	func viewDisappeared()
 }
 
@@ -117,5 +117,5 @@ public protocol StoryboardIdentifiable: class {
 
 /** This Protocol is used to initialize a View Controller via. Storyboard
 */
-@available(*, deprecated, message: "Deprecated in version 1.1. Use StoryboardIdentifiable instead", renamed: "StoryboardIdentifiable")
+@available(*, deprecated, message: "Deprecated in SwiftyVIPER version 1.1. Use StoryboardIdentifiable instead", renamed: "StoryboardIdentifiable")
 public typealias ViewStoryboardProtocol = StoryboardIdentifiable
