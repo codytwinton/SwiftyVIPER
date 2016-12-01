@@ -37,7 +37,7 @@ public extension StoryboardIdentifiable where Self: UIViewController {
 
 public extension ModuleProtocol {
 	
-	func present(from fromVC: UIViewController?, style: UIModalTransitionStyle, completion: CompletionBlock? = nil) {
+	func present(from fromVC: UIViewController?, style: UIModalTransitionStyle, completion: CodeBlock? = nil) {
 		viewController.modalTransitionStyle = style
 		fromVC?.present(viewController, animated: true, completion: completion)
 	}
@@ -49,12 +49,12 @@ public extension ModuleProtocol {
 
 public extension PresenterRouterProtocol where Self:RouterProtocol {
 	
-	func present(_ view: UIViewController, completion: CompletionBlock?) {
+	func present(_ view: UIViewController, completion: CodeBlock?) {
 		guard let viewController = viewController else {completion?(); return}
 		viewController.present(view, animated: true, completion: completion)
 	}
 	
-	func dismiss(completion: CompletionBlock? = nil) {
+	func dismiss(completion: CodeBlock? = nil) {
 		guard let viewController = viewController else {completion?(); return}
 		viewController.view?.endEditing(true)
 		viewController.dismiss(animated: true, completion: completion)

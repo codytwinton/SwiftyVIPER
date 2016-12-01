@@ -86,7 +86,7 @@ fileprivate class MockRouter: NSObject, RouterProtocol, DetailPresenterRouterPro
 	
 	// MARK: Functions
 	
-	func dismiss(completion: CompletionBlock?) {
+	func dismiss(completion: CodeBlock?) {
 		shouldDismiss = true
 		completion?()
 	}
