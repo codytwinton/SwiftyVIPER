@@ -55,7 +55,7 @@ class MockRouter: NSObject, RouterProtocol, PresenterRouterProtocol {
 // MARK: -
 
 class MockPresenter: NSObject, ViewPresenterProtocol {
-	
+	func viewLoaded() {}
 }
 
 // MARK: -
