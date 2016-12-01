@@ -33,18 +33,12 @@ class RootViewTests: XCTestCase {
 		view.beginAppearanceTransition(true, animated: false)
 		view.endAppearanceTransition()
 		XCTAssert(presenter.isViewLoaded)
-		XCTAssert(presenter.isViewAppearing)
-		XCTAssert(presenter.isViewAppeared)
 		
 		view.detailsSelected()
 		XCTAssert(presenter.isDetailsSelected)
 		
 		view.set(title: "Root")
 		XCTAssertEqual(view.title, "Root")
-		
-		view.beginAppearanceTransition(false, animated: false)
-		view.endAppearanceTransition()
-		XCTAssert(presenter.isViewDisappeared)
 	}
 	
 	
@@ -75,9 +69,6 @@ fileprivate class MockPresenter: NSObject, RootViewPresenterProtocol {
 	// MARK: Variables
 	
 	var isViewLoaded: Bool = false
-	var isViewAppearing: Bool = false
-	var isViewAppeared: Bool = false
-	var isViewDisappeared: Bool = false
 	
 	var isDetailsSelected: Bool = false
 	
@@ -86,18 +77,6 @@ fileprivate class MockPresenter: NSObject, RootViewPresenterProtocol {
 	
 	func viewLoaded() {
 		isViewLoaded = true
-	}
-	
-	func viewAppearing() {
-		isViewAppearing = true
-	}
-	
-	func viewAppeared() {
-		isViewAppeared = true
-	}
-	
-	func viewDisappeared() {
-		isViewDisappeared = true
 	}
 	
 	func detailsSelected() {

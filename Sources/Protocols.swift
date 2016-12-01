@@ -87,11 +87,20 @@ public protocol PresenterRouterProtocol: class {
 public protocol ViewPresenterProtocol {
 	/// Call when the View is loaded
 	func viewLoaded()
-	/// Call when the View is appearing
+	/** Call when the View is appearing
+	- note: Deprecated to reduce the number of calls to the Presenter
+	*/
+	@available(*, deprecated, message: "Deprecated in version 1.2")
 	func viewAppearing()
-	/// Call when the View has appeared
+	/** Call when the View has appeared
+	- note: Deprecated to reduce the number of calls to the Presenter
+	*/
+	@available(*, deprecated, message: "Deprecated in version 1.2")
 	func viewAppeared()
-	/// Call when the View has disappeared
+	/** Call when the View has disappeared
+	- note: Deprecated to reduce the number of calls to the Presenter
+	*/
+	@available(*, deprecated, message: "Deprecated in version 1.2")
 	func viewDisappeared()
 }
 

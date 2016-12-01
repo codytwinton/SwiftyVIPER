@@ -33,18 +33,12 @@ class DetailViewTests: XCTestCase {
 		view.beginAppearanceTransition(true, animated: false)
 		view.endAppearanceTransition()
 		XCTAssert(presenter.isViewLoaded)
-		XCTAssert(presenter.isViewAppearing)
-		XCTAssert(presenter.isViewAppeared)
 		
 		view.closeSelected()
 		XCTAssert(presenter.closeCalled)
 		
 		view.set(title: "Detail")
 		XCTAssertEqual(view.titleLabel?.text, "Detail")
-		
-		view.beginAppearanceTransition(false, animated: false)
-		view.endAppearanceTransition()
-		XCTAssert(presenter.isViewDisappeared)
 	}
 	
 	
@@ -77,9 +71,6 @@ fileprivate class MockPresenter: NSObject, DetailViewPresenterProtocol {
 	// MARK: Variables
 	
 	var isViewLoaded: Bool = false
-	var isViewAppearing: Bool = false
-	var isViewAppeared: Bool = false
-	var isViewDisappeared: Bool = false
 	
 	var closeCalled: Bool = false
 	
@@ -88,18 +79,6 @@ fileprivate class MockPresenter: NSObject, DetailViewPresenterProtocol {
 	
 	func viewLoaded() {
 		isViewLoaded = true
-	}
-	
-	func viewAppearing() {
-		isViewAppearing = true
-	}
-	
-	func viewAppeared() {
-		isViewAppeared = true
-	}
-	
-	func viewDisappeared() {
-		isViewDisappeared = true
 	}
 	
 	func closeSelected() {

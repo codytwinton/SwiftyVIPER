@@ -62,21 +62,6 @@ class DetailViewController: UIViewController {
 		
 		view.backgroundColor = .white
     }
-	
-	override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
-		presenter?.viewAppearing()
-	}
-	
-	override func viewDidAppear(_ animated: Bool) {
-		super.viewDidAppear(animated)
-		presenter?.viewAppeared()
-	}
-	
-	override func viewDidDisappear(_ animated: Bool) {
-		super.viewDidDisappear(animated)
-		presenter?.viewDisappeared()
-	}
 }
 
 
