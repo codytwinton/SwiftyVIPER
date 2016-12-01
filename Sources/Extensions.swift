@@ -68,7 +68,6 @@ public extension PresenterRouterProtocol where Self:RouterProtocol {
 
 // Allows these functions to be optional
 public extension ViewPresenterProtocol {
-	func viewLoaded() {}
 	func viewAppearing() {}
 	func viewAppeared() {}
 	func viewDisappeared() {}
