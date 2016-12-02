@@ -54,7 +54,10 @@ Released on 2016-11-16
 
 #### Added
 - iOS & tvOS Support
+	- Fixed by [Cody Winton](https://github.com/codytwinton)
 - Cocoapods, Carthage, and Manual Support
+	- Fixed by [Cody Winton](https://github.com/codytwinton)
 
 #### Updated
 - Improved VIPER Templates
+	- Fixed by [Cody Winton](https://github.com/codytwinton)
