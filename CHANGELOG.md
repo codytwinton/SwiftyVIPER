@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [1.2](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2)
+## [1.2.0](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2.0)
 #### Improved Presenter Interaction
 Released on 2016-12-01
 
