@@ -5,8 +5,8 @@ All notable changes to this project will be documented in this file.
 ---
 
 ## [1.2](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2)
-### Title
-Released on yyyy-mm-dd
+#### Improved Presenter Interaction
+Released on 2016-12-01
 
 #### Updated
 - `viewLoaded()` no longer optional for Presenters conforming to `ViewPresenterProtocol`
@@ -24,7 +24,8 @@ Released on yyyy-mm-dd
 
 ---
 
-## [1.1](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.1) | Improved Storyboard Interaction
+## [1.1](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.1)
+#### Improved Storyboard Interaction
 Released on 2016-11-29
 
 #### Added
@@ -37,7 +38,8 @@ Released on 2016-11-29
 
 ---
 
-## [1.0.1](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.0.1) | Minor Podspec Update
+## [1.0.1](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.0.1)
+#### Minor Podspec Update
 Released on 2016-11-21
 
 #### Fixed
@@ -46,7 +48,8 @@ Released on 2016-11-21
 
 ---
 
-## [1.0](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.0) | Official Release
+## [1.0](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.0)
+#### Official Release
 Released on 2016-11-16
 
 #### Added
