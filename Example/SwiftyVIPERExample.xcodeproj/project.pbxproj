@@ -273,7 +273,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = codeRed;
 				TargetAttributes = {
 					6A0E810D1DD13FAE006B1A61 = {
