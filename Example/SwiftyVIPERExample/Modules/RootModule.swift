@@ -18,7 +18,7 @@ import SwiftyVIPER
 
 // MARK: -
 
-class RootModule {
+final class RootModule {
 	
 	// MARK: - Variables
 	

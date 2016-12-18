@@ -18,7 +18,7 @@ import SwiftyVIPER
 
 // MARK: -
 
-class DetailModule {
+final class DetailModule {
 	
 	// MARK: - Constants
 	

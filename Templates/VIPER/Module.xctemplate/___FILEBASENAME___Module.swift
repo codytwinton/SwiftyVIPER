@@ -18,7 +18,7 @@ import SwiftyVIPER
 // MARK: -
 
 /// Used to initialize the ___FILEBASENAMEASIDENTIFIER___ VIPER module
-class ___FILEBASENAMEASIDENTIFIER___Module {
+final class ___FILEBASENAMEASIDENTIFIER___Module {
 
 	// MARK: - Variables
 
