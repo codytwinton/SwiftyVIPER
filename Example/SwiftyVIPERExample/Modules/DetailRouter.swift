@@ -24,7 +24,7 @@ protocol DetailPresenterRouterProtocol: PresenterRouterProtocol {
 
 // MARK: -
 
-class DetailRouter: NSObject {
+final class DetailRouter {
 	
 	// MARK: - Variables
 	

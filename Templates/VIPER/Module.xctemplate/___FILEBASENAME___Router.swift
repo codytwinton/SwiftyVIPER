@@ -25,7 +25,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol: PresenterRouterP
 // MARK: -
 
 /// The Router for the ___FILEBASENAMEASIDENTIFIER___ module
-class ___FILEBASENAMEASIDENTIFIER___Router: NSObject {
+final class ___FILEBASENAMEASIDENTIFIER___Router {
 
 	// MARK: - Variables
 

@@ -24,7 +24,7 @@ protocol RootPresenterRouterProtocol: PresenterRouterProtocol {
 
 // MARK: -
 
-class RootRouter: NSObject {
+final class RootRouter {
 	
 	// MARK: - Variables
 	
