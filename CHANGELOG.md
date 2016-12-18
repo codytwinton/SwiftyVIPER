@@ -9,6 +9,15 @@ All changes are ordered: Added, Updated, Removed, Fixed
 #### Improved VIPER Templates
 Released on 2016-12-18
 
+#### Added
+- Added `final` to certain template classes
+	- Added by [Cody Winton](https://github.com/codytwinton)
+
+#### Updated
+- Changed all template classes from `NSObject` subclasses to a plain Swift `class`
+	- Updated by [Cody Winton](https://github.com/codytwinton)
+- Changed template Interactor from `class` to `struct`
+	- Updated by [Cody Winton](https://github.com/codytwinton)
 
 #### Fixed
 - Removed old `ViewPresenterProtocol` functions from Templates
