@@ -27,7 +27,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 // MARK: -
 
 /// The Interactor for the ___FILEBASENAMEASIDENTIFIER___ module
-class ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject {
+struct ___FILEBASENAMEASIDENTIFIER___Interactor {
 
 	// MARK: - Variables
 

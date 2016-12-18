@@ -24,7 +24,7 @@ protocol DetailPresenterInteractorProtocol {
 
 // MARK: -
 
-class DetailInteractor: NSObject {
+struct DetailInteractor {
 	
 	// MARK: - Variables
 	

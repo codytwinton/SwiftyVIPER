@@ -24,7 +24,7 @@ protocol RootPresenterInteractorProtocol {
 
 // MARK: -
 
-class RootInteractor: NSObject {
+struct RootInteractor {
 	
 	// MARK: - Variables
 	
