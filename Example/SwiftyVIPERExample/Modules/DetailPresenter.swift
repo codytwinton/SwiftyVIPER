@@ -28,7 +28,7 @@ protocol DetailInteractorPresenterProtocol: class {
 
 // MARK: -
 
-class DetailPresenter: NSObject {
+final class DetailPresenter {
 	
 	// MARK: - Constants
 	
@@ -46,7 +46,6 @@ class DetailPresenter: NSObject {
 	init(router: DetailPresenterRouterProtocol, interactor: DetailPresenterInteractorProtocol) {
 		self.router = router
 		self.interactor = interactor
-		super.init()
 	}
 }
 

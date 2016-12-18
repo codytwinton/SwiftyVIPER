@@ -28,7 +28,7 @@ protocol RootInteractorPresenterProtocol: class {
 
 // MARK: -
 
-class RootPresenter: NSObject {
+final class RootPresenter {
 	
 	// MARK: - Constants
 	
@@ -46,7 +46,6 @@ class RootPresenter: NSObject {
 	init(router: RootPresenterRouterProtocol, interactor: RootPresenterInteractorProtocol) {
 		self.router = router
 		self.interactor = interactor
-		super.init()
 	}
 }
 

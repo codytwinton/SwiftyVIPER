@@ -35,7 +35,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol: class {
 // MARK: -
 
 /// The Presenter for the ___FILEBASENAMEASIDENTIFIER___ module
-class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
+final class ___FILEBASENAMEASIDENTIFIER___Presenter {
 
 	// MARK: - Constants
 
@@ -53,7 +53,6 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject {
 	init(router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol, interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol) {
 		self.router = router
 		self.interactor = interactor
-		super.init()
 	}
 }
 
