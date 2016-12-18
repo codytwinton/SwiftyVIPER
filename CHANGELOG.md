@@ -1,6 +1,18 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 `SwiftyVIPER` adheres to [Semantic Versioning](http://semver.org/).
+All changes are ordered: Added, Updated, Removed, Fixed
+
+---
+
+## [1.2.1](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2.0)
+#### Improved VIPER Templates
+Released on 2016-12-18
+
+
+#### Fixed
+- Removed old `ViewPresenterProtocol` functions from Templates
+	- Fixed by [Cody Winton](https://github.com/codytwinton)
 
 ---
 
