@@ -64,7 +64,7 @@ class RootViewTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: NSObject, RootViewPresenterProtocol {
+fileprivate class MockPresenter: RootViewPresenterProtocol {
 	
 	// MARK: Variables
 	

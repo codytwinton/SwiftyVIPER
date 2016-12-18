@@ -58,7 +58,7 @@ class RootInteractorTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: NSObject, RootInteractorPresenterProtocol {
+fileprivate class MockPresenter: RootInteractorPresenterProtocol {
 	
 	// MARK: Variables
 	

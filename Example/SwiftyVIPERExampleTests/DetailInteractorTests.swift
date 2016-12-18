@@ -56,7 +56,7 @@ class DetailInteractorTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: NSObject, DetailInteractorPresenterProtocol {
+fileprivate class MockPresenter: DetailInteractorPresenterProtocol {
 	
 	// MARK: Variables
 	

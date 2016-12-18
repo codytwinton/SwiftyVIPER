@@ -71,8 +71,8 @@ class ___FILEBASENAMEASIDENTIFIER___PresenterTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockRouter: NSObject, RouterProtocol, ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
 	
+fileprivate class MockRouter: RouterProtocol, ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
 	// MARK: Variables
 	
 	var viewController: UIViewController?
@@ -80,8 +80,8 @@ fileprivate class MockRouter: NSObject, RouterProtocol, ___FILEBASENAMEASIDENTIF
 
 // MARK: -
 
-fileprivate class MockInteractor: NSObject, ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 	
+fileprivate class MockInteractor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 	// MARK: Variables
 	
 	var titleRequested: Bool = false
@@ -96,8 +96,8 @@ fileprivate class MockInteractor: NSObject, ___FILEBASENAMEASIDENTIFIER___Presen
 
 // MARK: -
 
-fileprivate class MockView: NSObject, ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
 	
+fileprivate class MockView: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
 	// MARK: Variables
 	
 	var title: String? = nil

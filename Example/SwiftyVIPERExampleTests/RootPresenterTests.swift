@@ -76,7 +76,7 @@ class RootPresenterTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockRouter: NSObject, RouterProtocol, RootPresenterRouterProtocol {
+fileprivate class MockRouter: RouterProtocol, RootPresenterRouterProtocol {
 	
 	// MARK: Variables
 	
@@ -93,7 +93,7 @@ fileprivate class MockRouter: NSObject, RouterProtocol, RootPresenterRouterProto
 
 // MARK: -
 
-fileprivate class MockInteractor: NSObject, RootPresenterInteractorProtocol {
+fileprivate class MockInteractor: RootPresenterInteractorProtocol {
 	
 	// MARK: Variables
 	
@@ -109,7 +109,7 @@ fileprivate class MockInteractor: NSObject, RootPresenterInteractorProtocol {
 
 // MARK: -
 
-fileprivate class MockView: NSObject, RootPresenterViewProtocol {
+fileprivate class MockView: RootPresenterViewProtocol {
 	
 	// MARK: Variables
 	

@@ -66,7 +66,7 @@ class DetailViewTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: NSObject, DetailViewPresenterProtocol {
+fileprivate class MockPresenter: DetailViewPresenterProtocol {
 	
 	// MARK: Variables
 	

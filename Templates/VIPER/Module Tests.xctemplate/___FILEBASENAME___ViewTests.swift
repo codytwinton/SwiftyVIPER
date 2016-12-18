@@ -91,7 +91,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: NSObject, ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
+fileprivate class MockPresenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
 
 	// MARK: Variables
 

@@ -58,8 +58,8 @@ class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: NSObject, ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
 	
+fileprivate class MockPresenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
 	// MARK: Variables
 	
 	var title: String? = nil
