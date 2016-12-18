@@ -42,7 +42,7 @@ class MockModule: ModuleProtocol {
 // MARK: -
 
 /// The Router for the Test module
-class MockRouter: NSObject, RouterProtocol, PresenterRouterProtocol {
+class MockRouter: RouterProtocol, PresenterRouterProtocol {
 	
 	// MARK: - Variables
 	
@@ -54,7 +54,7 @@ class MockRouter: NSObject, RouterProtocol, PresenterRouterProtocol {
 
 // MARK: -
 
-class MockPresenter: NSObject, ViewPresenterProtocol {
+class MockPresenter: ViewPresenterProtocol {
 	func viewLoaded() {}
 }
 
