@@ -63,18 +63,6 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
 	func viewLoaded() {
 		interactor.requestTitle()
 	}
-
-	func viewAppearing() {
-
-	}
-
-	func viewAppeared() {
-
-	}
-
-	func viewDisappeared() {
-
-	}
 }
 
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Interactor to Presenter Protocol
