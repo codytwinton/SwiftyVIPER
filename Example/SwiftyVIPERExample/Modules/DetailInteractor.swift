@@ -24,7 +24,7 @@ protocol DetailPresenterInteractorProtocol {
 
 // MARK: -
 
-struct DetailInteractor {
+final class DetailInteractor {
 	
 	// MARK: - Variables
 	

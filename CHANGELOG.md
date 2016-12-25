@@ -5,7 +5,17 @@ All changes are ordered: Added, Updated, Removed, Fixed
 
 ---
 
-## [1.2.1](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2.0)
+## [1.2.2](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2.2)
+#### Improved VIPER Templates
+Released on 2016-12-24
+
+#### Updated
+- Changed template Interactor from `struct` to `class`
+	- Updated by [Cody Winton](https://github.com/codytwinton)
+
+---
+
+## [1.2.1](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2.1)
 #### Improved VIPER Templates
 Released on 2016-12-18
 

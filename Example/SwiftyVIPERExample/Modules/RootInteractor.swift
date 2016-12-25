@@ -24,7 +24,7 @@ protocol RootPresenterInteractorProtocol {
 
 // MARK: -
 
-struct RootInteractor {
+final class RootInteractor {
 	
 	// MARK: - Variables
 	
