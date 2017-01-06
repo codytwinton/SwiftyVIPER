@@ -21,26 +21,25 @@ protocol RootPresenterRouterProtocol: PresenterRouterProtocol {
 	func detailsSelected()
 }
 
-
 // MARK: -
 
 final class RootRouter {
-	
+
 	// MARK: - Variables
-	
+
 	weak var viewController: UIViewController?
 }
 
 // MARK: - Router Protocol
 
 extension RootRouter: RouterProtocol {
-	
+
 }
 
 // MARK: Root Presenter to Router Protocol
 
 extension RootRouter: RootPresenterRouterProtocol {
-	
+
 	func detailsSelected() {
 		DetailModule().present(from: viewController, style: .coverVertical)
 	}

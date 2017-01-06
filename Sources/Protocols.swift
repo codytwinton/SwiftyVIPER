@@ -15,7 +15,6 @@ public typealias CodeBlock = () -> Void
 @available(*, deprecated, message: "Deprecated in SwiftyVIPER version 1.2. Use CodeBlock instead", renamed: "CodeBlock")
 public typealias CompletionBlock = CodeBlock
 
-
 // MARK: Protocols
 
 /** This Protocol gives some basic functionality to a Module
@@ -32,7 +31,7 @@ public protocol ModuleProtocol: class {
 	- important: Should be a strong reference
 	*/
 	var viewController: UIViewController { get }
-	
+
 	/** Presents the View Controller owned by the Module
 	- parameters:
 		- fromVC: The view controller to present the module from
@@ -40,7 +39,7 @@ public protocol ModuleProtocol: class {
 		- completion: The code block to call when the transition completes
 	*/
 	func present(from fromVC: UIViewController?, style: UIModalTransitionStyle, completion: CodeBlock?)
-	
+
 	/** Pushes the View Controller owned by the Module
 	- parameters:
 		- navController: The navigation controller to push the module on
@@ -71,17 +70,18 @@ public protocol PresenterRouterProtocol: class {
 		- completion: The code block to call when the transition completes
 	*/
 	func present(_ view: UIViewController, completion: CodeBlock?)
-	
+
 	/** Dismisses a Module that was presented modally
 	- parameters:
 		- completion: The code block to call when the transition completes
 	*/
 	func dismiss(completion: CodeBlock?)
-	
+
 	/** Pops a Module that was pushed
 	- returns: Should return the view controller that was popped
 	*/
-	@discardableResult func pop() -> UIViewController?
+	@discardableResult
+	func pop() -> UIViewController?
 }
 
 /** This Protocol gives some basic functionality to a Presenter that can be called by a View
@@ -117,5 +117,7 @@ public protocol StoryboardIdentifiable: class {
 
 /** This Protocol is used to initialize a View Controller via. Storyboard
 */
-@available(*, deprecated, message: "Deprecated in SwiftyVIPER version 1.1. Use StoryboardIdentifiable instead", renamed: "StoryboardIdentifiable")
+@available(*, deprecated,
+message: "Deprecated in SwiftyVIPER version 1.1. Use StoryboardIdentifiable instead",
+renamed: "StoryboardIdentifiable")
 public typealias ViewStoryboardProtocol = StoryboardIdentifiable

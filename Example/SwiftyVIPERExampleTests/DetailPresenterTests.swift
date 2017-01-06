@@ -16,22 +16,20 @@ import XCTest
 
 import SwiftyVIPER
 
-
 // MARK: -
 
 class DetailPresenterTests: XCTestCase {
-	
+
 	// MARK: - Variables
-	
+
 	fileprivate var router: MockRouter!
 	fileprivate var interactor: MockInteractor!
 	fileprivate var view: MockView!
-	
+
 	fileprivate var presenter: DetailPresenter!
-	
-	
+
 	// MARK: Test Functions
-	
+
 	func testInteractor() {
 		presenter.viewLoaded()
 		presenter.viewAppearing()
@@ -39,53 +37,50 @@ class DetailPresenterTests: XCTestCase {
 		presenter.viewDisappeared()
 		XCTAssert(interactor.titleRequested)
 	}
-	
+
 	func testRouter() {
 		presenter.closeSelected()
 		XCTAssert(router.shouldDismiss)
 	}
-	
+
 	func testView() {
 		presenter.set(title: "Detail")
 		XCTAssertEqual(view.title, "Detail")
 	}
-	
-	
+
 	// MARK: Setup
-	
+
 	override func setUp() {
         super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
-		
+
 		router = MockRouter()
 		interactor = MockInteractor()
 		view = MockView()
-		
+
 		presenter = DetailPresenter(router: self.router, interactor: self.interactor)
 		presenter.view = self.view
     }
-	
+
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
 }
 
-
 // MARK: - Mock Classes
 
 // MARK: -
 
 fileprivate class MockRouter: RouterProtocol, DetailPresenterRouterProtocol {
-	
+
 	// MARK: Variables
-	
+
 	var viewController: UIViewController?
 	var shouldDismiss: Bool = false
-	
-	
+
 	// MARK: Functions
-	
+
 	func dismiss(completion: CodeBlock?) {
 		shouldDismiss = true
 		completion?()
@@ -95,14 +90,13 @@ fileprivate class MockRouter: RouterProtocol, DetailPresenterRouterProtocol {
 // MARK: -
 
 fileprivate class MockInteractor: DetailPresenterInteractorProtocol {
-	
+
 	// MARK: Variables
-	
+
 	var titleRequested: Bool = false
-	
-	
+
 	// MARK: Functions
-	
+
 	func requestTitle() {
 		titleRequested = true
 	}
@@ -111,14 +105,13 @@ fileprivate class MockInteractor: DetailPresenterInteractorProtocol {
 // MARK: -
 
 fileprivate class MockView: DetailPresenterViewProtocol {
-	
+
 	// MARK: Variables
-	
+
 	var title: String? = nil
-	
-	
+
 	// MARK: Functions
-	
+
 	func set(title: String?) {
 		self.title = title
 	}

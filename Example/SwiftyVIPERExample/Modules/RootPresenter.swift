@@ -14,7 +14,6 @@ import Foundation
 
 import SwiftyVIPER
 
-
 // MARK: Protocols
 
 protocol RootViewPresenterProtocol: ViewPresenterProtocol {
@@ -25,24 +24,21 @@ protocol RootInteractorPresenterProtocol: class {
 	func set(title: String?)
 }
 
-
 // MARK: -
 
 final class RootPresenter {
-	
+
 	// MARK: - Constants
-	
+
 	let router: RootPresenterRouterProtocol
 	let interactor: RootPresenterInteractorProtocol
-	
-	
+
 	// MARK: Variables
-	
+
 	weak var view: RootPresenterViewProtocol?
-	
-	
+
 	// MARK: Inits
-	
+
 	init(router: RootPresenterRouterProtocol, interactor: RootPresenterInteractorProtocol) {
 		self.router = router
 		self.interactor = interactor
@@ -56,19 +52,19 @@ extension RootPresenter: RootViewPresenterProtocol {
 	func viewLoaded() {
 		interactor.requestTitle()
 	}
-	
+
 	func viewAppearing() {
-		
+
 	}
-	
+
 	func viewAppeared() {
-		
+
 	}
-	
+
 	func viewDisappeared() {
-		
+
 	}
-	
+
 	func detailsSelected() {
 		router.detailsSelected()
 	}
@@ -77,7 +73,7 @@ extension RootPresenter: RootViewPresenterProtocol {
 // MARK: Root Interactor to Presenter Protocol
 
 extension RootPresenter: RootInteractorPresenterProtocol {
-	
+
 	func set(title: String?) {
 		view?.set(title: title)
 	}

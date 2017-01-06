@@ -14,27 +14,25 @@ import Foundation
 
 import SwiftyVIPER
 
-
 // MARK: Protocols
 
 protocol RootPresenterInteractorProtocol {
 	func requestTitle()
 }
 
-
 // MARK: -
 
 final class RootInteractor {
-	
+
 	// MARK: - Variables
-	
+
 	weak var presenter: RootInteractorPresenterProtocol?
 }
 
 // MARK: - Root Presenter to Interactor Protocol
 
 extension RootInteractor: RootPresenterInteractorProtocol {
-	
+
 	func requestTitle() {
 		presenter?.set(title: "Root")
 	}

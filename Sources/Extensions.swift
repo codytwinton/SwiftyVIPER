@@ -8,11 +8,10 @@
 
 import UIKit
 
-
 // MARK: Extensions
 
 public extension UIStoryboard {
-	
+
 	/**
 	Returns the view controller of a perticular type
 	
@@ -36,30 +35,38 @@ public extension StoryboardIdentifiable where Self: UIViewController {
 }
 
 public extension ModuleProtocol {
-	
+
 	func present(from fromVC: UIViewController?, style: UIModalTransitionStyle, completion: CodeBlock? = nil) {
 		viewController.modalTransitionStyle = style
 		fromVC?.present(viewController, animated: true, completion: completion)
 	}
-	
+
 	func push(from navController: UINavigationController?) {
 		navController?.pushViewController(viewController, animated: true)
 	}
 }
 
 public extension PresenterRouterProtocol where Self:RouterProtocol {
-	
+
 	func present(_ view: UIViewController, completion: CodeBlock?) {
-		guard let viewController = viewController else {completion?(); return}
-		viewController.present(view, animated: true, completion: completion)
+		switch viewController {
+		case nil:
+			completion?()
+		case let controller?:
+			controller.present(view, animated: true, completion: completion)
+		}
 	}
-	
+
 	func dismiss(completion: CodeBlock? = nil) {
-		guard let viewController = viewController else {completion?(); return}
-		viewController.view?.endEditing(true)
-		viewController.dismiss(animated: true, completion: completion)
+		switch viewController {
+		case nil:
+			completion?()
+		case let controller?:
+			controller.view?.endEditing(true)
+			controller.dismiss(animated: true, completion: completion)
+		}
 	}
-	
+
 	@discardableResult
 	func pop() -> UIViewController? {
 		return viewController?.navigationController?.popViewController(animated: true)

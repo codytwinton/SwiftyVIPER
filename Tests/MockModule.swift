@@ -15,14 +15,13 @@ import UIKit
 
 import SwiftyVIPER
 
-
 // MARK: -
 
 /// Used to initialize the Test VIPER module
 class MockModule: ModuleProtocol {
 
 	// MARK: - Variables
-	
+
 	private(set) lazy var router: MockRouter = {
 		return MockRouter()
 	}()
@@ -30,25 +29,25 @@ class MockModule: ModuleProtocol {
 	private(set) lazy var view: UIViewController = {
 		return UIViewController()
 	}()
-	
-	var viewController: UIViewController {return view}
+
+	var viewController: UIViewController {
+		return view
+	}
 
 	init() {
 		router.viewController = view
 	}
 }
 
-
 // MARK: -
 
 /// The Router for the Test module
 class MockRouter: RouterProtocol, PresenterRouterProtocol {
-	
+
 	// MARK: - Variables
-	
+
 	weak var viewController: UIViewController?
 }
-
 
 // MARK: - Mock Classes
 

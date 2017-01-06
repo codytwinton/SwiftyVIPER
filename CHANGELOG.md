@@ -5,6 +5,16 @@ All changes are ordered: Added, Updated, Removed, Fixed
 
 ---
 
+## [1.2.3](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2.3)
+#### Added SwiftLint
+Released on 2017-01-06
+
+#### Updated
+- Implemented [SwiftLint](https://github.com/realm/SwiftLint) for the entire project
+	- Updated by [Cody Winton](https://github.com/codytwinton)
+
+---
+
 ## [1.2.2](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2.2)
 #### Improved VIPER Templates
 Released on 2016-12-24
