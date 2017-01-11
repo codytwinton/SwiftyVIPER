@@ -67,6 +67,7 @@ disabled_rules:
 
 included:
   - Sources
+  - Templates
   - Tests
 
 excluded:

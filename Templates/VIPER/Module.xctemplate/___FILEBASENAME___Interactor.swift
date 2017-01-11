@@ -14,7 +14,6 @@ import Foundation
 
 import SwiftyVIPER
 
-
 // MARK: Protocols
 
 /// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___Interactor` and referenced by `___FILEBASENAMEASIDENTIFIER___Presenter`
@@ -22,7 +21,6 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 	/// Requests the title for the presenter
 	func requestTitle()
 }
-
 
 // MARK: -
 

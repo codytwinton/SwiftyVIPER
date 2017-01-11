@@ -14,7 +14,6 @@ import UIKit
 
 import SwiftyVIPER
 
-
 // MARK: -
 
 /// Used to initialize the ___FILEBASENAMEASIDENTIFIER___ VIPER module
@@ -23,7 +22,6 @@ final class ___FILEBASENAMEASIDENTIFIER___Module {
 	// MARK: - Constants
 
 	let storyboard: UIStoryboard = UIStoryboard(name: <#T##String#>, bundle: Bundle.main)
-
 
 	// MARK: Variables
 
@@ -55,5 +53,5 @@ final class ___FILEBASENAMEASIDENTIFIER___Module {
 // MARK: - Module Protocol
 
 extension ___FILEBASENAMEASIDENTIFIER___Module: ModuleProtocol {
-	var viewController: UIViewController {return view}
+	var viewController: UIViewController { return view }
 }

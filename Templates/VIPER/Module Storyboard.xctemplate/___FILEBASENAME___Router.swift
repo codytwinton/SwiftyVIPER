@@ -21,7 +21,6 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol: PresenterRouterP
 
 }
 
-
 // MARK: -
 
 /// The Router for the ___FILEBASENAMEASIDENTIFIER___ module

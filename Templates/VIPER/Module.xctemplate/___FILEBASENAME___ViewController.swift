@@ -14,7 +14,6 @@ import UIKit
 
 import SwiftyVIPER
 
-
 // MARK: Protocols
 
 /// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___Interactor` and referenced by `___FILEBASENAMEASIDENTIFIER___Presenter`
@@ -26,7 +25,6 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol: class {
 	func set(title: String?)
 }
 
-
 // MARK: -
 
 /// The View Controller for the ___FILEBASENAMEASIDENTIFIER___ module
@@ -36,9 +34,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
 	let presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol
 
-
 	// MARK: Variables
-
 
 	// MARK: Inits
 
@@ -51,7 +47,6 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 		fatalError("init(coder:) has not been implemented")
 	}
 
-
 	// MARK: - Load Functions
 
 	override func viewDidLoad() {
@@ -61,7 +56,6 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 		view.backgroundColor = .white
     }
 }
-
 
 // MARK: - ___FILEBASENAMEASIDENTIFIER___ Presenter to View Protocol
 

@@ -14,7 +14,6 @@ import UIKit
 
 import SwiftyVIPER
 
-
 // MARK: Protocols
 
 /// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___Presenter` and referenced by `___FILEBASENAMEASIDENTIFIER___ViewController`
@@ -31,7 +30,6 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol: class {
 	func set(title: String?)
 }
 
-
 // MARK: -
 
 /// The Presenter for the ___FILEBASENAMEASIDENTIFIER___ module
@@ -42,11 +40,9 @@ final class ___FILEBASENAMEASIDENTIFIER___Presenter {
 	let router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol
 	let interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol
 
-
 	// MARK: Variables
 
 	weak var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol?
-
 
 	// MARK: Inits
 
