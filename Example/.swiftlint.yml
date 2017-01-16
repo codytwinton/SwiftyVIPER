@@ -1,13 +1,16 @@
 opt_in_rules:
   - attributes
+  - class_delegate_protocol
   - closing_brace
   - closure_end_indentation
   - closure_parameter_position
   - closure_spacing
   - colon
   - comma
+  - compiler_protocol_init
   - conditional_returns_on_newline
   - control_statement
+  #- custom_rules
   - cyclomatic_complexity
   - dynamic_inline
   - empty_count
@@ -21,7 +24,9 @@ opt_in_rules:
   - force_unwrapping
   - function_body_length
   - function_parameter_count
+  - generic_type_name
   - implicit_getter
+  - large_tuple
   - leading_whitespace
   - legacy_cggeometry_functions
   - legacy_constant
@@ -29,9 +34,10 @@ opt_in_rules:
   - legacy_nsgeometry_functions
   - line_length
   - mark
+  - missing_docs
   - nesting
   - nimble_operator
-  - number_separator
+  - object_literal
   - opening_brace
   - operator_usage_whitespace
   - operator_whitespace
@@ -39,8 +45,11 @@ opt_in_rules:
   - private_unit_test
   - prohibited_super_call
   - redundant_nil_coalescing
+  - redundant_optional_initialization
+  - redundant_void_return
   - redundant_string_enum_value
   - return_arrow_whitespace
+  - shorthand_operator
   - statement_position
   - switch_case_on_newline
   - syntactic_sugar
@@ -53,9 +62,11 @@ opt_in_rules:
   - type_name
   - unused_closure_parameter
   - unused_enumerated
+  - unused_optional_binding
   - valid_docs
   - valid_ibinspectable
   - variable_name
+  - vertical_parameter_alignment
   - vertical_whitespace
   - void_return
   - weak_delegate
@@ -63,7 +74,8 @@ opt_in_rules:
 disabled_rules:
   - file_header
   - missing_docs
-  - private_outlet
+  - number_separator
+  - sorted_imports
 
 included:
   - SwiftyVIPERExample
@@ -72,3 +84,6 @@ included:
 excluded:
   - Pods
   - Carthage
+
+private_outlet:
+  allow_private_set: true

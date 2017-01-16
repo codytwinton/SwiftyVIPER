@@ -108,7 +108,7 @@ fileprivate class MockView: DetailPresenterViewProtocol {
 
 	// MARK: Variables
 
-	var title: String? = nil
+	var title: String?
 
 	// MARK: Functions
 

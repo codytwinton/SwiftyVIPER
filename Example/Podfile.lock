@@ -1,9 +1,11 @@
 PODS:
   - SnapKit (3.0.2)
-  - SwiftyVIPER (1.2.0)
+  - SwiftLint (0.16.0)
+  - SwiftyVIPER (1.2.3)
 
 DEPENDENCIES:
   - SnapKit (~> 3.0)
+  - SwiftLint
   - SwiftyVIPER (from `../`)
 
 EXTERNAL SOURCES:
@@ -12,8 +14,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
-  SwiftyVIPER: 81439f158bb55a6dffd40ab7a672f9702dee93c8
+  SwiftLint: 90665265ae50b58167c674a11c680bbabe9d6513
+  SwiftyVIPER: f0d3130dc59b9d22368a8acf55ec36edd14af8f9
 
-PODFILE CHECKSUM: 1e6ac5a0d3ab338684887ec4fba43c754891f56c
+PODFILE CHECKSUM: c6da0c6bcb02cc30fdfd4a32a226180f037f8803
 
 COCOAPODS: 1.1.1

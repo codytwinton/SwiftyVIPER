@@ -56,7 +56,7 @@ fileprivate class MockPresenter: DetailInteractorPresenterProtocol {
 
 	// MARK: Variables
 
-	var title: String? = nil
+	var title: String?
 
 	// MARK: Functions
 

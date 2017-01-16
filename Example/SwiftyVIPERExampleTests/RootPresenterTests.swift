@@ -107,7 +107,7 @@ fileprivate class MockView: RootPresenterViewProtocol {
 
 	// MARK: Variables
 
-	var title: String? = nil
+	var title: String?
 
 	// MARK: Functions
 
