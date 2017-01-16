@@ -168,10 +168,10 @@
 			buildConfigurationList = 6A3037CC1DDCDE2C0016B3E9 /* Build configuration list for PBXNativeTarget "SwiftyVIPERtvOS" */;
 			buildPhases = (
 				6A3037C01DDCDE2C0016B3E9 /* Sources */,
+				6AA354C81E1783A500FB46AA /* Swift Lint */,
 				6A3037C11DDCDE2C0016B3E9 /* Frameworks */,
 				6A3037C21DDCDE2C0016B3E9 /* Headers */,
 				6A3037C31DDCDE2C0016B3E9 /* Resources */,
-				6AA354C81E1783A500FB46AA /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -205,10 +205,10 @@
 			buildConfigurationList = 6AF0EB3A1DDCD5A300F9506F /* Build configuration list for PBXNativeTarget "SwiftyVIPERiOS" */;
 			buildPhases = (
 				6AF0EB241DDCD5A300F9506F /* Sources */,
+				6AA354C71E17838F00FB46AA /* Swift Lint */,
 				6AF0EB251DDCD5A300F9506F /* Frameworks */,
 				6AF0EB261DDCD5A300F9506F /* Headers */,
 				6AF0EB271DDCD5A300F9506F /* Resources */,
-				6AA354C71E17838F00FB46AA /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -336,7 +336,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/Build-Phases/swiftlint.sh";
+			shellScript = "";
 		};
 		6AA354C81E1783A500FB46AA /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -350,7 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/Build-Phases/swiftlint.sh";
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 
