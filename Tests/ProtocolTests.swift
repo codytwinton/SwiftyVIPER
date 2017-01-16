@@ -101,15 +101,15 @@ class ProtocolTests: XCTestCase {
 	// MARK: Setup
 
 	override func setUp() {
-        super.setUp()
+		super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 
 		module = MockModule()
 		router = module.router
-    }
+	}
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+	override func tearDown() {
+		// Put teardown code here. This method is called after the invocation of each test method in the class.
+		super.tearDown()
+	}
 }
