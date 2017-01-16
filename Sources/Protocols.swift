@@ -33,16 +33,14 @@ public protocol ModuleProtocol: class {
 	var viewController: UIViewController { get }
 
 	/** Presents the View Controller owned by the Module
-	- parameters:
-		- fromVC: The view controller to present the module from
-		- style: The modal transition style to use
-		- completion: The code block to call when the transition completes
+	- parameter fromVC: The view controller to present the module from
+	- parameter style: The modal transition style to use
+	- parameter completion: The code block to call when the transition completes
 	*/
 	func present(from fromVC: UIViewController?, style: UIModalTransitionStyle, completion: CodeBlock?)
 
 	/** Pushes the View Controller owned by the Module
-	- parameters:
-		- navController: The navigation controller to push the module on
+	- parameter navController: The navigation controller to push the module on
 	*/
 	func push(from navController: UINavigationController?)
 }
@@ -65,15 +63,13 @@ public protocol PresenterRouterProtocol: class {
 	/** Presents a view object from a Presenter
 	- note: This should be used to present a simple view controller, like a `UIAlertController`.
 	- note: A new module should be initialized and presented directly from the Router object, not a Presenter
-	- parameters:
-		- view: The view controller to present
-		- completion: The code block to call when the transition completes
+	- parameter view: The view controller to present
+	- parameter completion: The code block to call when the transition completes
 	*/
 	func present(_ view: UIViewController, completion: CodeBlock?)
 
 	/** Dismisses a Module that was presented modally
-	- parameters:
-		- completion: The code block to call when the transition completes
+	- parameter completion: The code block to call when the transition completes
 	*/
 	func dismiss(completion: CodeBlock?)
 

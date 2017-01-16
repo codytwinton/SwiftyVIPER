@@ -14,9 +14,8 @@ public extension UIStoryboard {
 
 	/**
 	Returns the view controller of a perticular type
-	
-	- parameters:
-		- type: The Class Type, which must be a `UIViewController` that conforms to `StoryboardIdentifiable`
+
+	- parameter type: The Class Type, which must be a `UIViewController` that conforms to `StoryboardIdentifiable`
 	- returns: A Storyboard Instance of Type
 	*/
 	func viewController<T: UIViewController>(_ type: T.Type) -> T where T: StoryboardIdentifiable {
