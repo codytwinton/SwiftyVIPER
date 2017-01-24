@@ -12,6 +12,7 @@ env:
     - DESTINATION="OS=9.0,name=iPhone 6"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"
 
 script:
+  - brew unlink swiftlint
   - brew install swiftlint
   - xcodebuild -version
   - xcodebuild -showsdks
