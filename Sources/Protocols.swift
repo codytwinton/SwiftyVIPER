@@ -1,9 +1,9 @@
 //
 //  Protocols.swift
-//  Credntia
+//  SwiftyVIPER
 //
 //  Created by Cody Winton on 9/21/16.
-//  Copyright © 2016 Credntia LLC. All rights reserved.
+//  Copyright © 2016 codeRed. All rights reserved.
 //
 
 import UIKit

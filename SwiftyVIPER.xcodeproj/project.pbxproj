@@ -113,8 +113,8 @@
 		6A2D6F881DD144A5008BA1C6 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6AF4DD141DDCCC3700C49188 /* Info.plist */,
 				6A3037E51DDCE3CA0016B3E9 /* Storyboards */,
+				6AF4DD141DDCCC3700C49188 /* Info.plist */,
 				6ACF466F1DD1495000A49396 /* ProtocolTests.swift */,
 				6AF9E0F01DDC055D00F81BEA /* MockModule.swift */,
 			);
