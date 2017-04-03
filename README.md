@@ -34,7 +34,7 @@ If all of this is totally knew for you, check out my running list of [VIPER Reso
 - [x] VIPER Module Templates
 - [x] VIPER Unit Test Templates
 - [x] Simple Module Initialization and Presentation
-- [x] Cocoapods Support
+- [x] CocoaPods Support
 - [x] Carthage Support
 
 ## Requirements
