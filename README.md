@@ -27,7 +27,7 @@ Great question! VIPER is a [backronym](https://en.wikipedia.org/wiki/Backronym) 
  - Entity
  - Router
 
-If all of this is totally knew for you, check out my running list of [VIPER Resources](#resources)
+If all of this is totally new for you, check out my running list of [VIPER Resources](#resources)
 
 ## Features
 
