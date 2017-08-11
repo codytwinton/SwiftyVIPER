@@ -15,7 +15,7 @@
 [![Carthage Compatible][carthage-image]][carthage-url]
 
 
-SwiftyVIPER allows easy use of VIPER architecture thoughout your iOS application.
+SwiftyVIPER allows easy use of VIPER architecture throughout your iOS application.
 
 ### What is VIPER?
 
