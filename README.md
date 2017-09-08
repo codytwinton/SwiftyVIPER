@@ -15,7 +15,7 @@
 [![Carthage Compatible][carthage-image]][carthage-url]
 
 
-SwiftyVIPER allows easy use of VIPER architecture thoughout your iOS application.
+SwiftyVIPER allows easy use of VIPER architecture throughout your iOS application.
 
 ### What is VIPER?
 
@@ -27,14 +27,14 @@ Great question! VIPER is a [backronym](https://en.wikipedia.org/wiki/Backronym) 
  - Entity
  - Router
 
-If all of this is totally knew for you, check out my running list of [VIPER Resources](#resources)
+If all of this is totally new for you, check out my running list of [VIPER Resources](#resources)
 
 ## Features
 
 - [x] VIPER Module Templates
 - [x] VIPER Unit Test Templates
 - [x] Simple Module Initialization and Presentation
-- [x] Cocoapods Support
+- [x] CocoaPods Support
 - [x] Carthage Support
 
 ## Requirements
