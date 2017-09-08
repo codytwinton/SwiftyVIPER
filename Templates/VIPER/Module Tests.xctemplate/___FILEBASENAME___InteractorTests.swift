@@ -10,11 +10,10 @@
 
 // MARK: Imports
 
-import XCTest
-
 @testable import ___PROJECTNAME___
 
 import SwiftyVIPER
+import XCTest
 
 // MARK: -
 
@@ -22,14 +21,14 @@ class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var presenter: MockPresenter!
-	fileprivate var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor!
+	fileprivate var presenter: MockPresenter?
+	fileprivate var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor?
 
 	// MARK: Test Functions
 
 	func testPresenter() {
-		interactor.requestTitle()
-		XCTAssertEqual(presenter.title, "___FILEBASENAMEASIDENTIFIER___")
+		interactor?.requestTitle()
+		XCTAssertEqual(presenter?.title, "___FILEBASENAMEASIDENTIFIER___")
 	}
 
 	// MARK: Setup
@@ -41,7 +40,7 @@ class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
 		presenter = MockPresenter()
 
 		interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
-		interactor.presenter = self.presenter
+		interactor?.presenter = presenter
     }
 
     override func tearDown() {
@@ -54,7 +53,8 @@ class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
+private class MockPresenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
+	
 	// MARK: Variables
 
 	var title: String? = nil

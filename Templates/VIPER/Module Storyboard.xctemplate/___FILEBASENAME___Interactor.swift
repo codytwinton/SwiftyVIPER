@@ -11,7 +11,6 @@
 // MARK: Imports
 
 import Foundation
-
 import SwiftyVIPER
 
 // MARK: Protocols
@@ -25,16 +24,13 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 // MARK: -
 
 /// The Interactor for the ___FILEBASENAMEASIDENTIFIER___ module
-final class ___FILEBASENAMEASIDENTIFIER___Interactor {
+final class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 
 	// MARK: - Variables
 
 	weak var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol?
-}
 
-// MARK: - ___FILEBASENAMEASIDENTIFIER___ Presenter to Interactor Protocol
-
-extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
+	// MARK: - ___FILEBASENAMEASIDENTIFIER___ Presenter to Interactor Protocol
 
 	func requestTitle() {
 		presenter?.set(title: "___FILEBASENAMEASIDENTIFIER___")

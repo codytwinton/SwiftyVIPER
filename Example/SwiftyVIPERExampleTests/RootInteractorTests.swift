@@ -39,7 +39,7 @@ class RootInteractorTests: XCTestCase {
 		presenter = MockPresenter()
 
 		interactor = RootInteractor()
-		interactor?.presenter = self.presenter
+		interactor?.presenter = presenter
     }
 
     override func tearDown() {
