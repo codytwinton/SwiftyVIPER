@@ -10,11 +10,9 @@
 
 // MARK: Imports
 
-import XCTest
-
-@testable import SwiftyVIPERExample
-
 import SwiftyVIPER
+@testable import SwiftyVIPERExample
+import XCTest
 
 // MARK: -
 
@@ -22,30 +20,30 @@ class DetailPresenterTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var router: MockRouter!
-	fileprivate var interactor: MockInteractor!
-	fileprivate var view: MockView!
+	fileprivate var router: MockRouter?
+	fileprivate var interactor: MockInteractor?
+	fileprivate var view: MockView?
 
-	fileprivate var presenter: DetailPresenter!
+	fileprivate var presenter: DetailPresenter?
 
 	// MARK: Test Functions
 
 	func testInteractor() {
-		presenter.viewLoaded()
-		presenter.viewAppearing()
-		presenter.viewAppeared()
-		presenter.viewDisappeared()
-		XCTAssert(interactor.titleRequested)
+		presenter?.viewLoaded()
+		presenter?.viewAppearing()
+		presenter?.viewAppeared()
+		presenter?.viewDisappeared()
+		XCTAssert(interactor?.titleRequested ?? false)
 	}
 
 	func testRouter() {
-		presenter.closeSelected()
-		XCTAssert(router.shouldDismiss)
+		presenter?.closeSelected()
+		XCTAssert(router?.shouldDismiss ?? false)
 	}
 
 	func testView() {
-		presenter.set(title: "Detail")
-		XCTAssertEqual(view.title, "Detail")
+		presenter?.set(title: "Detail")
+		XCTAssertEqual(view?.title, "Detail")
 	}
 
 	// MARK: Setup
@@ -54,12 +52,16 @@ class DetailPresenterTests: XCTestCase {
         super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 
-		router = MockRouter()
-		interactor = MockInteractor()
+		let router = MockRouter()
+		self.router = router
+
+		let interactor = MockInteractor()
+		self.interactor = interactor
+
 		view = MockView()
 
-		presenter = DetailPresenter(router: self.router, interactor: self.interactor)
-		presenter.view = self.view
+		presenter = DetailPresenter(router: router, interactor: interactor)
+		presenter?.view = self.view
     }
 
     override func tearDown() {
@@ -72,7 +74,7 @@ class DetailPresenterTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockRouter: RouterProtocol, DetailPresenterRouterProtocol {
+private class MockRouter: RouterProtocol, DetailPresenterRouterProtocol {
 
 	// MARK: Variables
 
@@ -89,7 +91,7 @@ fileprivate class MockRouter: RouterProtocol, DetailPresenterRouterProtocol {
 
 // MARK: -
 
-fileprivate class MockInteractor: DetailPresenterInteractorProtocol {
+private class MockInteractor: DetailPresenterInteractorProtocol {
 
 	// MARK: Variables
 
@@ -104,7 +106,7 @@ fileprivate class MockInteractor: DetailPresenterInteractorProtocol {
 
 // MARK: -
 
-fileprivate class MockView: DetailPresenterViewProtocol {
+private class MockView: DetailPresenterViewProtocol {
 
 	// MARK: Variables
 

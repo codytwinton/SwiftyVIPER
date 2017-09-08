@@ -10,11 +10,9 @@
 
 // MARK: Imports
 
-import XCTest
-
-@testable import SwiftyVIPERExample
-
 import SwiftyVIPER
+@testable import SwiftyVIPERExample
+import XCTest
 
 // MARK: -
 
@@ -22,21 +20,21 @@ class RootViewTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var presenter: MockPresenter!
-	fileprivate var view: RootViewController!
+	fileprivate var presenter: MockPresenter?
+	fileprivate var view: RootViewController?
 
 	// MARK: Test Functions
 
 	func testPresenter() {
-		view.beginAppearanceTransition(true, animated: false)
-		view.endAppearanceTransition()
-		XCTAssert(presenter.isViewLoaded)
+		view?.beginAppearanceTransition(true, animated: false)
+		view?.endAppearanceTransition()
+		XCTAssert(presenter?.isViewLoaded ?? false)
 
-		view.detailsSelected()
-		XCTAssert(presenter.isDetailsSelected)
+		view?.detailsSelected()
+		XCTAssert(presenter?.isDetailsSelected ?? false)
 
-		view.set(title: "Root")
-		XCTAssertEqual(view.title, "Root")
+		view?.set(title: "Root")
+		XCTAssertEqual(view?.title, "Root")
 	}
 
 	// MARK: Setup
@@ -45,8 +43,8 @@ class RootViewTests: XCTestCase {
 		super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 
-		presenter = MockPresenter()
-
+		let presenter = MockPresenter()
+		self.presenter = presenter
 		view = RootViewController(presenter: presenter)
 	}
 
@@ -60,7 +58,7 @@ class RootViewTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: RootViewPresenterProtocol {
+private class MockPresenter: RootViewPresenterProtocol {
 
 	// MARK: Variables
 

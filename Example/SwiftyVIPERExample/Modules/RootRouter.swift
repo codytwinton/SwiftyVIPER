@@ -11,9 +11,8 @@
 // MARK: Imports
 
 import Foundation
-import UIKit
-
 import SwiftyVIPER
+import UIKit
 
 // MARK: Protocols
 
@@ -23,22 +22,15 @@ protocol RootPresenterRouterProtocol: PresenterRouterProtocol {
 
 // MARK: -
 
-final class RootRouter {
+final class RootRouter: RouterProtocol, RootPresenterRouterProtocol {
 
 	// MARK: - Variables
 
 	weak var viewController: UIViewController?
-}
 
-// MARK: - Router Protocol
+	// MARK: - Router Protocol
 
-extension RootRouter: RouterProtocol {
-
-}
-
-// MARK: Root Presenter to Router Protocol
-
-extension RootRouter: RootPresenterRouterProtocol {
+	// MARK: Root Presenter to Router Protocol
 
 	func detailsSelected() {
 		DetailModule().present(from: viewController, style: .coverVertical)

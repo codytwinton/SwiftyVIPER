@@ -11,9 +11,8 @@
 // MARK: Imports
 
 import Foundation
-import UIKit
-
 import SwiftyVIPER
+import UIKit
 
 // MARK: Protocols
 
@@ -23,21 +22,13 @@ protocol DetailPresenterRouterProtocol: PresenterRouterProtocol {
 
 // MARK: -
 
-final class DetailRouter {
+final class DetailRouter: RouterProtocol, DetailPresenterRouterProtocol {
 
 	// MARK: - Variables
 
 	weak var viewController: UIViewController?
-}
 
-// MARK: - Router Protocol
+	// MARK: - Router Protocol
 
-extension DetailRouter: RouterProtocol {
-
-}
-
-// MARK: Detail Presenter to Router Protocol
-
-extension DetailRouter: DetailPresenterRouterProtocol {
-
+	// MARK: Detail Presenter to Router Protocol
 }

@@ -10,11 +10,9 @@
 
 // MARK: Imports
 
-import XCTest
-
-@testable import SwiftyVIPERExample
-
 import SwiftyVIPER
+@testable import SwiftyVIPERExample
+import XCTest
 
 // MARK: -
 
@@ -22,30 +20,29 @@ class RootPresenterTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var router: MockRouter!
-	fileprivate var interactor: MockInteractor!
-	fileprivate var view: MockView!
-
-	fileprivate var presenter: RootPresenter!
+	fileprivate var router: MockRouter?
+	fileprivate var interactor: MockInteractor?
+	fileprivate var view: MockView?
+	fileprivate var presenter: RootPresenter?
 
 	// MARK: Test Functions
 
 	func testInteractor() {
-		presenter.viewLoaded()
-		presenter.viewAppearing()
-		presenter.viewAppeared()
-		presenter.viewDisappeared()
-		XCTAssert(interactor.titleRequested)
+		presenter?.viewLoaded()
+		presenter?.viewAppearing()
+		presenter?.viewAppeared()
+		presenter?.viewDisappeared()
+		XCTAssert(interactor?.titleRequested ?? false)
 	}
 
 	func testRouter() {
-		presenter.detailsSelected()
-		XCTAssert(router.shouldShowDetails)
+		presenter?.detailsSelected()
+		XCTAssert(router?.shouldShowDetails ?? false)
 	}
 
 	func testView() {
-		presenter.set(title: "Root")
-		XCTAssertEqual(view.title, "Root")
+		presenter?.set(title: "Root")
+		XCTAssertEqual(view?.title, "Root")
 	}
 
 	// MARK: Setup
@@ -54,12 +51,16 @@ class RootPresenterTests: XCTestCase {
         super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 
-		router = MockRouter()
-		interactor = MockInteractor()
+		let router = MockRouter()
+		self.router = router
+
+		let interactor = MockInteractor()
+		self.interactor = interactor
+
 		view = MockView()
 
-		presenter = RootPresenter(router: self.router, interactor: self.interactor)
-		presenter.view = self.view
+		presenter = RootPresenter(router: router, interactor: interactor)
+		presenter?.view = self.view
     }
 
     override func tearDown() {
@@ -72,7 +73,7 @@ class RootPresenterTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockRouter: RouterProtocol, RootPresenterRouterProtocol {
+private class MockRouter: RouterProtocol, RootPresenterRouterProtocol {
 
 	// MARK: Variables
 
@@ -88,7 +89,7 @@ fileprivate class MockRouter: RouterProtocol, RootPresenterRouterProtocol {
 
 // MARK: -
 
-fileprivate class MockInteractor: RootPresenterInteractorProtocol {
+private class MockInteractor: RootPresenterInteractorProtocol {
 
 	// MARK: Variables
 
@@ -103,7 +104,7 @@ fileprivate class MockInteractor: RootPresenterInteractorProtocol {
 
 // MARK: -
 
-fileprivate class MockView: RootPresenterViewProtocol {
+private class MockView: RootPresenterViewProtocol {
 
 	// MARK: Variables
 

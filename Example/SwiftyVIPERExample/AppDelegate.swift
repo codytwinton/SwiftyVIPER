@@ -6,9 +6,8 @@
 //  Copyright © 2016 codeRed. All rights reserved.
 //
 
-import UIKit
-
 import SnapKit
+import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

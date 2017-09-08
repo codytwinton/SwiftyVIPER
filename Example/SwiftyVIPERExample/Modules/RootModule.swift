@@ -11,41 +11,42 @@
 // MARK: Imports
 
 import Foundation
-import UIKit
-
 import SwiftyVIPER
+import UIKit
 
 // MARK: -
 
-final class RootModule {
+final class RootModule: ModuleProtocol {
 
 	// MARK: - Variables
 
 	private(set) lazy var interactor: RootInteractor = {
-		return RootInteractor()
+		RootInteractor()
 	}()
 
 	private(set) lazy var router: RootRouter = {
-		return RootRouter()
+		RootRouter()
 	}()
 
 	private(set) lazy var presenter: RootPresenter = {
-		return RootPresenter(router: self.router, interactor: self.interactor)
+		RootPresenter(router: self.router, interactor: self.interactor)
 	}()
 
 	private(set) lazy var view: RootViewController = {
-		return RootViewController(presenter: self.presenter)
+		RootViewController(presenter: self.presenter)
 	}()
+
+	// MARK: Module Protocol Variables
+
+	var viewController: UIViewController {
+		return view
+	}
+
+	// MARK: Inits
 
 	init() {
 		presenter.view = view
 		router.viewController = view
 		interactor.presenter = presenter
 	}
-}
-
-// MARK: - Module Protocol
-
-extension RootModule: ModuleProtocol {
-	var viewController: UIViewController { return view }
 }

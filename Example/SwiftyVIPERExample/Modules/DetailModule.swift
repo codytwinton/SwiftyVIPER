@@ -11,30 +11,29 @@
 // MARK: Imports
 
 import Foundation
-import UIKit
-
 import SwiftyVIPER
+import UIKit
 
 // MARK: -
 
-final class DetailModule {
+final class DetailModule: ModuleProtocol {
 
 	// MARK: - Constants
 
-	let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+	let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
 
 	// MARK: Variables
 
 	private(set) lazy var interactor: DetailInteractor = {
-		return DetailInteractor()
+		DetailInteractor()
 	}()
 
 	private(set) lazy var router: DetailRouter = {
-		return DetailRouter()
+		DetailRouter()
 	}()
 
 	private(set) lazy var presenter: DetailPresenter = {
-		return DetailPresenter(router: self.router, interactor: self.interactor)
+		DetailPresenter(router: self.router, interactor: self.interactor)
 	}()
 
 	private(set) lazy var view: DetailViewController = {
@@ -43,15 +42,15 @@ final class DetailModule {
 		return vc
 	}()
 
+	// MARK: - Module Protocol Variables
+
+	var viewController: UIViewController { return view }
+
+	// MARK: Inits
+
 	init() {
 		presenter.view = view
 		router.viewController = view
 		interactor.presenter = presenter
 	}
-}
-
-// MARK: - Module Protocol
-
-extension DetailModule: ModuleProtocol {
-	var viewController: UIViewController { return view }
 }

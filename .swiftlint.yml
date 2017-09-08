@@ -77,7 +77,7 @@ opt_in_rules:
 - single_test_class
 - sorted_imports
 - statement_position
-- strict_fileprivate #enable for Swift 3.2 or 4
+# - strict_fileprivate #enable for Swift 3.2 or 4
 - switch_case_on_newline
 - syntactic_sugar
 - todo

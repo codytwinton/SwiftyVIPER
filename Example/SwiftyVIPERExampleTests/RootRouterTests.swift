@@ -10,11 +10,9 @@
 
 // MARK: Imports
 
-import XCTest
-
-@testable import SwiftyVIPERExample
-
 import SwiftyVIPER
+@testable import SwiftyVIPERExample
+import XCTest
 
 // MARK: -
 
@@ -22,12 +20,12 @@ class RootRouterTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var router: RootRouter!
+	fileprivate var router: RootRouter?
 
 	// MARK: Test Functions
 
 	func testDetails() {
-		router.detailsSelected()
+		router?.detailsSelected()
 	}
 
 	// MARK: Setup

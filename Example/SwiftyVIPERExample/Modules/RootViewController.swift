@@ -10,9 +10,8 @@
 
 // MARK: Imports
 
-import UIKit
-
 import SwiftyVIPER
+import UIKit
 
 // MARK: Protocols
 
@@ -22,7 +21,7 @@ protocol RootPresenterViewProtocol: class {
 
 // MARK: -
 
-class RootViewController: UIViewController {
+class RootViewController: UIViewController, RootPresenterViewProtocol {
 
 	// MARK: - Constants
 
@@ -70,7 +69,7 @@ class RootViewController: UIViewController {
 		view.backgroundColor = .white
 
 		view.addSubview(rootImageView)
-		rootImageView.snp.makeConstraints { (make) in
+		rootImageView.snp.makeConstraints { make in
 			make.top.equalTo(40)
 			make.centerX.equalTo(self.view)
 			make.left.equalTo(self.view).offset(30)
@@ -78,17 +77,14 @@ class RootViewController: UIViewController {
 		}
 
 		view.addSubview(detailsButton)
-		detailsButton.snp.makeConstraints { (make) in
+		detailsButton.snp.makeConstraints { make in
 			make.bottom.equalTo(self.view).offset(-30)
 			make.centerX.equalTo(self.view)
 			make.size.equalTo(self.detailsButton.frame.size)
 		}
     }
-}
 
-// MARK: - Root Presenter to View Protocol
-
-extension RootViewController: RootPresenterViewProtocol {
+	// MARK: - Root Presenter to View Protocol
 
 	func set(title: String?) {
 		self.title = title

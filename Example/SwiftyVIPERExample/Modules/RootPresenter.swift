@@ -26,7 +26,7 @@ protocol RootInteractorPresenterProtocol: class {
 
 // MARK: -
 
-final class RootPresenter {
+final class RootPresenter: RootViewPresenterProtocol, RootInteractorPresenterProtocol {
 
 	// MARK: - Constants
 
@@ -43,11 +43,8 @@ final class RootPresenter {
 		self.router = router
 		self.interactor = interactor
 	}
-}
 
-// MARK: - Root View to Presenter Protocol
-
-extension RootPresenter: RootViewPresenterProtocol {
+	// MARK: - Root View to Presenter Protocol
 
 	func viewLoaded() {
 		interactor.requestTitle()
@@ -68,11 +65,8 @@ extension RootPresenter: RootViewPresenterProtocol {
 	func detailsSelected() {
 		router.detailsSelected()
 	}
-}
 
-// MARK: Root Interactor to Presenter Protocol
-
-extension RootPresenter: RootInteractorPresenterProtocol {
+	// MARK: Root Interactor to Presenter Protocol
 
 	func set(title: String?) {
 		view?.set(title: title)

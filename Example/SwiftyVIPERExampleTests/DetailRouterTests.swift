@@ -10,9 +10,8 @@
 
 // MARK: Imports
 
-import XCTest
-
 @testable import SwiftyVIPERExample
+import XCTest
 
 // MARK: -
 
@@ -20,7 +19,7 @@ class DetailRouterTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var router: DetailRouter!
+	fileprivate var router: DetailRouter?
 
 	// MARK: Setup
 

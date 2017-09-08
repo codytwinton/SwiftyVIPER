@@ -10,9 +10,8 @@
 
 // MARK: Imports
 
-import XCTest
-
 @testable import SwiftyVIPERExample
+import XCTest
 
 // MARK: -
 
@@ -20,14 +19,14 @@ class DetailInteractorTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var presenter: MockPresenter!
-	fileprivate var interactor: DetailInteractor!
+	fileprivate var presenter: MockPresenter?
+	fileprivate var interactor: DetailInteractor?
 
 	// MARK: Test Functions
 
 	func testPresenter() {
-		interactor.requestTitle()
-		XCTAssertEqual(presenter.title, "Detail")
+		interactor?.requestTitle()
+		XCTAssertEqual(presenter?.title, "Detail")
 	}
 
 	// MARK: Setup
@@ -39,7 +38,7 @@ class DetailInteractorTests: XCTestCase {
 		presenter = MockPresenter()
 
 		interactor = DetailInteractor()
-		interactor.presenter = self.presenter
+		interactor?.presenter = self.presenter
     }
 
     override func tearDown() {
@@ -52,7 +51,7 @@ class DetailInteractorTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: DetailInteractorPresenterProtocol {
+private class MockPresenter: DetailInteractorPresenterProtocol {
 
 	// MARK: Variables
 

@@ -22,16 +22,13 @@ protocol RootPresenterInteractorProtocol {
 
 // MARK: -
 
-final class RootInteractor {
+final class RootInteractor: RootPresenterInteractorProtocol {
 
 	// MARK: - Variables
 
 	weak var presenter: RootInteractorPresenterProtocol?
-}
 
-// MARK: - Root Presenter to Interactor Protocol
-
-extension RootInteractor: RootPresenterInteractorProtocol {
+	// MARK: - Root Presenter to Interactor Protocol
 
 	func requestTitle() {
 		presenter?.set(title: "Root")

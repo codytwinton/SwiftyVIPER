@@ -10,9 +10,8 @@
 
 // MARK: Imports
 
-import UIKit
-
 import SwiftyVIPER
+import UIKit
 
 // MARK: Protocols
 
@@ -22,7 +21,7 @@ protocol DetailPresenterViewProtocol: class {
 
 // MARK: -
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, StoryboardIdentifiable, DetailPresenterViewProtocol {
 
 	// MARK: - Constants
 
@@ -57,15 +56,8 @@ class DetailViewController: UIViewController {
 
 		view.backgroundColor = .white
     }
-}
 
-// MARK: - Storyboard Protocol
-
-extension DetailViewController: StoryboardIdentifiable {}
-
-// MARK: - Detail Presenter to View Protocol
-
-extension DetailViewController: DetailPresenterViewProtocol {
+	// MARK: - Detail Presenter to View Protocol
 
 	func set(title: String?) {
 		titleLabel?.text = title

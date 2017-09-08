@@ -11,7 +11,6 @@
 // MARK: Imports
 
 import Foundation
-
 import SwiftyVIPER
 
 // MARK: Protocols
@@ -22,16 +21,13 @@ protocol DetailPresenterInteractorProtocol {
 
 // MARK: -
 
-final class DetailInteractor {
+final class DetailInteractor: DetailPresenterInteractorProtocol {
 
 	// MARK: - Variables
 
 	weak var presenter: DetailInteractorPresenterProtocol?
-}
 
-// MARK: - Detail Presenter to Interactor Protocol
-
-extension DetailInteractor: DetailPresenterInteractorProtocol {
+	// MARK: - Detail Presenter to Interactor Protocol
 
 	func requestTitle() {
 		presenter?.set(title: "Detail")

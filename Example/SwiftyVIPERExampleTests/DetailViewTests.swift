@@ -10,11 +10,9 @@
 
 // MARK: Imports
 
-import XCTest
-
-@testable import SwiftyVIPERExample
-
 import SwiftyVIPER
+@testable import SwiftyVIPERExample
+import XCTest
 
 // MARK: -
 
@@ -22,21 +20,21 @@ class DetailViewTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var presenter: MockPresenter!
-	fileprivate var view: DetailViewController!
+	fileprivate var presenter: MockPresenter?
+	fileprivate var view: DetailViewController?
 
 	// MARK: Test Functions
 
 	func testPresenter() {
-		view.beginAppearanceTransition(true, animated: false)
-		view.endAppearanceTransition()
-		XCTAssert(presenter.isViewLoaded)
+		view?.beginAppearanceTransition(true, animated: false)
+		view?.endAppearanceTransition()
+		XCTAssert(presenter?.isViewLoaded ?? false)
 
-		view.closeSelected()
-		XCTAssert(presenter.closeCalled)
+		view?.closeSelected()
+		XCTAssert(presenter?.closeCalled ?? false)
 
-		view.set(title: "Detail")
-		XCTAssertEqual(view.titleLabel?.text, "Detail")
+		view?.set(title: "Detail")
+		XCTAssertEqual(view?.titleLabel?.text, "Detail")
 	}
 
 	// MARK: Setup
@@ -49,7 +47,7 @@ class DetailViewTests: XCTestCase {
 
 		let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
 		view = storyboard.viewController(DetailViewController.self)
-		view.presenter = presenter
+		view?.presenter = presenter
 	}
 
 	override func tearDown() {
@@ -62,7 +60,7 @@ class DetailViewTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: DetailViewPresenterProtocol {
+private class MockPresenter: DetailViewPresenterProtocol {
 
 	// MARK: Variables
 

@@ -10,11 +10,9 @@
 
 // MARK: Imports
 
-import XCTest
-
-@testable import SwiftyVIPERExample
-
 import SwiftyVIPER
+@testable import SwiftyVIPERExample
+import XCTest
 
 // MARK: -
 
@@ -22,14 +20,14 @@ class RootInteractorTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var presenter: MockPresenter!
-	fileprivate var interactor: RootInteractor!
+	fileprivate var presenter: MockPresenter?
+	fileprivate var interactor: RootInteractor?
 
 	// MARK: Test Functions
 
 	func testPresenter() {
-		interactor.requestTitle()
-		XCTAssertEqual(presenter.title, "Root")
+		interactor?.requestTitle()
+		XCTAssertEqual(presenter?.title, "Root")
 	}
 
 	// MARK: Setup
@@ -41,7 +39,7 @@ class RootInteractorTests: XCTestCase {
 		presenter = MockPresenter()
 
 		interactor = RootInteractor()
-		interactor.presenter = self.presenter
+		interactor?.presenter = self.presenter
     }
 
     override func tearDown() {
@@ -54,7 +52,7 @@ class RootInteractorTests: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: RootInteractorPresenterProtocol {
+private class MockPresenter: RootInteractorPresenterProtocol {
 
 	// MARK: Variables
 

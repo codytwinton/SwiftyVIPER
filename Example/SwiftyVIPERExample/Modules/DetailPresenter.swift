@@ -26,7 +26,7 @@ protocol DetailInteractorPresenterProtocol: class {
 
 // MARK: -
 
-final class DetailPresenter {
+final class DetailPresenter: DetailViewPresenterProtocol, DetailInteractorPresenterProtocol {
 
 	// MARK: - Constants
 
@@ -43,11 +43,8 @@ final class DetailPresenter {
 		self.router = router
 		self.interactor = interactor
 	}
-}
 
-// MARK: - Detail View to Presenter Protocol
-
-extension DetailPresenter: DetailViewPresenterProtocol {
+	// MARK: - Detail View to Presenter Protocol
 
 	func viewLoaded() {
 		interactor.requestTitle()
@@ -68,11 +65,8 @@ extension DetailPresenter: DetailViewPresenterProtocol {
 	func closeSelected() {
 		router.dismiss(completion: nil)
 	}
-}
 
-// MARK: Detail Interactor to Presenter Protocol
-
-extension DetailPresenter: DetailInteractorPresenterProtocol {
+	// MARK: Detail Interactor to Presenter Protocol
 
 	func set(title: String?) {
 		view?.set(title: title)
