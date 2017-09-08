@@ -8,9 +8,8 @@
 
 // MARK: Imports
 
-import XCTest
-
 import SwiftyVIPER
+import XCTest
 
 // MARK: -
 
@@ -18,8 +17,8 @@ class ProtocolTests: XCTestCase {
 
 	// MARK: - Variables
 
-	var module: MockModule!
-	var router: MockRouter!
+	var module: MockModule?
+	var router: MockRouter?
 
 	// MARK: Test Functions
 
@@ -29,12 +28,12 @@ class ProtocolTests: XCTestCase {
 		viewController.beginAppearanceTransition(true, animated: false)
 		viewController.endAppearanceTransition()
 
-		module.present(from: viewController, style: UIModalTransitionStyle.crossDissolve, completion: nil)
+		module?.present(from: viewController, style: UIModalTransitionStyle.crossDissolve, completion: nil)
 
-		router.dismiss(completion: nil)
+		router?.dismiss(completion: nil)
 
-		router.viewController = nil
-		router.dismiss(completion: nil)
+		router?.viewController = nil
+		router?.dismiss(completion: nil)
 	}
 
 	func testPushPop() {
@@ -44,8 +43,8 @@ class ProtocolTests: XCTestCase {
 		navController.beginAppearanceTransition(true, animated: false)
 		navController.endAppearanceTransition()
 
-		module.push(from: navController)
-		router.pop()
+		module?.push(from: navController)
+		router?.pop()
 	}
 
 	func testPresent() {
@@ -54,16 +53,16 @@ class ProtocolTests: XCTestCase {
 		viewController.beginAppearanceTransition(true, animated: false)
 		viewController.endAppearanceTransition()
 
-		module.present(from: viewController, style: UIModalTransitionStyle.crossDissolve, completion: nil)
+		module?.present(from: viewController, style: UIModalTransitionStyle.crossDissolve, completion: nil)
 
 		let newVC = UIViewController()
 		newVC.beginAppearanceTransition(true, animated: false)
 		newVC.endAppearanceTransition()
 
-		router.present(newVC, completion: nil)
+		router?.present(newVC, completion: nil)
 
-		router.viewController = nil
-		router.present(newVC, completion: nil)
+		router?.viewController = nil
+		router?.present(newVC, completion: nil)
 	}
 
 	func testPresenter() {
@@ -105,7 +104,7 @@ class ProtocolTests: XCTestCase {
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 
 		module = MockModule()
-		router = module.router
+		router = module?.router
 	}
 
 	override func tearDown() {

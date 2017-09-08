@@ -11,9 +11,8 @@
 // MARK: Imports
 
 import Foundation
-import UIKit
-
 import SwiftyVIPER
+import UIKit
 
 // MARK: -
 
