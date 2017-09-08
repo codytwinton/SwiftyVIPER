@@ -23,11 +23,11 @@ class MockModule: ModuleProtocol {
 	// MARK: - Variables
 
 	private(set) lazy var router: MockRouter = {
-		return MockRouter()
+		MockRouter()
 	}()
 
 	private(set) lazy var view: UIViewController = {
-		return UIViewController()
+		UIViewController()
 	}()
 
 	var viewController: UIViewController {
