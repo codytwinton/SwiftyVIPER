@@ -56,6 +56,7 @@ class RootViewController: UIViewController, RootPresenterViewProtocol {
 
 	// MARK: - Functions
 
+	@objc
 	func detailsSelected() {
 		presenter.detailsSelected()
 	}

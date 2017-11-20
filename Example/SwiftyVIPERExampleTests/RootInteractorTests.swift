@@ -20,8 +20,8 @@ class RootInteractorTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var presenter: MockPresenter?
-	fileprivate var interactor: RootInteractor?
+	private var presenter: MockPresenter?
+	private var interactor: RootInteractor?
 
 	// MARK: Test Functions
 

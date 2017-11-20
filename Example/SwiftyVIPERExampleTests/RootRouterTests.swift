@@ -20,7 +20,7 @@ class RootRouterTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var router: RootRouter?
+	private var router: RootRouter?
 
 	// MARK: Test Functions
 

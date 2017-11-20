@@ -44,6 +44,7 @@ class DetailViewController: UIViewController, StoryboardIdentifiable, DetailPres
 
 	// MARK: - Functions
 
+	@objc
 	func closeSelected() {
 		presenter?.closeSelected()
 	}

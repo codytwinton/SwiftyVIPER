@@ -19,7 +19,7 @@ class DetailRouterTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var router: DetailRouter?
+	private var router: DetailRouter?
 
 	// MARK: Setup
 

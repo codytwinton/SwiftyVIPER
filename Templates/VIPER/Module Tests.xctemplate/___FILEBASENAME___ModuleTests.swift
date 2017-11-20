@@ -10,11 +10,10 @@
 
 // MARK: Imports
 
-import XCTest
-
 @testable import ___PROJECTNAME___
 
 import SwiftyVIPER
+import XCTest
 
 // MARK: -
 
@@ -22,28 +21,28 @@ class ___FILEBASENAMEASIDENTIFIER___ModuleTests: XCTestCase {
 
 	// MARK: - Variables
 
-	var module: ___FILEBASENAMEASIDENTIFIER___Module!
+	var module: ___FILEBASENAMEASIDENTIFIER___Module?
 
 	// MARK: Test Functions
 
 	func testSetup() {
 		XCTAssertNotNil(module)
 
-		XCTAssertNotNil(module.interactor)
-		XCTAssertNotNil(module.router)
-		XCTAssertNotNil(module.presenter)
-		XCTAssertNotNil(module.view)
-		XCTAssertNotNil(module.viewController)
+		XCTAssertNotNil(module?.interactor)
+		XCTAssertNotNil(module?.router)
+		XCTAssertNotNil(module?.presenter)
+		XCTAssertNotNil(module?.view)
+		XCTAssertNotNil(module?.viewController)
 
-		XCTAssertNotNil(module.view.presenter)
+		XCTAssertNotNil(module?.view.presenter)
 
-		XCTAssertNotNil(module.presenter.view)
-		XCTAssertNotNil(module.presenter.router)
-		XCTAssertNotNil(module.presenter.interactor)
+		XCTAssertNotNil(module?.presenter.view)
+		XCTAssertNotNil(module?.presenter.router)
+		XCTAssertNotNil(module?.presenter.interactor)
 
-		XCTAssertNotNil(module.router.viewController)
+		XCTAssertNotNil(module?.router.viewController)
 
-		XCTAssertNotNil(module.interactor.presenter)
+		XCTAssertNotNil(module?.interactor.presenter)
 	}
 
 	// MARK: Setup
