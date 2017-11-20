@@ -20,8 +20,8 @@ class DetailViewTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var presenter: MockPresenter?
-	fileprivate var view: DetailViewController?
+	private var presenter: MockPresenter?
+	private var view: DetailViewController?
 
 	// MARK: Test Functions
 

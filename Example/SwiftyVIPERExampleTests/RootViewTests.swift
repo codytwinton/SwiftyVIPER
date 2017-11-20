@@ -20,8 +20,8 @@ class RootViewTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var presenter: MockPresenter?
-	fileprivate var view: RootViewController?
+	private var presenter: MockPresenter?
+	private var view: RootViewController?
 
 	// MARK: Test Functions
 

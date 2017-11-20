@@ -20,10 +20,10 @@ class RootPresenterTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var router: MockRouter?
-	fileprivate var interactor: MockInteractor?
-	fileprivate var view: MockView?
-	fileprivate var presenter: RootPresenter?
+	private var router: MockRouter?
+	private var interactor: MockInteractor?
+	private var view: MockView?
+	private var presenter: RootPresenter?
 
 	// MARK: Test Functions
 

@@ -20,11 +20,11 @@ class DetailPresenterTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var router: MockRouter?
-	fileprivate var interactor: MockInteractor?
-	fileprivate var view: MockView?
+	private var router: MockRouter?
+	private var interactor: MockInteractor?
+	private var view: MockView?
 
-	fileprivate var presenter: DetailPresenter?
+	private var presenter: DetailPresenter?
 
 	// MARK: Test Functions
 

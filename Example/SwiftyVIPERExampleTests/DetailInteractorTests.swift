@@ -19,8 +19,8 @@ class DetailInteractorTests: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var presenter: MockPresenter?
-	fileprivate var interactor: DetailInteractor?
+	private var presenter: MockPresenter?
+	private var interactor: DetailInteractor?
 
 	// MARK: Test Functions
 
