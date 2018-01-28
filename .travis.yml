@@ -7,7 +7,7 @@ env:
   - LANG=en_US.UTF-8
   - PROJECT=SwiftyVIPER.xcodeproj
   - IOS_FRAMEWORK_SCHEME="SwiftyVIPERiOS"
-  - IOS_SDK=iphonesimulator10.0
+  - IOS_SDK=iphonesimulator11.2
   matrix:
   - DESTINATION="OS=11.0,name=iPhone 8"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"
 
