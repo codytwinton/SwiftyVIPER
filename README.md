@@ -1,20 +1,20 @@
 # SwiftyVIPER
 
-![Header](Assets/SwiftyVIPER.png)
+![Header][main-image]
 
 ---
 
-[![Language][lang-image]][lang-url]
-[![License][license-image]][license-url]
-[![Platform][platform-image]][cocoapod-url]
+[![Language][lang-image]](https://swift.org/)
+[![License][license-image]](LICENSE)
+[![Platform][platform-image]](http://cocoapods.org/pods/SwiftyVIPER)
 
-[![Build Status][build-image]][build-url]
-[![Docs Percentage][docs-image]][docs-url]
-[![Code Coverage][codecov-image]][codecov-url]
-[![Code Beat][codebeat-image]][codebeat-url]
+[![Build Status][build-image]](https://travis-ci.org/codytwinton/SwiftyVIPER)
+[![Docs Percentage][docs-image]](http://cocoadocs.org/docsets/SwiftyVIPER)
+[![Code Coverage][codecov-image]](https://codecov.io/gh/codytwinton/SwiftyVIPER)
+[![Code Beat][codebeat-image]](https://codebeat.co/projects/github-com-codytwinton-swiftyviper)
 
-[![Pod Version][pod-version-image]][cocoapod-url]
-[![Carthage Compatible][carthage-image]][carthage-url]
+[![Pod Version][pod-version-image]](http://cocoapods.org/pods/SwiftyVIPER)
+[![Carthage Compatible][carthage-image]](https://github.com/Carthage/Carthage)
 
 SwiftyVIPER allows easy use of VIPER architecture throughout your iOS application.
 
@@ -176,6 +176,7 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 * Inspired by [ViperMcFlurry](https://github.com/rambler-digital-solutions/ViperMcFlurry)
 * README edited with [StackEdit](https://stackedit.io/)
 
+[main-image]: Assets/SwiftyVIPER.png
 [build-image]: https://travis-ci.org/codytwinton/SwiftyVIPER.svg?branch=master
 [carthage-image]: https://img.shields.io/badge/Carthage-compatible-4BC51D.svg
 [codebeat-image]: https://codebeat.co/badges/74c04e5b-e6a2-4baa-9e09-5b08d87dcabc
@@ -185,13 +186,3 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 [license-image]: https://img.shields.io/github/license/codytwinton/SwiftyVIPER.svg
 [platform-image]: https://img.shields.io/cocoapods/p/SwiftyVIPER.svg
 [pod-version-image]: https://img.shields.io/cocoapods/v/SwiftyVIPER.svg
-
-[build-url]: https://travis-ci.org/codytwinton/SwiftyVIPER
-[carthage-url]: https://github.com/Carthage/Carthage
-[cocoapod-url]: http://cocoapods.org/pods/SwiftyVIPER
-[codebeat-url]: https://codebeat.co/projects/github-com-codytwinton-swiftyviper
-[codecov-url]: https://codecov.io/gh/codytwinton/SwiftyVIPER
-[docs-url]: http://cocoadocs.org/docsets/SwiftyVIPER
-[homepage-url]: https://github.com/codytwinton/SwiftyVIPER
-[lang-url]: https://swift.org/
-[license-url]: LICENSE
