@@ -1,3 +1,5 @@
+# SwiftyVIPER
+
 ![Header](Assets/SwiftyVIPER.png)
 
 ---
@@ -14,38 +16,38 @@
 [![Pod Version][pod-version-image]][cocoapod-url]
 [![Carthage Compatible][carthage-image]][carthage-url]
 
-
 SwiftyVIPER allows easy use of VIPER architecture throughout your iOS application.
 
-### What is VIPER?
+## VIPER Architecture
 
-Great question! VIPER is a [backronym](https://en.wikipedia.org/wiki/Backronym) which stands for:
+What is VIPER? Great question! VIPER is a [backronym](https://en.wikipedia.org/wiki/Backronym) which stands for:
 
- - View
- - Interactor
- - Presenter
- - Entity
- - Router
+* View
+* Interactor
+* Presenter
+* Entity
+* Router
 
 If all of this is totally new for you, check out my running list of [VIPER Resources](#resources)
 
 ## Features
 
-- [x] VIPER Module Templates
-- [x] VIPER Unit Test Templates
-- [x] Simple Module Initialization and Presentation
-- [x] CocoaPods Support
-- [x] Carthage Support
+* [x] VIPER Module Templates
+* [x] VIPER Unit Test Templates
+* [x] Simple Module Initialization and Presentation
+* [x] CocoaPods Support
+* [x] Carthage Support
 
 ## Requirements
 
-- iOS 8.0+ | tvOS 9.0+
-- Xcode 8
-- Swift 3
+* iOS 8.0+ | tvOS 9.0+
+* Xcode 8
+* Swift 3
 
 ## Installation
 
-#### CocoaPods
+### CocoaPods
+
 You can use [CocoaPods](http://cocoapods.org/) to install `SwiftyVIPER` by adding it to your `Podfile`:
 
 ```ruby
@@ -54,15 +56,15 @@ use_frameworks!
 platform :ios, '8.0'
 
 def shared_pods
-	pod 'SwiftyVIPER', '~> 1.0'
+    pod 'SwiftyVIPER', '~> 1.0'
 end
 
 target 'MyApp' do
-	shared_pods
+    shared_pods
 end
 
 target 'MyAppTests' do
-	shared_pods
+    shared_pods
 end
 ```
 
@@ -73,15 +75,15 @@ import UIKit
 import SwiftyVIPER
 ```
 
-#### Carthage
+### Carthage
 
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
 
 You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
 
 ```bash
-$ brew update
-$ brew install carthage
+brew update
+brew install carthage
 ```
 
 To integrate SwiftyVIPER into your Xcode project using Carthage, specify it in your `Cartfile`:
@@ -132,11 +134,11 @@ Next, choose the Module name. We'll go with `Custom`.
 
 This will create 5 files per module:
 
-- `CustomModule.swift`
-- `CustomViewController.swift`
-- `CustomPresenter.swift`
-- `CustomRouter.swift`
-- `CustomInteractor.swift`
+* `CustomModule.swift`
+* `CustomViewController.swift`
+* `CustomPresenter.swift`
+* `CustomRouter.swift`
+* `CustomInteractor.swift`
 
 Don't forget to target your main app. Once you've added the main template, go ahead and add the Unit Test template. **Make sure it's the same name!** In this case, we'd stay with `Custom`.
 
@@ -158,22 +160,21 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 
 ## Resources
 
- - [mutualmobile.com](https://mutualmobile.com/posts/meet-viper-fast-agile-non-lethal-ios-architecture-framework)
- - [objc.io](https://www.objc.io/issues/13-architecture/viper/)
- - [ckl.io](https://www.ckl.io/blog/ios-project-architecture-using-viper/)
- - [stackoverflow.com](http://stackoverflow.com/questions/35132664/why-protocols-are-used-in-both-direction-in-viper-architecture-rather-than-in-on)
- - [yalantis.com](https://yalantis.com/blog/tree-of-models-as-an-alternative-app-architecture-model/)
- - [medium.com](https://medium.com/mobile-travel-technologies/architecting-mobile-apps-with-b-viper-modules-e94e277c8d68)
- - [speakerdeck.com](https://speakerdeck.com/sergigracia/clean-architecture-viper)
- - [brigade.engineering](https://brigade.engineering/brigades-experience-using-an-mvc-alternative-36ef1601a41f#.tezoetq87)
+* [mutualmobile.com](https://mutualmobile.com/posts/meet-viper-fast-agile-non-lethal-ios-architecture-framework)
+* [objc.io](https://www.objc.io/issues/13-architecture/viper/)
+* [ckl.io](https://www.ckl.io/blog/ios-project-architecture-using-viper/)
+* [stackoverflow.com](http://stackoverflow.com/questions/35132664/why-protocols-are-used-in-both-direction-in-viper-architecture-rather-than-in-on)
+* [yalantis.com](https://yalantis.com/blog/tree-of-models-as-an-alternative-app-architecture-model/)
+* [medium.com](https://medium.com/mobile-travel-technologies/architecting-mobile-apps-with-b-viper-modules-e94e277c8d68)
+* [speakerdeck.com](https://speakerdeck.com/sergigracia/clean-architecture-viper)
+* [brigade.engineering](https://brigade.engineering/brigades-experience-using-an-mvc-alternative-36ef1601a41f#.tezoetq87)
 
 ## Meta
 
-- Cody Winton – [@codytwinton](https://twitter.com/codytwinton)
-- Distributed under the MIT license. See [LICENSE][license-url] for more information.
-- Inspired by [ViperMcFlurry](https://github.com/rambler-digital-solutions/ViperMcFlurry)
-- README edited with [StackEdit](https://stackedit.io/)
-
+* Cody Winton – [@codytwinton](https://twitter.com/codytwinton)
+* Distributed under the MIT license. See [LICENSE][license-url] for more information.
+* Inspired by [ViperMcFlurry](https://github.com/rambler-digital-solutions/ViperMcFlurry)
+* README edited with [StackEdit](https://stackedit.io/)
 
 [build-image]: https://travis-ci.org/codytwinton/SwiftyVIPER.svg?branch=master
 [carthage-image]: https://img.shields.io/badge/Carthage-compatible-4BC51D.svg
@@ -184,7 +185,6 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 [license-image]: https://img.shields.io/github/license/codytwinton/SwiftyVIPER.svg
 [platform-image]: https://img.shields.io/cocoapods/p/SwiftyVIPER.svg
 [pod-version-image]: https://img.shields.io/cocoapods/v/SwiftyVIPER.svg
-
 
 [build-url]: https://travis-ci.org/codytwinton/SwiftyVIPER
 [carthage-url]: https://github.com/Carthage/Carthage
