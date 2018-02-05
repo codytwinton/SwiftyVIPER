@@ -16,13 +16,13 @@ import SwiftyVIPER
 
 // MARK: Protocols
 
-/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___` and referenced by `___FILEBASENAMEASIDENTIFIER___ViewController`
-protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol: ViewPresenterProtocol {
+/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___` and referenced by `___VARIABLE_productName___ViewController`
+protocol ___VARIABLE_productName___ViewPresenterProtocol: ViewPresenterProtocol {
 
 }
 
-/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___` and referenced by `___FILEBASENAMEASIDENTIFIER___Interactor`
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol: class {
+/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___` and referenced by `___VARIABLE_productName___Interactor`
+protocol ___VARIABLE_productName___InteractorPresenterProtocol: class {
 	/** Sets the title for the presenter
 	- parameters:
 		- title The title to set
@@ -32,7 +32,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol: class {
 
 // MARK: -
 
-/// The Presenter for the ___FILEBASENAMEASIDENTIFIER___ module
+/// The Presenter for the ___VARIABLE_productName___ module
 final class ___FILEBASENAMEASIDENTIFIER___ {
 
 	// MARK: - Constants
@@ -52,18 +52,18 @@ final class ___FILEBASENAMEASIDENTIFIER___ {
 	}
 }
 
-// MARK: - ___FILEBASENAMEASIDENTIFIER___ View to Presenter Protocol
+// MARK: - ___VARIABLE_productName___ View to Presenter Protocol
 
-extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___ViewPresenterProtocol {
 
 	func viewLoaded() {
 		interactor.requestTitle()
 	}
 }
 
-// MARK: ___FILEBASENAMEASIDENTIFIER___ Interactor to Presenter Protocol
+// MARK: ___VARIABLE_productName___ Interactor to Presenter Protocol
 
-extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___InteractorPresenterProtocol {
 
 	func set(title: String?) {
 		view?.set(title: title)
