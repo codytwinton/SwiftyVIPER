@@ -22,11 +22,11 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var router: MockRouter!
-	fileprivate var interactor: MockInteractor!
-	fileprivate var view: MockView!
+	private var router: MockRouter!
+	private var interactor: MockInteractor!
+	private var view: MockView!
 
-	fileprivate var presenter: ___VARIABLE_productName___Presenter!
+	private var presenter: ___VARIABLE_productName___Presenter!
 
 	// MARK: Test Functions
 
@@ -67,7 +67,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockRouter: RouterProtocol, ___VARIABLE_productName___PresenterRouterProtocol {
+private class MockRouter: RouterProtocol, ___VARIABLE_productName___PresenterRouterProtocol {
 	// MARK: Variables
 
 	var viewController: UIViewController?
@@ -75,7 +75,7 @@ fileprivate class MockRouter: RouterProtocol, ___VARIABLE_productName___Presente
 
 // MARK: -
 
-fileprivate class MockInteractor: ___VARIABLE_productName___PresenterInteractorProtocol {
+private class MockInteractor: ___VARIABLE_productName___PresenterInteractorProtocol {
 	// MARK: Variables
 
 	var titleRequested: Bool = false
@@ -89,10 +89,10 @@ fileprivate class MockInteractor: ___VARIABLE_productName___PresenterInteractorP
 
 // MARK: -
 
-fileprivate class MockView: ___VARIABLE_productName___PresenterViewProtocol {
+private class MockView: ___VARIABLE_productName___PresenterViewProtocol {
 	// MARK: Variables
 
-	var title: String? = nil
+	var title: String?
 
 	// MARK: Functions
 

@@ -22,8 +22,8 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var presenter: MockPresenter!
-	fileprivate var view: ___VARIABLE_productName___ViewController!
+	private var presenter: MockPresenter!
+	private var view: ___VARIABLE_productName___ViewController!
 
 	// MARK: Test Functions
 
@@ -77,7 +77,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockPresenter: ___VARIABLE_productName___ViewPresenterProtocol {
+private class MockPresenter: ___VARIABLE_productName___ViewPresenterProtocol {
 
 	// MARK: Variables
 
