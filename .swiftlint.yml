@@ -1,4 +1,4 @@
-swiftlint_version: 0.24.0
+swiftlint_version: 0.24.2
 
 opt_in_rules:
 - array_init
@@ -66,6 +66,7 @@ opt_in_rules:
 - overridden_super_call
 - override_in_extension
 - pattern_matching_keywords
+- private_action
 - private_outlet
 - private_over_fileprivate
 - private_unit_test
@@ -79,6 +80,7 @@ opt_in_rules:
 - redundant_optional_initialization
 - redundant_void_return
 - redundant_string_enum_value
+- required_enum_case
 - return_arrow_whitespace
 - shorthand_operator
 - single_test_class
@@ -107,14 +109,18 @@ opt_in_rules:
 - void_return
 - weak_delegate
 - xctfail_message
+- yoda_condition
 
 disabled_rules:
 - custom_rules
+- discouraged_object_literal
+- explicit_acl
 - explicit_enum_raw_value
 - explicit_top_level_acl
 - file_header
 - no_extension_access_modifier
 - number_separator
+- prefixed_toplevel_constant
 
 included:
 - Sources
