@@ -63,9 +63,8 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 		--------------- */
 
-		if view == nil {
-			fatalError("Uncomment one of the Sections Above")
-		}
+		guard view == nil else { return }
+		fatalError("Uncomment one of the Sections Above")
 	}
 
 	override func tearDown() {

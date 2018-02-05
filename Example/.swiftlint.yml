@@ -12,7 +12,6 @@ opt_in_rules:
 - colon
 - comma
 - compiler_protocol_init
-- conditional_returns_on_newline
 - contains_over_first_not_nil
 - control_statement
 - cyclomatic_complexity
@@ -113,6 +112,7 @@ opt_in_rules:
 
 disabled_rules:
 - custom_rules
+- conditional_returns_on_newline
 - discouraged_object_literal
 - explicit_acl
 - explicit_enum_raw_value

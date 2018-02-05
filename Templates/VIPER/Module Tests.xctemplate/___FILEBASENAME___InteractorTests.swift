@@ -21,8 +21,8 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var presenter: MockPresenter?
-	fileprivate var interactor: ___VARIABLE_productName___Interactor?
+	private var presenter: MockPresenter?
+	private var interactor: ___VARIABLE_productName___Interactor?
 
 	// MARK: Test Functions
 
@@ -57,7 +57,7 @@ private class MockPresenter: ___VARIABLE_productName___InteractorPresenterProtoc
 
 	// MARK: Variables
 
-	var title: String? = nil
+	var title: String?
 
 	// MARK: Functions
 
