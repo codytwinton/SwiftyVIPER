@@ -16,12 +16,12 @@ import SwiftyVIPER
 
 // MARK: Protocols
 
-/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___Presenter` and referenced by `___FILEBASENAMEASIDENTIFIER___ViewController`
+/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___` and referenced by `___FILEBASENAMEASIDENTIFIER___ViewController`
 protocol ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol: ViewPresenterProtocol {
 
 }
 
-/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___Presenter` and referenced by `___FILEBASENAMEASIDENTIFIER___Interactor`
+/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___` and referenced by `___FILEBASENAMEASIDENTIFIER___Interactor`
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol: class {
 	/** Sets the title for the presenter
 	- parameters:
@@ -33,20 +33,20 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol: class {
 // MARK: -
 
 /// The Presenter for the ___FILEBASENAMEASIDENTIFIER___ module
-final class ___FILEBASENAMEASIDENTIFIER___Presenter {
+final class ___FILEBASENAMEASIDENTIFIER___ {
 
 	// MARK: - Constants
 
-	let router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol
-	let interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol
+	let router: ___FILEBASENAMEASIDENTIFIER___RouterProtocol
+	let interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol
 
 	// MARK: Variables
 
-	weak var view: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol?
+	weak var view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol?
 
 	// MARK: Inits
 
-	init(router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol, interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol) {
+	init(router: ___FILEBASENAMEASIDENTIFIER___RouterProtocol, interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol) {
 		self.router = router
 		self.interactor = interactor
 	}
@@ -54,7 +54,7 @@ final class ___FILEBASENAMEASIDENTIFIER___Presenter {
 
 // MARK: - ___FILEBASENAMEASIDENTIFIER___ View to Presenter Protocol
 
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ViewPresenterProtocol {
 
 	func viewLoaded() {
 		interactor.requestTitle()
@@ -63,7 +63,7 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
 
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Interactor to Presenter Protocol
 
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
 
 	func set(title: String?) {
 		view?.set(title: title)

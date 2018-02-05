@@ -15,7 +15,7 @@ import SwiftyVIPER
 
 // MARK: Protocols
 
-/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___Interactor` and referenced by `___FILEBASENAMEASIDENTIFIER___Presenter`
+/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___` and referenced by `___FILEBASENAMEASIDENTIFIER___Presenter`
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 	/// Requests the title for the presenter
 	func requestTitle()
@@ -24,11 +24,11 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 // MARK: -
 
 /// The Interactor for the ___FILEBASENAMEASIDENTIFIER___ module
-final class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
+final class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 
 	// MARK: - Variables
 
-	weak var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol?
+	weak var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol?
 
 	// MARK: - ___FILEBASENAMEASIDENTIFIER___ Presenter to Interactor Protocol
 

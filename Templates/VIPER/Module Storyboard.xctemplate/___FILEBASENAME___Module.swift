@@ -16,7 +16,7 @@ import UIKit
 // MARK: -
 
 /// Used to initialize the ___FILEBASENAMEASIDENTIFIER___ VIPER module
-final class ___FILEBASENAMEASIDENTIFIER___Module: ModuleProtocol {
+final class ___FILEBASENAMEASIDENTIFIER___: ModuleProtocol {
 
 	// MARK: - Constants
 
