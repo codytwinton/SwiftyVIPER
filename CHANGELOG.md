@@ -12,7 +12,7 @@ All changes are ordered: Added, Updated, Removed, Fixed
 
 Released on 2018-02-04
 
-### Updated
+#### Updated
 
 - Changed all templates and source code to support Swift 4.0
   - Updated by [Cody Winton](https://github.com/codytwinton)
@@ -27,7 +27,7 @@ Released on 2018-02-04
 
 Released on 2017-01-06
 
-### Updated
+#### Updated
 
 - Implemented [SwiftLint](https://github.com/realm/SwiftLint) for the entire project
   - Updated by [Cody Winton](https://github.com/codytwinton)
@@ -40,7 +40,7 @@ Released on 2017-01-06
 
 Released on 2016-12-24
 
-### Updated
+#### Updated
 
 - Changed template Interactor from `struct` to `class`
   - Updated by [Cody Winton](https://github.com/codytwinton)
@@ -53,19 +53,19 @@ Released on 2016-12-24
 
 Released on 2016-12-18
 
-### Added
+#### Added
 
 - Added `final` to certain template classes
   - Added by [Cody Winton](https://github.com/codytwinton)
 
-### Updated
+#### Updated
 
 - Changed all template classes from `NSObject` subclasses to a plain Swift `class`
   - Updated by [Cody Winton](https://github.com/codytwinton)
 - Changed template Interactor from `class` to `struct`
   - Updated by [Cody Winton](https://github.com/codytwinton)
 
-### Fixed
+#### Fixed
 
 - Removed old `ViewPresenterProtocol` functions from Templates
   - Fixed by [Cody Winton](https://github.com/codytwinton)
@@ -78,14 +78,14 @@ Released on 2016-12-18
 
 Released on 2016-12-01
 
-### Updated
+#### Updated
 
 - `viewLoaded()` no longer optional for Presenters conforming to `ViewPresenterProtocol`
   - Updated by [Cody Winton](https://github.com/codytwinton)
 - `CompletionBlock` was renamed `CodeBlock`
   - Updated by [Cody Winton](https://github.com/codytwinton)
 
-### Removed
+#### Removed
 
 - `ViewPresenterProtocol.viewAppearing()`
   - Removed by [Cody Winton](https://github.com/codytwinton)
@@ -102,12 +102,12 @@ Released on 2016-12-01
 
 Released on 2016-11-29
 
-### Added
+#### Added
 
 - `StoryboardIdentifiable` extension to enable default `storyboardID` value for a `UIViewController`
   - Added by [Cody Winton](https://github.com/codytwinton)
 
-### Updated
+#### Updated
 
 - The protocol `ViewStoryboardProtocol` was renamed `StoryboardIdentifiable`
   - Updated by [Cody Winton](https://github.com/codytwinton)
@@ -120,7 +120,7 @@ Released on 2016-11-29
 
 Released on 2016-11-21
 
-### Fixed
+#### Fixed
 
 - Officially requires automatic reference counting
   - Fixed by [Cody Winton](https://github.com/codytwinton)
@@ -133,14 +133,14 @@ Released on 2016-11-21
 
 Released on 2016-11-16
 
-### Added
+#### Added
 
 - iOS & tvOS Support
   - Fixed by [Cody Winton](https://github.com/codytwinton)
 - Cocoapods, Carthage, and Manual Support
   - Fixed by [Cody Winton](https://github.com/codytwinton)
 
-### Updated
+#### Updated
 
 - Improved VIPER Templates
   - Fixed by [Cody Winton](https://github.com/codytwinton)
