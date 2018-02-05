@@ -35,7 +35,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 		presenter?.viewAppearing()
 		presenter?.viewAppeared()
 		presenter?.viewDisappeared()
-		XCTAssert(interactor!.titleRequested)
+		XCTAssertEqual(interactor?.titleRequested, true)
 	}
 
 	func testView() {
@@ -49,11 +49,15 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
         super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 
-		router = MockRouter()
-		interactor = MockInteractor()
-		view = MockView()
+		let router = MockRouter()
+		self.router = router
 
-		presenter = ___VARIABLE_productName___Presenter(router: self.router!, interactor: self.interactor!)
+		let interactor = MockInteractor()
+		self.interactor = interactor
+
+		presenter = ___VARIABLE_productName___Presenter(router: router, interactor: interactor)
+
+		view = MockView()
 		presenter?.view = self.view
     }
 

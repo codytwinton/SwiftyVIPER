@@ -30,7 +30,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 	func testPresenter() {
 		view?.beginAppearanceTransition(true, animated: false)
 		view?.endAppearanceTransition()
-		XCTAssert(presenter!.isViewLoaded)
+		XCTAssertEqual(presenter?.isViewLoaded, true)
 
 		view?.set(title: "___VARIABLE_productName___")
 		XCTAssertEqual(view?.title, "___VARIABLE_productName___")
@@ -45,12 +45,13 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 		super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 
-		presenter = MockPresenter()
+		let presenter = MockPresenter()
+		self.presenter = presenter
 
 		// FIXME: - Uncomment this section, if you're using a standard VIPER Module
 		/* ---------------
 
-		view = ___VARIABLE_productName___ViewController(presenter: self.presenter!)
+		view = ___VARIABLE_productName___ViewController(presenter: presenter)
 
 		--------------- */
 
