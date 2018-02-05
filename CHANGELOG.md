@@ -1,104 +1,146 @@
 # Change Log
+
 All notable changes to this project will be documented in this file.
 `SwiftyVIPER` adheres to [Semantic Versioning](http://semver.org/).
 All changes are ordered: Added, Updated, Removed, Fixed
 
 ---
 
+## [2.0](https://github.com/codytwinton/SwiftyVIPER/releases/tag/2.0)
+
+### Updated for Swift 4
+
+Released on 2018-02-04
+
+### Updated
+
+- Changed all templates and source code to support Swift 4.0
+  - Updated by [Cody Winton](https://github.com/codytwinton)
+- Changed all templates and source code to support Swiftlint 0.24.2
+  - Updated by [Cody Winton](https://github.com/codytwinton)
+
+---
+
 ## [1.2.3](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2.3)
-#### Added SwiftLint
+
+### Added SwiftLint
+
 Released on 2017-01-06
 
-#### Updated
+### Updated
+
 - Implemented [SwiftLint](https://github.com/realm/SwiftLint) for the entire project
-	- Updated by [Cody Winton](https://github.com/codytwinton)
+  - Updated by [Cody Winton](https://github.com/codytwinton)
 
 ---
 
 ## [1.2.2](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2.2)
-#### Improved VIPER Templates
+
+### Improved VIPER Templates
+
 Released on 2016-12-24
 
-#### Updated
+### Updated
+
 - Changed template Interactor from `struct` to `class`
-	- Updated by [Cody Winton](https://github.com/codytwinton)
+  - Updated by [Cody Winton](https://github.com/codytwinton)
 
 ---
 
 ## [1.2.1](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2.1)
-#### Improved VIPER Templates
+
+### Improved VIPER Templates
+
 Released on 2016-12-18
 
-#### Added
+### Added
+
 - Added `final` to certain template classes
-	- Added by [Cody Winton](https://github.com/codytwinton)
+  - Added by [Cody Winton](https://github.com/codytwinton)
 
-#### Updated
+### Updated
+
 - Changed all template classes from `NSObject` subclasses to a plain Swift `class`
-	- Updated by [Cody Winton](https://github.com/codytwinton)
+  - Updated by [Cody Winton](https://github.com/codytwinton)
 - Changed template Interactor from `class` to `struct`
-	- Updated by [Cody Winton](https://github.com/codytwinton)
+  - Updated by [Cody Winton](https://github.com/codytwinton)
 
-#### Fixed
+### Fixed
+
 - Removed old `ViewPresenterProtocol` functions from Templates
-	- Fixed by [Cody Winton](https://github.com/codytwinton)
+  - Fixed by [Cody Winton](https://github.com/codytwinton)
 
 ---
 
 ## [1.2.0](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.2.0)
-#### Improved Presenter Interaction
+
+### Improved Presenter Interaction
+
 Released on 2016-12-01
 
-#### Updated
-- `viewLoaded()` no longer optional for Presenters conforming to `ViewPresenterProtocol`
-	- Updated by [Cody Winton](https://github.com/codytwinton)
-- `CompletionBlock` was renamed `CodeBlock`
-	- Updated by [Cody Winton](https://github.com/codytwinton)
+### Updated
 
-#### Removed
+- `viewLoaded()` no longer optional for Presenters conforming to `ViewPresenterProtocol`
+  - Updated by [Cody Winton](https://github.com/codytwinton)
+- `CompletionBlock` was renamed `CodeBlock`
+  - Updated by [Cody Winton](https://github.com/codytwinton)
+
+### Removed
+
 - `ViewPresenterProtocol.viewAppearing()`
-	- Removed by [Cody Winton](https://github.com/codytwinton)
+  - Removed by [Cody Winton](https://github.com/codytwinton)
 - `ViewPresenterProtocol.viewAppeared()`
-	- Removed by [Cody Winton](https://github.com/codytwinton)
+  - Removed by [Cody Winton](https://github.com/codytwinton)
 - `ViewPresenterProtocol.viewDisappeared()`
-	- Removed by [Cody Winton](https://github.com/codytwinton)
+  - Removed by [Cody Winton](https://github.com/codytwinton)
 
 ---
 
 ## [1.1](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.1)
-#### Improved Storyboard Interaction
+
+### Improved Storyboard Interaction
+
 Released on 2016-11-29
 
-#### Added
-- `StoryboardIdentifiable` extension to enable default `storyboardID` value for a `UIViewController`
-	- Added by [Cody Winton](https://github.com/codytwinton)
+### Added
 
-#### Updated
+- `StoryboardIdentifiable` extension to enable default `storyboardID` value for a `UIViewController`
+  - Added by [Cody Winton](https://github.com/codytwinton)
+
+### Updated
+
 - The protocol `ViewStoryboardProtocol` was renamed `StoryboardIdentifiable`
-	- Updated by [Cody Winton](https://github.com/codytwinton)
+  - Updated by [Cody Winton](https://github.com/codytwinton)
 
 ---
 
 ## [1.0.1](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.0.1)
-#### Minor Podspec Update
+
+### Minor Podspec Update
+
 Released on 2016-11-21
 
-#### Fixed
+### Fixed
+
 - Officially requires automatic reference counting
-	- Fixed by [Cody Winton](https://github.com/codytwinton)
+  - Fixed by [Cody Winton](https://github.com/codytwinton)
 
 ---
 
 ## [1.0](https://github.com/codytwinton/SwiftyVIPER/releases/tag/1.0)
-#### Official Release
+
+### Official Release
+
 Released on 2016-11-16
 
-#### Added
-- iOS & tvOS Support
-	- Fixed by [Cody Winton](https://github.com/codytwinton)
-- Cocoapods, Carthage, and Manual Support
-	- Fixed by [Cody Winton](https://github.com/codytwinton)
+### Added
 
-#### Updated
+- iOS & tvOS Support
+  - Fixed by [Cody Winton](https://github.com/codytwinton)
+- Cocoapods, Carthage, and Manual Support
+  - Fixed by [Cody Winton](https://github.com/codytwinton)
+
+### Updated
+
 - Improved VIPER Templates
-	- Fixed by [Cody Winton](https://github.com/codytwinton)
+  - Fixed by [Cody Winton](https://github.com/codytwinton)

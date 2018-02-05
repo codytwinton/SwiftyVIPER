@@ -182,7 +182,7 @@ We would love for you to contribute to **SwiftyVIPER**, check the ``LICENSE`` fi
 [codebeat-image]: https://codebeat.co/badges/74c04e5b-e6a2-4baa-9e09-5b08d87dcabc
 [codecov-image]: https://codecov.io/gh/codytwinton/SwiftyVIPER/branch/master/graph/badge.svg
 [docs-image]: https://img.shields.io/cocoapods/metrics/doc-percent/SwiftyVIPER.svg
-[lang-image]: https://img.shields.io/badge/swift-3.0-orange.svg
+[lang-image]: https://img.shields.io/badge/swift-4.0-orange.svg
 [license-image]: https://img.shields.io/github/license/codytwinton/SwiftyVIPER.svg
 [platform-image]: https://img.shields.io/cocoapods/p/SwiftyVIPER.svg
 [pod-version-image]: https://img.shields.io/cocoapods/v/SwiftyVIPER.svg
