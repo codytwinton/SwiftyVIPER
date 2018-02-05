@@ -15,25 +15,25 @@ import UIKit
 
 // MARK: -
 
-/// Used to initialize the ___FILEBASENAMEASIDENTIFIER___ VIPER module
+/// Used to initialize the ___VARIABLE_productName___ VIPER module
 final class ___FILEBASENAMEASIDENTIFIER___: ModuleProtocol {
 
 	// MARK: - Variables
 
-	private(set) lazy var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor = {
-		___FILEBASENAMEASIDENTIFIER___Interactor()
+	private(set) lazy var interactor: ___VARIABLE_productName___Interactor = {
+		___VARIABLE_productName___Interactor()
 	}()
 
-	private(set) lazy var router: ___FILEBASENAMEASIDENTIFIER___Router = {
-		___FILEBASENAMEASIDENTIFIER___Router()
+	private(set) lazy var router: ___VARIABLE_productName___Router = {
+		___VARIABLE_productName___Router()
 	}()
 
-	private(set) lazy var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter = {
-		___FILEBASENAMEASIDENTIFIER___Presenter(router: self.router, interactor: self.interactor)
+	private(set) lazy var presenter: ___VARIABLE_productName___Presenter = {
+		___VARIABLE_productName___Presenter(router: self.router, interactor: self.interactor)
 	}()
 
-	private(set) lazy var view: ___FILEBASENAMEASIDENTIFIER___ViewController = {
-		___FILEBASENAMEASIDENTIFIER___ViewController(presenter: self.presenter)
+	private(set) lazy var view: ___VARIABLE_productName___ViewController = {
+		___VARIABLE_productName___ViewController(presenter: self.presenter)
 	}()
 
 	// MARK: - Module Protocol Variables
