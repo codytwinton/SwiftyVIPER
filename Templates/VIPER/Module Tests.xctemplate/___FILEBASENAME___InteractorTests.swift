@@ -17,7 +17,7 @@ import XCTest
 
 // MARK: -
 
-class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
+class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 	// MARK: - Variables
 

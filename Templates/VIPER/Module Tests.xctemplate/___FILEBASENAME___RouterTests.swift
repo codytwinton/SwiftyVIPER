@@ -18,7 +18,7 @@ import SwiftyVIPER
 
 // MARK: -
 
-class ___FILEBASENAMEASIDENTIFIER___RouterTests: XCTestCase {
+class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 	// MARK: - Variables
 
