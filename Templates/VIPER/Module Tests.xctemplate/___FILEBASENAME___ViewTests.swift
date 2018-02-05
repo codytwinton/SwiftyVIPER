@@ -22,21 +22,21 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 	// MARK: - Variables
 
-	private var presenter: MockPresenter!
-	private var view: ___VARIABLE_productName___ViewController!
+	private var presenter: MockPresenter?
+	private var view: ___VARIABLE_productName___ViewController?
 
 	// MARK: Test Functions
 
 	func testPresenter() {
-		view.beginAppearanceTransition(true, animated: false)
-		view.endAppearanceTransition()
-		XCTAssert(presenter.isViewLoaded)
+		view?.beginAppearanceTransition(true, animated: false)
+		view?.endAppearanceTransition()
+		XCTAssert(presenter!.isViewLoaded)
 
-		view.set(title: "___VARIABLE_productName___")
-		XCTAssertEqual(view.title, "___VARIABLE_productName___")
+		view?.set(title: "___VARIABLE_productName___")
+		XCTAssertEqual(view?.title, "___VARIABLE_productName___")
 
-		view.beginAppearanceTransition(false, animated: false)
-		view.endAppearanceTransition()
+		view?.beginAppearanceTransition(false, animated: false)
+		view?.endAppearanceTransition()
 	}
 
 	// MARK: Setup
@@ -50,7 +50,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 		// FIXME: - Uncomment this section, if you're using a standard VIPER Module
 		/* ---------------
 
-		view = ___VARIABLE_productName___ViewController(presenter: self.presenter)
+		view = ___VARIABLE_productName___ViewController(presenter: self.presenter!)
 
 		--------------- */
 

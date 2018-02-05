@@ -22,7 +22,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 	// MARK: - Variables
 
-	private var router: ___VARIABLE_productName___Router!
+	private var router: ___VARIABLE_productName___Router?
 
 	// MARK: Setup
 

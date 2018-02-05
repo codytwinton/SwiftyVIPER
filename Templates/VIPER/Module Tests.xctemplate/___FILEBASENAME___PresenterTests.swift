@@ -22,25 +22,25 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 	// MARK: - Variables
 
-	private var router: MockRouter!
-	private var interactor: MockInteractor!
-	private var view: MockView!
+	private var router: MockRouter?
+	private var interactor: MockInteractor?
+	private var view: MockView?
 
-	private var presenter: ___VARIABLE_productName___Presenter!
+	private var presenter: ___VARIABLE_productName___Presenter?
 
 	// MARK: Test Functions
 
 	func testInteractor() {
-		presenter.viewLoaded()
-		presenter.viewAppearing()
-		presenter.viewAppeared()
-		presenter.viewDisappeared()
-		XCTAssert(interactor.titleRequested)
+		presenter?.viewLoaded()
+		presenter?.viewAppearing()
+		presenter?.viewAppeared()
+		presenter?.viewDisappeared()
+		XCTAssert(interactor!.titleRequested)
 	}
 
 	func testView() {
-		presenter.set(title: "___VARIABLE_productName___")
-		XCTAssertEqual(view.title, "___VARIABLE_productName___")
+		presenter?.set(title: "___VARIABLE_productName___")
+		XCTAssertEqual(view?.title, "___VARIABLE_productName___")
 	}
 
 	// MARK: Setup
@@ -53,8 +53,8 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 		interactor = MockInteractor()
 		view = MockView()
 
-		presenter = ___VARIABLE_productName___Presenter(router: self.router, interactor: self.interactor)
-		presenter.view = self.view
+		presenter = ___VARIABLE_productName___Presenter(router: self.router!, interactor: self.interactor!)
+		presenter?.view = self.view
     }
 
     override func tearDown() {
