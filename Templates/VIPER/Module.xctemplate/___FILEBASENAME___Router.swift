@@ -16,7 +16,7 @@ import SwiftyVIPER
 
 // MARK: Protocols
 
-/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___Router` and referenced by `___FILEBASENAMEASIDENTIFIER___Presenter`
+/// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___` and referenced by `___FILEBASENAMEASIDENTIFIER___Presenter`
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol: PresenterRouterProtocol {
 
 }
@@ -24,7 +24,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol: PresenterRouterP
 // MARK: -
 
 /// The Router for the ___FILEBASENAMEASIDENTIFIER___ module
-final class ___FILEBASENAMEASIDENTIFIER___Router {
+final class ___FILEBASENAMEASIDENTIFIER___ {
 
 	// MARK: - Variables
 
@@ -33,12 +33,12 @@ final class ___FILEBASENAMEASIDENTIFIER___Router {
 
 // MARK: - Router Protocol
 
-extension ___FILEBASENAMEASIDENTIFIER___Router: RouterProtocol {
+extension ___FILEBASENAMEASIDENTIFIER___: RouterProtocol {
 
 }
 
 // MARK: ___FILEBASENAMEASIDENTIFIER___ Presenter to Router Protocol
 
-extension ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
 
 }

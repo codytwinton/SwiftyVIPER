@@ -28,7 +28,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol: class {
 // MARK: -
 
 /// The View Controller for the ___FILEBASENAMEASIDENTIFIER___ module
-class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
 	// MARK: - Constants
 
@@ -59,7 +59,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
 // MARK: - ___FILEBASENAMEASIDENTIFIER___ Presenter to View Protocol
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
 
 	func set(title: String?) {
 		self.title = title
