@@ -22,7 +22,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 	// MARK: - Variables
 
-	fileprivate var router: ___FILEBASENAMEASIDENTIFIER___Router!
+	fileprivate var router: ___VARIABLE_productName___Router!
 
 	// MARK: Setup
 
@@ -30,7 +30,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
         super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 
-		router = ___FILEBASENAMEASIDENTIFIER___Router()
+		router = ___VARIABLE_productName___Router()
     }
 
     override func tearDown() {

@@ -21,7 +21,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 	// MARK: - Variables
 
-	var module: ___FILEBASENAMEASIDENTIFIER___Module?
+	var module: ___VARIABLE_productName___Module?
 
 	// MARK: Test Functions
 
@@ -51,7 +51,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 		super.setUp()
 		// Put setup code here. This method is called before the invocation of each test method in the class.
 
-		module = ___FILEBASENAMEASIDENTIFIER___Module()
+		module = ___VARIABLE_productName___Module()
 	}
 
 	override func tearDown() {

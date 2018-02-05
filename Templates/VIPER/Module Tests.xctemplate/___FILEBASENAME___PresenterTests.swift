@@ -26,7 +26,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 	fileprivate var interactor: MockInteractor!
 	fileprivate var view: MockView!
 
-	fileprivate var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter!
+	fileprivate var presenter: ___VARIABLE_productName___Presenter!
 
 	// MARK: Test Functions
 
@@ -39,8 +39,8 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 	}
 
 	func testView() {
-		presenter.set(title: "___FILEBASENAMEASIDENTIFIER___")
-		XCTAssertEqual(view.title, "___FILEBASENAMEASIDENTIFIER___")
+		presenter.set(title: "___VARIABLE_productName___")
+		XCTAssertEqual(view.title, "___VARIABLE_productName___")
 	}
 
 	// MARK: Setup
@@ -53,7 +53,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 		interactor = MockInteractor()
 		view = MockView()
 
-		presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(router: self.router, interactor: self.interactor)
+		presenter = ___VARIABLE_productName___Presenter(router: self.router, interactor: self.interactor)
 		presenter.view = self.view
     }
 
@@ -67,7 +67,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 // MARK: -
 
-fileprivate class MockRouter: RouterProtocol, ___FILEBASENAMEASIDENTIFIER___PresenterRouterProtocol {
+fileprivate class MockRouter: RouterProtocol, ___VARIABLE_productName___PresenterRouterProtocol {
 	// MARK: Variables
 
 	var viewController: UIViewController?
@@ -75,7 +75,7 @@ fileprivate class MockRouter: RouterProtocol, ___FILEBASENAMEASIDENTIFIER___Pres
 
 // MARK: -
 
-fileprivate class MockInteractor: ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
+fileprivate class MockInteractor: ___VARIABLE_productName___PresenterInteractorProtocol {
 	// MARK: Variables
 
 	var titleRequested: Bool = false
@@ -89,7 +89,7 @@ fileprivate class MockInteractor: ___FILEBASENAMEASIDENTIFIER___PresenterInterac
 
 // MARK: -
 
-fileprivate class MockView: ___FILEBASENAMEASIDENTIFIER___PresenterViewProtocol {
+fileprivate class MockView: ___VARIABLE_productName___PresenterViewProtocol {
 	// MARK: Variables
 
 	var title: String? = nil

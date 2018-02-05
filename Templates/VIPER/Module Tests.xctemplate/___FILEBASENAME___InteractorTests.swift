@@ -22,13 +22,13 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 	// MARK: - Variables
 
 	fileprivate var presenter: MockPresenter?
-	fileprivate var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor?
+	fileprivate var interactor: ___VARIABLE_productName___Interactor?
 
 	// MARK: Test Functions
 
 	func testPresenter() {
 		interactor?.requestTitle()
-		XCTAssertEqual(presenter?.title, "___FILEBASENAMEASIDENTIFIER___")
+		XCTAssertEqual(presenter?.title, "___VARIABLE_productName___")
 	}
 
 	// MARK: Setup
@@ -39,7 +39,7 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 		presenter = MockPresenter()
 
-		interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
+		interactor = ___VARIABLE_productName___Interactor()
 		interactor?.presenter = presenter
     }
 
@@ -53,8 +53,8 @@ class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
 
 // MARK: -
 
-private class MockPresenter: ___FILEBASENAMEASIDENTIFIER___InteractorPresenterProtocol {
-	
+private class MockPresenter: ___VARIABLE_productName___InteractorPresenterProtocol {
+
 	// MARK: Variables
 
 	var title: String? = nil
