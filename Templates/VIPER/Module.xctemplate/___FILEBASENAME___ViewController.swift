@@ -28,7 +28,7 @@ protocol ___VARIABLE_productName___PresenterViewProtocol: class {
 // MARK: -
 
 /// The View Controller for the ___VARIABLE_productName___ module
-class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController, ___VARIABLE_productName___PresenterViewProtocol {
 
 	// MARK: - Constants
 
@@ -55,11 +55,8 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
 		view.backgroundColor = .white
     }
-}
 
-// MARK: - ___VARIABLE_productName___ Presenter to View Protocol
-
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___PresenterViewProtocol {
+	// MARK: - ___VARIABLE_productName___ Presenter to View Protocol
 
 	func set(title: String?) {
 		self.title = title

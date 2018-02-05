@@ -24,21 +24,9 @@ protocol ___VARIABLE_productName___PresenterRouterProtocol: PresenterRouterProto
 // MARK: -
 
 /// The Router for the ___VARIABLE_productName___ module
-final class ___FILEBASENAMEASIDENTIFIER___ {
+final class ___FILEBASENAMEASIDENTIFIER___: RouterProtocol, ___VARIABLE_productName___PresenterRouterProtocol {
 
 	// MARK: - Variables
 
 	weak var viewController: UIViewController?
-}
-
-// MARK: - Router Protocol
-
-extension ___FILEBASENAMEASIDENTIFIER___: RouterProtocol {
-
-}
-
-// MARK: ___VARIABLE_productName___ Presenter to Router Protocol
-
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___PresenterRouterProtocol {
-
 }
