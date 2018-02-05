@@ -15,10 +15,6 @@ import SwiftyVIPER
 
 // MARK: Protocols
 
-class ___VARIABLE_productName___ {
-
-}
-
 /// Should be conformed to by the `___FILEBASENAMEASIDENTIFIER___` and referenced by `___FILEBASENAMEASIDENTIFIER___Presenter`
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterInteractorProtocol {
 	/// Requests the title for the presenter
