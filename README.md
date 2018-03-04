@@ -41,8 +41,8 @@ If all of this is totally new for you, check out my running list of [VIPER Resou
 ## Requirements
 
 * iOS 8.0+ | tvOS 9.0+
-* Xcode 8
-* Swift 3
+* Xcode 9
+* Swift 4
 
 ## Installation
 
