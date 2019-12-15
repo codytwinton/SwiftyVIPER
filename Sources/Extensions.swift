@@ -19,10 +19,10 @@ public extension UIStoryboard {
 	- returns: A Storyboard Instance of Type
 	*/
 	func viewController<T: UIViewController>(_ type: T.Type) -> T where T: StoryboardIdentifiable {
-		guard let vc = instantiateViewController(withIdentifier: type.storyboardID) as? T else {
+		guard let view = instantiateViewController(withIdentifier: type.storyboardID) as? T else {
 			fatalError("Couldn't find a View Controller with Identifier \(type.storyboardID)")
 		}
-		return vc
+		return view
 	}
 }
 
@@ -45,7 +45,7 @@ public extension ModuleProtocol {
 	}
 }
 
-public extension PresenterRouterProtocol where Self:RouterProtocol {
+public extension PresenterRouterProtocol where Self: RouterProtocol {
 
 	func present(_ view: UIViewController, completion: CodeBlock?) {
 		switch viewController {

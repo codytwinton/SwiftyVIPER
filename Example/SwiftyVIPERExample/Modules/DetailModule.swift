@@ -37,9 +37,9 @@ final class DetailModule: ModuleProtocol {
 	}()
 
 	private(set) lazy var view: DetailViewController = {
-		let vc = self.storyboard.viewController(DetailViewController.self)
-		vc.presenter = self.presenter
-		return vc
+		let view = self.storyboard.viewController(DetailViewController.self)
+		view.presenter = self.presenter
+		return view
 	}()
 
 	// MARK: - Module Protocol Variables

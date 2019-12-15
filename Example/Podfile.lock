@@ -1,22 +1,27 @@
 PODS:
   - SnapKit (4.0.0)
   - SwiftLint (0.24.2)
-  - SwiftyVIPER (1.2.3)
+  - SwiftyVIPER (2.0)
 
 DEPENDENCIES:
   - SnapKit (~> 4.0)
   - SwiftLint
   - SwiftyVIPER (from `../`)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
+    - SwiftLint
+
 EXTERNAL SOURCES:
   SwiftyVIPER:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
-  SwiftyVIPER: f0d3130dc59b9d22368a8acf55ec36edd14af8f9
+  SwiftyVIPER: 09eb59e7252d79b06c2de2615d0855e2fe89d286
 
 PODFILE CHECKSUM: 4269a90155939122582435f9d1610513292926a1
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.8.4

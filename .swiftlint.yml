@@ -1,5 +1,3 @@
-swiftlint_version: 0.24.2
-
 opt_in_rules:
 - array_init
 - attributes
@@ -23,7 +21,6 @@ opt_in_rules:
 - empty_parameters
 - empty_parentheses_with_trailing_closure
 - explicit_init
-- explicit_type_interface
 - extension_access_modifier
 - fatal_error_message
 - file_length
